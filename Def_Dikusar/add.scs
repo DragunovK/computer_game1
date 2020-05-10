@@ -60,6 +60,15 @@ concept_player_building
     [Постройка игрока] (* <- lang_ru;; *);
     [Player building] (* <- lang_en;; *);;
 
+concept_game_object
+<- sc_node_not_relation;
+
+  => nrel_main_idtf:
+    [Игровой объект] (* <- lang_ru;; *);
+    [Game object] (* <- lang_en;; *);;
+
+
+
 
 
 

@@ -32,7 +32,7 @@ nrel_ability
     };;
 <= nrel_sc_text_translation: ... (*
       -> rrel_example:
-[<b><sc_element sys_idtf="nrel_ability">Способность*</sc_element></b> - действие или состояние характерное для героя.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+[<b><sc_element sys_idtf="nrel_ability">Способность*</sc_element> - действие или состояние характерное для героя.] (* <- lang_ru;; => nrel_format: format_html;; *);;
     *);;
    *);
 => nrel_definitional_domain: ... (*
@@ -48,7 +48,7 @@ nrel_ability
       [Утв.(о способности*)] (* <- lang_ru;; *);;
     <= nrel_sc_text_translation: ... (*
       -> rrel_example:
-[<b><sc_element sys_idtf="concept_hero_char">Герой</sc_element></b> приобретает новые способности с  повышением уровня.](*<-lang_ru;; => nrel_format: format_html;;*);;
+[Герой приобретает новые способности с  повышением уровня.](*<-lang_ru;; => nrel_format: format_html;;*);;
       *);;
   *);;
 action -> Blink;;

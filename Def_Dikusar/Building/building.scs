@@ -7,7 +7,10 @@ concept_game_object_building
        (*<-lang_en;;*);
 => nrel_idtf:
       [здание]
-      (*<-lang_ru;;*);    
+      (*<-lang_ru;;*);   
+=> nrel_idtf:
+      [строение]
+      (*<-lang_ru;;*);     
 <- rrel_key_sc_element: ... (*
     <- definition;;
     => nrel_main_idtf:
@@ -17,13 +20,13 @@ desfense;
 hiring;
 buying;
 upgrade;
-concobjectept_game_object;
+concept_game_object;
 defense;
 nrel_function
 };; 
       <= nrel_sc_text_translation: ... (*
       -> rrel_example:
-        [<b><sc_element sys_idtf="concept_game_object_building">Постройка</sc_element> -- статический или малоподвижный игровой объект, выполняющий функции: найм, апгрейд, покупка предметов и оборона.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+        [<b><sc_element sys_idtf="concept_game_object_building">Постройка</sc_element></b> -- статический или малоподвижный игровой объект, выполняющий функции: найм, апгрейд, покупка предметов и оборона.] (* <- lang_ru;; => nrel_format: format_html;; *);;
     *);;
    *);
 /*<= nrel_first_domain:
@@ -35,10 +38,10 @@ nrel_function
       [Утв. (о постройке)] (* <- lang_ru;; *);;
     <= nrel_sc_text_translation: ... (*
       -> rrel_example:
-[ Каждая <b><sc_element sys_idtf="concept_race">раса</sc_element> имеет свои уникальные постройки.](*<-lang_ru;; => nrel_format: format_html;;*);;
+[ Каждая раса имеет свои уникальные постройки.](*<-lang_ru;; => nrel_format: format_html;;*);;
       *);;
   *);
-
+<=nrel_inclusion:concept_game_object;
 
 <- rrel_key_sc_element: ...
 (*
