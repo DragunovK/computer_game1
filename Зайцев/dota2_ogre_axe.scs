@@ -1,0 +1,54 @@
+concept_ogre_axe <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Ogre Axe]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Ogre Axe]
+      (*<-lang_en;;*);
+
+	<- item_dota2;
+
+	=>nrel_price: 1000;
+	=>nrel_is_a_part: 
+		concept_sange;
+		concept_black_king_bar;
+		concept_aghanims_scepter;
+		concept_dragon_lance;
+		concept_echo_sabre;
+		concept_meteor_hammer;
+		
+	=>nrel_passive_ability: passive_ability_ogre_axe;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Ogre Axe)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Вы становитесь сильнее, просто держа его в руках.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Ogre Axe)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Данный предмет отлично подойдет героям, у которых основная характеристика сила, в средней стадии игры.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/ogre_axe.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

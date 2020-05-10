@@ -1,0 +1,13 @@
+nrel_range_of_application
+
+	<-sc_node_norole_relation;
+	<-oriented_relation;
+	<-binary_relation;
+	<-antisymmetric_relation;
+	<-antireflexive_relation;
+
+=> nrel_main_idtf:	
+      [range of application*]
+      (*<-lang_en;;*);
+      [дальность применения*]
+	(*<-lang_ru;;*);;

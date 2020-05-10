@@ -1,0 +1,50 @@
+concept_claymore <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Claymore]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Claymore]
+      (*<-lang_en;;*);
+
+	<- item_dota2;
+
+	=>nrel_price: 1400;
+	=>nrel_is_a_part: 
+		concept_shadow_blade;
+		concept_satanic;
+		
+	=>nrel_passive_ability: passive_ability_claymore;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Claymore)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Меч, способный пробить броню — это обычный выбор начинающих меченосцев.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Claymore)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Отлично подойдет керри героям, которым нужем дополнительный урон.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/claymore.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

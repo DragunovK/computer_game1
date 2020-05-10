@@ -1,0 +1,52 @@
+concept_hyperstone <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Hyperstone]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Hyperstone]
+      (*<-lang_en;;*); 
+
+	<- item_dota2;
+
+	=>nrel_price: 2000;
+	=>nrel_passive_ability: passive_ability_hyperstone;
+		
+
+	=>nrel_is_a_part:
+			concept_assault_cuirass;
+			concept_mjollnir;
+			concept_moon_shard;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Hyperstone)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Загадочный гравированный камень, который делает носителя усерднее.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Hyperstone)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Отлично подойдет керри героям, у которых низкая скорость атаки.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/hyperstone.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

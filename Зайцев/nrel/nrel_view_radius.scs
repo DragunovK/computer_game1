@@ -1,0 +1,14 @@
+nrel_view_radius
+
+
+	<-sc_node_norole_relation;
+	<-oriented_relation;
+	<-binary_relation;
+	<-antisymmetric_relation;
+	<-antireflexive_relation;
+
+=> nrel_main_idtf:	
+      [view radius*]
+      (*<-lang_en;;*);
+      [радиус обзора*]
+	(*<-lang_ru;;*);;

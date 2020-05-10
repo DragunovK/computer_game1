@@ -1,0 +1,8 @@
+passive_ability_wraith_band
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[+5 к скорости атаки](* <-lang_en; lang_ru;; *);
+
+	<- ability;;

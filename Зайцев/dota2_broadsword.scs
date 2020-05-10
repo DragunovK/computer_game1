@@ -1,0 +1,50 @@
+concept_broadsword <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Broadsword]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Broadsword]
+      (*<-lang_en;;*);
+
+	<- item_dota2;
+
+	=>nrel_price: 1000;
+	=>nrel_is_a_part: 
+		concept_blade_mail;
+		concept_crystalys;
+		
+	=>nrel_passive_ability: passive_ability_broadsword;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Broadsword)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Будучи классическим оружием рыцарей, этот клинок является прочным и надежным выбором для убийства врагов.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Broadsword)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Отлично подойдет керри героям, которым нужем дополнительный урон.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/broadsword.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

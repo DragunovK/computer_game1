@@ -1,0 +1,55 @@
+concept_bracer <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Bracer]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Наручи]
+      (*<-lang_ru;;*); 
+
+	<- item_dota2;
+
+	=>nrel_price: 510;
+	=>nrel_passive_ability: 
+			passive_ability_slippers_of_agility;
+			passive_ability_mantle_of_intelligence;
+			passive_ability_belt_of_strength;
+			passive_ability_bracer;
+
+	=>nrel_components:
+			concept_gauntlets_of_strength;
+			concept_circlet;
+			concept_recipe_for_bracer;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Наручи)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Наручи — типичный выбор для укрепления защиты и продления жизни в бою.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Наручи)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Герои покупают Bracer для большей выживаемости.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/bracer.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

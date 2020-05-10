@@ -1,0 +1,6 @@
+concept_desolator <- sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Desolator](* <-lang_en; lang_ru;; *);
+
+	<- item_dota2;;

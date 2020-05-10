@@ -1,0 +1,54 @@
+concept_energy_booster <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Energy booster]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [усилитель энергии]
+      (*<-lang_ru;;*); 
+
+	<- item_dota2;
+
+	=>nrel_price: 900;
+	=>nrel_is_a_part: 
+		Arcane_Boots;
+		Soul_Booster;
+		Lotus_Orb;
+		Aether_Lens;
+		Aeon_Disk;
+		Holy_Locket;
+		
+	=>nrel_passive_ability: passive_ability_energy_booster;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Energy booster)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Этот ляписовый камень усиливает магический потенциал владельца, позволяя ему дольше сохранять колдовские силы в бою.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Energy booster)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Energy booster отлично подойдет героям, у которых основная характеристика интеллект.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/energy_booster.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

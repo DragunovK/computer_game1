@@ -1,0 +1,14 @@
+nrel_experience_gain_per_minute
+
+
+	<-sc_node_norole_relation;
+	<-oriented_relation;
+	<-binary_relation;
+	<-antisymmetric_relation;
+	<-antireflexive_relation;
+
+=> nrel_main_idtf:	
+      [experience gain per minute*]
+      (*<-lang_en;;*);
+      [прирост опыта в минуту*]
+	(*<-lang_ru;;*);;

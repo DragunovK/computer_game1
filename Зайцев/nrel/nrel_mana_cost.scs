@@ -1,0 +1,14 @@
+nrel_mana_cost
+
+
+	<-sc_node_norole_relation;
+	<-oriented_relation;
+	<-binary_relation;
+	<-antisymmetric_relation;
+	<-antireflexive_relation;
+
+=> nrel_main_idtf:	
+      [mana cost*]
+      (*<-lang_en;;*);
+      [расход маны*]
+	(*<-lang_ru;;*);;

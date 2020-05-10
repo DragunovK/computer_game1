@@ -1,0 +1,51 @@
+concept_blades_of_attack <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Blades of Attack]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Blades of Attack]
+      (*<-lang_en;;*);
+
+	<- item_dota2;
+
+	=>nrel_price: 450;
+	=>nrel_is_a_part: 
+		concept_armlet_of_mordiggian;
+		concept_crystalys;
+		concept_phase_boots;
+		
+	=>nrel_passive_ability: passive_ability_blades_of_attack;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Blades of Attack)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Не стоит недооценивать опасность этих маленьких незаметных клинков.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Blades of Attack)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Отлично подойдет керри героям, которым нужем дополнительный урон.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/blades_of_attack.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

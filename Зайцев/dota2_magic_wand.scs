@@ -1,0 +1,62 @@
+concept_magic_wand <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Magic Wand]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Волшебная палочка]
+      (*<-lang_ru;;*); 
+
+	<- item_dota2;
+
+	=>nrel_price: 450;
+	=>nrel_passive_ability: 
+			passive_ability_slippers_of_agility;
+			passive_ability_gauntlets_of_strength;
+			passive_ability_mantle_of_intelligence;
+
+	=>nrel_components:
+			concept_branch;
+			concept_magic_stick;
+			concept_recipe_for_magic_wand;
+
+	=>nrel_recharge: 13;
+	=>nrel_maximum_charges: 20;
+	=>nrel_restore_health_and_mana_per_charge: 15;
+
+	=>nrel_is_a_part: concept_holly_locket;
+
+	=>nrel_active_ability: active_ability_magic_wand;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Волшебная палочка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Улучшеная волшебная палочка, используемая для концентрации магической энергии как начинающими волшебниками, так и великими колдунами.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Волшебная палочка)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Не дает заряды от переключаемых способностей, активных модификаторов атаки и способностей срабатывающих от других способностей. Прерывает произносимые заклинания владельца при применении.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/magic_wand.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

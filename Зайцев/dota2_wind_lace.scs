@@ -1,0 +1,53 @@
+concept_wind_lace <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Wind Lace]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Wind Lace]
+      (*<-lang_en;;*);
+
+	<- item_dota2;
+
+	=>nrel_price: 250;
+	=>nrel_is_a_part: 
+		concept_euls_scepter_of_divinity;
+		concept_spirit_vessel;
+		concept_drum_of_endurance;
+		concept_solar_crest;
+		concept_tranquil_boots;
+		
+	=>nrel_passive_ability: passive_ability_wind_lace;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Wind Lace)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Да преисполнится скоростью тот, чьи подошвы ощутили касание ветра.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Wind Lace)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Скорость передвижения от нескольких Wind Lace не складывается. Складывается с другими бонусами скорости передвижения.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/wind_lace.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

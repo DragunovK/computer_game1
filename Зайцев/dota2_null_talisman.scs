@@ -1,0 +1,55 @@
+concept_null_talisman <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Null Talisman]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Null Talisman]
+      (*<-lang_en;;*); 
+
+	<- item_dota2;
+
+	=>nrel_price: 510;
+	=>nrel_passive_ability: 
+			passive_ability_gauntlets_of_strength;
+			passive_ability_robe_of_the_magi;
+			passive_ability_slippers_of_agility;
+			passive_ability_null_talisman;
+
+	=>nrel_components:
+			concept_mantle_of_intelligence;
+			concept_circlet;
+			concept_recipe_for_null_talisman;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Null Talisman)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Небольшой драгоценный камень, связанный звеньями.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Null Talisman)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Герои, которым нужно раннее усиление характеристики интеллект, часто извлекают пользу из Null Talisman.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/null_talisman.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

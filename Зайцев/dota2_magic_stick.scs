@@ -1,0 +1,50 @@
+concept_magic_stick <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Magic Stick]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Magic Stick]
+      (*<-lang_en;;*); 
+
+	<- item_dota2;
+
+	=>nrel_price: 200;
+	=>nrel_recharge: 13;
+	=>nrel_maximum_charges: 10;
+	=>nrel_restore_health_and_mana_per_charge: 15;
+	=>nrel_active_ability: active_ability_magic_wand;
+	=>nrel_is_a_part: magic_wand;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Magic Stick)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Простая волшебная палочка, используемая для концентрации магической энергии как начинающими волшебниками, так и великими колдунами.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Magic Stick)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Не дает заряды от переключаемых способностей, активных модификаторов атаки и способностей срабатывающих от других способностей. Прерывает произносимые заклинания владельца при применении.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/magic_stick.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

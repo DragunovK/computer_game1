@@ -1,0 +1,53 @@
+concept_boots_of_speed <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Boots of Speed]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Boots of Speed]
+      (*<-lang_en;;*);
+
+	<- item_dota2;
+
+	=>nrel_price: 500;
+	=>nrel_is_a_part: 
+		concept_phase_boots;
+		concept_power_treads;
+		concept_boots_of_travel;
+		concept_arcane_boots;
+		concept_tranquil_boots;
+		
+	=>nrel_passive_ability: passive_ability_boots_of_speed;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Boots of Speed)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Удобная обувь, ускоряющая передвижение.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Boots of Speed)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Основные бонусы к скорости передвижения от нескольких пар ботинок не складываются.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/boots_of_speed.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

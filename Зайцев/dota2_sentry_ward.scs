@@ -1,0 +1,51 @@
+concept_sentry_ward <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Sentry Ward]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Сентри вард]
+      (*<-lang_ru;;*); 
+
+	<- item_dota2;
+
+	=>nrel_price: 75;
+	=>nrel_lifetime: 360;
+	=>nrel_range_of_application: 500;
+	=>nrel_view_radius: 1000;
+	=>nrel_recharge: 1;
+	=>nrel_hero_destruction_attacks: 2;
+	=>nrel_nonhero_destruction_attacks: 8;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Sentry Ward)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [предмет, который можно купить в Основной лавке, в разделе Расходуемые. Вард, который имеет способность True Sight, в радиусе 1000 раскрывающую невидимых существ и варды в вашей видимости.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Sentry Ward)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Можно передать один Sentry Ward союзному герою, удерживайте клавишу Ctrl. Может быть использован не только владельцем. Уничтожение Sentry Ward отображается в уведомлениях чата для союзников. Не даёт наземный обзор.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/sentry_ward.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

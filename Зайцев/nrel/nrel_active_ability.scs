@@ -1,0 +1,14 @@
+nrel_active_ability
+
+
+	<-sc_node_norole_relation;
+	<-oriented_relation;
+	<-binary_relation;
+	<-antisymmetric_relation;
+	<-antireflexive_relation;
+
+=> nrel_main_idtf:	
+      [active_ability*]
+      (*<-lang_en;;*);
+      [активная способность*]
+	(*<-lang_ru;;*);;
