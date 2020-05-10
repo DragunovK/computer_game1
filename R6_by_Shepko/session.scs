@@ -1,0 +1,70 @@
+session_231 = [*
+r6_game_session<=nrel_inclusion:{
+	rrel_1: blue;
+	rrel_2: orange;
+	rrel_attack_operative: orange;	
+	rrel_defense_operative: blue;
+	rrel_1: round
+};;
+
+r6_game_session=>nrel_game_mode: charge;;
+
+team->
+	orange;
+	blue;;
+
+orange=>nrel_team_operative: Thermite;;
+orange=>nrel_team_operative: Ash;;
+orange=>nrel_team_operative: IQ;;
+orange=>nrel_team_operative: Blitz;;
+
+blue=>nrel_team_operative: Pulse;;
+blue=>nrel_team_operative: Castle;;
+blue=>nrel_team_operative: Jager;;
+blue=>nrel_team_operative: Bandit;;
+
+Bandit<=nrel_reinforce_wall: {
+rrel_event_time: 3_21;
+wall_4231
+};;
+
+
+Thermite<=nrel_kill: {
+rrel_event_time: 2_00;
+Pulse
+};;
+
+Thermite<=nrel_kill: {
+rrel_event_time: 1_47;
+Bandit;
+Jager
+};;
+
+Thermite<=nrel_deactivation: {
+rrel_event_time: 0_23;
+deactivation_231
+};;
+
+orange->win;;
+
+time->2_00;
+->2_12;
+->3_21;
+->1_47;;
+
+deactivation_231=[*
+situation
+->deactivation_start;
+->deactivation_finish;;
+process->
+nrel_deactivation;;
+
+nrel_deactivation=>nrel_initial_situation: deactivation_start;;
+nrel_deactivation=>nrel_final_situation: deactivation_finish;;
+
+nrel_deactivation => nrel_event: (deactivation_start => deactivation_finish);;
+*];;
+
+
+
+*];;

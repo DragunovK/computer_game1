@@ -1,0 +1,106 @@
+concept_rainbow_six_siege
+
+=> nrel_main_idtf:     
+	 [Радуга 6: Осада]   (*<-lang_ru;;*);
+      [Rainbow 6: Siege]  (*<-lang_en;;*);  
+
+<-concept_computer_game;
+<-sc_node_not_relation;
+<-concept_shooter;
+<-nowadays;
+
+=>nrel_game_mode: concept_singleplayer_game;
+=>nrel_game_mode: concept_multiplayer_game;
+=>nrel_announcement_date: date_09.06.2014;
+=>nrel_publication_date: date_07.04.2015;
+=>nrel_game_camera: concept_first_person_view;
+=>nrel_game_engine: AnvilNext(*
+<-game_engine;;
+*);
+=>nrel_publisher: company_ubisoft;
+=>nrel_developer: company_ubisoft;
+=>nrel_platform: {
+concept_windows;
+concept_xbox_one;
+concept_playstation_3;
+concept_playstation_4
+};
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (Rainbow 6: Siege)] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+concept_shooter;
+concept_tactics;
+concept_computer_game;
+concept_three_dimensional_game;
+concept_multiplatform_game;
+company_ubisoft;
+concept_first_person_view
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[ Rainbow 6: Siege — мультиплатформенная компьютерная игра, тактический шутер от первого лица, разработанный канадской компанией <b><sc_element sys_idtf="company_ubisoft" > Ubisof </b></sc_element> и изданный ей же.](*<-lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/R6Siege.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+->rank;
+->nrel_player_rank;
+->special_device;
+->nrel_unique_device;
+->nrel_device;
+->round;
+->game_location;
+->self_supporting_wall;
+->supporting_wall;
+->nrel_reinforce_wall;
+->capture_position_mode;
+->nrel_deactivation;
+->antiterror_mode;
+->fastgame_mode;
+->unrating_mode;
+->rating_mode;
+->charge;
+->hostage_mode;
+->r6_operation;
+->r6_year;
+->r6_game_session;
+->nrel_kill;
+->nrel_season;
+->nrel_team_operative;
+->special_forces;
+->drone;
+->rrel_attack_operative;
+->rrel_defense_operative;
+->operative;
+->nrel_game_unit;
+->nrel_armor_cathegory;
+->armor;
+->low_armor;
+->middle_armor;
+->high_armor;
+->glory_boost;
+->glory_point;
+->r6_credit;
+->season_pass;
+->alfa_pack;
+->custom_unit;
+->nrel_climbed;
+->rrel_stuning;
+->rrel_support;
+->rrel_elimination;
+->rrel_wall_breacher;
+->rrel_reinforce_attachment;
+->rrel_event_time;;

@@ -1,0 +1,181 @@
+nrel_climbed
+
+<-sc_node_norole_relation;
+
+<-  antisymmetric_relation;
+<|- reflexive_relation;
+<|- transitive_relation;
+<- oriented_relation;
+	 =>nrel_first_domain: operative;
+		nrel_second_domain: supporting_wall;
+=> nrel_main_idtf:     
+	 [забираться*]   (*<-lang_ru;;*);
+      [climbed*]  (*<-lang_en;;*); 
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (забираться*)] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+		reinforcement
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Забираться* - возможность <b><sc_element sys_idtf="operative" > оперативника </b></sc_element> проникать в помещение по <b><sc_element sys_idtf="supporting_wall" > стенам </b></sc_element> ](*<-lang_ru;;   => nrel_format: format_html;;*);;
+      *);;
+  *);;
+
+nrel_scouting
+
+<-sc_node_norole_relation;
+
+<-  symmetric_relation;
+<|- reflexive_relation;
+<- transitive_relation;
+<- oriented_relation;
+	 =>nrel_first_domain: operative;
+		nrel_first_domain: drone;
+		nrel_second_domain: indoor;
+=> nrel_main_idtf:     
+	 [устройство разведки']   (*<-lang_ru;;*);
+      [scouting']  (*<-lang_en;;*); 
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (разведка*)] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+		charge
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Разведка* - процесс обнаружения </b></sc_element> <b><sc_element sys_idtf="charge" > заряда </b></sc_element>, противника и других элементов сопротивления ](*<-lang_ru;;   => nrel_format: format_html;;*);;
+      *);;
+  *);;
+
+rrel_elimination
+
+<-sc_node_role_relation;
+
+	 =>nrel_first_domain: operative;
+		nrel_second_domain: special_device;
+=> nrel_main_idtf:     
+	 [устройство устранения']   (*<-lang_ru;;*);
+      [elimination']  (*<-lang_en;;*); 
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (устранение')] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+		special_device
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Устранение - роль </b></sc_element> <b><sc_element sys_idtf="special_device" > спецустройства </b></sc_element> нацеленная на обезвреживание противника ](*<-lang_ru;;   => nrel_format: format_html;;*);;
+      *);;
+  *);;
+
+rrel_support
+
+<-sc_node_role_relation;
+
+	 =>nrel_first_domain: operative;
+		nrel_second_domain: special_device;
+
+=> nrel_main_idtf:     
+	 [устройство поддержки']   (*<-lang_ru;;*);
+      [support']  (*<-lang_en;;*); 
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (оперативник защиты')] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+	concept_rainbow_six_siege;
+	operative;
+	rrel_attack_operative
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Поддержка - роль </b></sc_element> <b><sc_element sys_idtf="special_device" > спецустройства </b></sc_element> нацеленная на помощь союзникам ](*<-lang_ru;;  => nrel_format: format_html;;*);;
+      *);;
+  *);;
+
+rrel_stuning
+
+<-sc_node_role_relation;
+
+	 =>nrel_first_domain: operative;
+		nrel_second_domain: special_device;
+
+=> nrel_main_idtf:     
+	 [оглушающее устройство']   (*<-lang_ru;;*);
+      [stuning']  (*<-lang_en;;*); 
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (оглушающее устройство')] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+	concept_rainbow_six_siege;
+	operative;
+	rrel_attack_operative
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Оглушающее устройство - роль </b></sc_element> <b><sc_element sys_idtf="special_device" > спецустройства </b></sc_element> нацеленная на дизориентацию противника](*<-lang_ru;;  => nrel_format: format_html;;*);;
+      *);;
+  *);;
+
+rrel_reinforce_attachment
+
+<-sc_node_role_relation;
+
+	 =>nrel_first_domain: operative;
+		nrel_second_domain: special_device;
+
+=> nrel_main_idtf:     
+	 [приспособление к укреплению']   (*<-lang_ru;;*);
+      [reinforce attachment']  (*<-lang_en;;*); 
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (приспособление к укреплению')] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+	concept_rainbow_six_siege;
+	operative;
+	rrel_attack_operative
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Приспособление к укреплению - роль </b></sc_element> <b><sc_element sys_idtf="special_device" > спецустройства </b></sc_element> нацеленная на дополнительную защиту позиции](*<-lang_ru;;  => nrel_format: format_html;;*);;
+      *);;
+  *);;
+
+rrel_wall_breacher
+
+<-sc_node_role_relation;
+
+	 =>nrel_first_domain: operative;
+		nrel_second_domain: special_device;
+
+=> nrel_main_idtf:     
+	 [пробивное устройство']   (*<-lang_ru;;*);
+      [wall breacher']  (*<-lang_en;;*); 
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (пробивное устройство')] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+	concept_rainbow_six_siege;
+	operative;
+	rrel_attack_operative
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Пробивное устройство - роль </b></sc_element> <b><sc_element sys_idtf="special_device" > спецустройства </b></sc_element> нацеленная на пробитие стен](*<-lang_ru;;  => nrel_format: format_html;;*);;
+      *);;
+  *);;

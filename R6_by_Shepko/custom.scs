@@ -1,0 +1,137 @@
+glory_point
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[очки славы]
+	(*<-lang_ru;;*);
+	[glory points]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (очки славы) ] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+    operative;
+concept_rainbow_six_siege;
+custom_unit
+};;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Очки славы - игровая валюта в игре  <b><sc_element sys_idtf="concept_rainbow_six_siege" > Rainbow Six: Siege </b></sc_element> за которую можно купить
+  <b><sc_element sys_idtf="operative" > оперативника </b></sc_element> или  <b><sc_element sys_idtf="custom_unit" > предмет кастомизации </b></sc_element>. Выдается по завершению каждой игры ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+alfa_pack
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[альфа пакет]
+	(*<-lang_ru;;*);
+	[alfa pack]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (альфа пакет) ] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+custom_unit
+};;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Альфа пакет - случайный набор <b><sc_element sys_idtf="custom_unit" > предметов кастомизации </b></sc_element> который дается игроку отыгравшему некоторое количество игр ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+custom_unit
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[предмет кастомизации]
+	(*<-lang_ru;;*);
+	[custom unit]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (предмет кастомизации) ] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+    operative;
+concept_rainbow_six_siege
+};;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Предмет кастомизации - изменяет внешний вид  <b><sc_element sys_idtf="operative" > оперативника </b></sc_element> в игре <b><sc_element sys_idtf="concept_rainbow_six_siege" > Rainbow Six: Siege </b></sc_element>] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+season_pass
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[сезонный пропуск]
+	(*<-lang_ru;;*);
+	[season pass]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (сезонный пропуск) ] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+    operative;
+	r6_year;
+nrel_season
+};;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Сезонный пропуск - возможность купить за деньги всех <b><sc_element sys_idtf="operative" > оперативников </b></sc_element>, которые выйдут в <b><sc_element sys_idtf="nrel_season" > сезонах </b></sc_element> текущего на момент покупки 
+<b><sc_element sys_idtf="r6_year" > года </b></sc_element>] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+r6_credit
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[креди игры]
+	(*<-lang_ru;;*);
+	[game credit]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (кредит игры) ] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+    glory_point;
+concept_rainbow_six_siege
+};;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Кредит игры - валюта в игре <b><sc_element sys_idtf="concept_rainbow_six_siege" > Rainbow Six: Siege </b></sc_element>, который в отличии от  
+<b><sc_element sys_idtf="glory_point" > очков славы </b></sc_element> можно купить за деньги и не выдается по завершению игр] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+glory_boost
+
+=> nrel_main_idtf:
+ 	[ускорение очков славы]
+	(*<-lang_ru;;*);
+	[glory boost]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (ускорение очков славы) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Ускорение очков славы- увеличивает получение очков славы после завершения игры. Приобретается за деньги] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+

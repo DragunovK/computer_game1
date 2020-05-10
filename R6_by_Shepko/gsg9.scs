@@ -1,0 +1,121 @@
+GSG9
+
+<-concept_rainbow_six_siege;
+<-special_forces;
+
+=>nrel_location: Germany;;
+Germany<-country;;
+
+GSG9<=nrel_inclusion: {
+rrel_defense_operative: Jager;
+rrel_defense_operative: Bandit;
+rrel_attack_operative: IQ;
+rrel_attack_operative: Blitz
+};;
+operative
+->Jager;
+->IQ;
+->Bandit;
+->Blitz;;
+
+Jager
+
+=>nrel_armor_cathegory:low_armor;
+
+<=nrel_device: 
+	barbed_wire;
+<=nrel_device: 	
+	C4;
+
+
+<=nrel_unique_device:{
+rrel_support: GRS
+};;
+
+special_device
+	->barbed_wire;
+	->C4;
+	->GRS;;
+
+barbed_wire
+=> nrel_main_idtf:     
+	 [колючая проволока]   (*<-lang_ru;;*);;
+
+IQ
+
+=>nrel_armor_cathegory: low_armor;
+
+<=nrel_device:
+	breach_charge;
+<=nrel_device:
+	claymore;
+<=nrel_device:
+	drone;
+
+<=nrel_unique_device:{
+rrel_scouting: electronic_detector 
+};;
+
+special_device
+	->breach_charge;
+	->claymore;
+	->electronic_detector;;
+
+breach_charge
+=> nrel_main_idtf:     
+	 [пробивной заряд]   (*<-lang_ru;;*);;
+
+claymore
+=> nrel_main_idtf:     
+	 [клеймор]   (*<-lang_ru;;*);;
+
+electronic_detector
+=> nrel_main_idtf:     
+	 [детектор электроники]   (*<-lang_ru;;*);;
+
+Bandit
+
+=>nrel_armor_cathegory: low_armor;
+
+<=nrel_device:
+	barbed_wire;
+<=nrel_device:
+	C4;
+
+<=nrel_unique_device:{
+rrel_reinforce_attachment: shock_wire
+};;
+
+special_device
+	->shock_wire;;
+
+shock_wire
+=> nrel_main_idtf:     
+	 [устройство подачи тока]   (*<-lang_ru;;*);;
+
+Blitz
+
+=>nrel_armor_cathegory: middle_armor;
+
+<=nrel_device:
+	breach_charge;
+<=nrel_device:
+	smoke_grenade;
+<=nrel_device:
+	drone;
+
+<=nrel_unique_device:{
+rrel_stuning: flash_shield
+};;
+
+special_device
+	->smoke_grenade;
+	->flash_shield;;
+
+flash_shield
+=> nrel_main_idtf:     
+	 [щит со вспышкой]   (*<-lang_ru;;*);;
+
+smoke_grenade
+=> nrel_main_idtf:     
+	 [дымовая граната]   (*<-lang_ru;;*);;

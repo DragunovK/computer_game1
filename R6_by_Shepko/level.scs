@@ -1,0 +1,126 @@
+round
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[раунд]
+	(*<-lang_ru;;*);
+	[round]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (спецустройство) ] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+    drone;
+rrel_defense_operative;
+nrel_reinforce_wall;
+self_supporting_wall;
+special_device;
+nrel_unique_device
+};;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Раунд - деление партии на части по 3 минуты, в которую входит стадия подготовки, где <b><sc_element sys_idtf="rrel_attack_operative" > атака </b></sc_element> производит разведку с помощью 
+<b><sc_element sys_idtf="drone" > дронов </b></sc_element>, а <b><sc_element sys_idtf="rrel_defense_operative" > защита </b></sc_element> <b><sc_element sys_idtf="nrel_reinforce_wall" > укрепляет </b></sc_element>
+<b><sc_element sys_idtf="self_supporting_wall" > самонесущие стены </b></sc_element> и расставляет <b><sc_element sys_idtf="special_device" > спецустройства </b></sc_element> или <b><sc_element sys_idtf="nrel_unique_device" > уникальное устройство
+  </b></sc_element>, стадию действия, где происходит уничтожение одной из команд либо выполнение сценария
+] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+nrel_reinforce_wall
+
+<-  sc_node_norole_relation;
+<-  antisymmetric_relation;
+<|- reflexive_relation;
+<|- transitive_relation;
+<- oriented_relation;
+	 =>nrel_first_domain: operative;
+		nrel_second_domain: self_supporting_wall;
+=> nrel_main_idtf:     
+	 [укрепленние стены*]   (*<-lang_ru;;*);
+      [reinforce wall*]  (*<-lang_en;;*); 
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (укрепление стены*)] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+special_device
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Укрепленние стены - защита помещения от проникновение внутрь с помощью <b><sc_element sys_idtf="special_device" > спецустройств </b></sc_element> ](*<-lang_ru;;  => nrel_format: format_html;;*);;
+      *);;
+  *);;
+
+supporting_wall
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[несущая стена]
+	(*<-lang_ru;;*);
+	[supporting wall]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (несущая стена) ] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+    concept_rainbow_six_siege
+};;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Несущая стена - наружная стена здания, которую в игре <b><sc_element sys_idtf="concept_rainbow_six_siege" > Rainbow Six: Siege </b></sc_element> разрушить нельзя
+] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+self_supporting_wall
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[самонесущая стена]
+	(*<-lang_ru;;*);
+	[self-supporting wall]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (самонесущая стена) ] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+    concept_rainbow_six_siege;
+nrel_reinforce_wall
+};;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Самонесущая стена - внутренняя стена здания, которую в игре <b><sc_element sys_idtf="concept_rainbow_six_siege" > Rainbow Six: Siege </b></sc_element> можно разрушить или 
+<b><sc_element sys_idtf="nrel_reinforce_wall" > укрепить </b></sc_element>
+] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+game_location
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[игровая локация]
+	(*<-lang_ru;;*);
+	[game location]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (игровая локация) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[
+Игровая локация - карта проведения игры, состоящая из улицы и помещения.
+] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+

@@ -1,0 +1,104 @@
+nrel_season
+
+<-  sc_node_norole_relation;
+<-  antisymmetric_relation;
+<|- reflexive_relation;
+<- transitive_relation;
+<- oriented_relation;
+
+=>nrel_definitional_domain: concept_rainbow_six_siege;
+
+	 =>nrel_first_domain: r6_year;
+		nrel_second_domain: r6_operation;
+=>nrel_main_idtf:
+ 	[сезон*]  (* <- lang_ru;; *);
+	[season* ] (* <- lang_en;; *);
+
+<-rrel_key_sc_element: ... (*
+ 	<- definition;;
+	=>nrel_main_idtf:
+	[Опр. (сезон*)] (* <- lang_ru;; *);;
+	=>nrel_using_constants: {
+	concept_rainbow_six_siege;
+	r6_operation;
+	operative
+};;
+<=nrel_sc_text_translation: ... (*
+	-> rrel_example:
+[Сезон в игре <b><sc_element sys_idtf="concept_rainbow_six_siege" > Rainbow Six: Siege </b></sc_element> - период в игре называющийся 
+<b><sc_element sys_idtf="r6_operation" > операцией </b></sc_element> и равен 3 месяцам, за которые происходят обновления в игровом процессе, добавление новых 
+<b><sc_element sys_idtf="operative" > оперативников </b></sc_element> и карт.](* <- lang_ru;; => nrel_format: format_html;; *);;
+   *);;
+  *);;
+
+r6_year
+
+<-sc_node_not_relation;
+
+=>nrel_main_idtf:
+ 	[год игры]
+	(*<-lang_ru;;*);
+	[game year]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (год игры) ] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+	concept_rainbow_six_siege;
+	r6_operation
+};;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Год игры в <b><sc_element sys_idtf="concept_rainbow_six_siege" >  Rainbow Six: Siege  </b></sc_element> - номер года с начала выпуска игры, который в свою очередь делится на 
+<b><sc_element sys_idtf="r6_operation" >  операции  </b></sc_element>  ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+r6_operation
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[операция]
+	(*<-lang_ru;;*);
+	[operation]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (операция) ] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+	concept_rainbow_six_siege;
+	r6_operation
+};;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Операция в <b><sc_element sys_idtf="concept_rainbow_six_siege" >  Rainbow Six: Siege  </b></sc_element> - глобальное обновление игры включающее новых
+ <b><sc_element sys_idtf="concept_operative" > оперативников </b></sc_element>, карты и механики.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+r6_game_session
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[игровая сессия]
+	(*<-lang_ru;;*);
+	[game_session]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (игровая сессия) ] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+	concept_rainbow_six_siege;
+	r6_operation
+};;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Игровая сессия - набор раундов, по окончанию которых побеждает одна из команд.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;

@@ -1,0 +1,232 @@
+
+
+capture_position_mode
+
+
+=> nrel_main_idtf:
+ 	[режим захват позиции]
+	(*<-lang_ru;;*);
+	[capture position mode]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (режим захват позиции) ] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+        concept_rainbow_six_siege;
+	nrel_deactivation;
+rrel_attack_operative;
+rrel_defense_operative
+};;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Захват позиции - игровой режим в игре  <b><sc_element sys_idtf="concept_rainbow_six_siege" > Rainbow Six: Siege </b></sc_element>, включающий в себя
+заход на точку и удержание ее за  <b><sc_element sys_idtf="rrel_attack_operative" > атаку </b></sc_element> или оборона точки за <b><sc_element sys_idtf="rrel_defense_operative" > защиту </b></sc_element> ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+
+hostage_mode
+
+
+=> nrel_main_idtf:
+ 	[режим заложник]
+	(*<-lang_ru;;*);
+	[hostage mode]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (режим заложник) ] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+        concept_rainbow_six_siege;
+rrel_attack_operative;
+rrel_defense_operative
+};;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Заложник - игровой режим в игре  <b><sc_element sys_idtf="concept_rainbow_six_siege" > Rainbow Six: Siege </b></sc_element>, включающий в себя
+вывод заложника из точки в безопасную зону
+ за  <b><sc_element sys_idtf="rrel_attack_operative" > атаку </b></sc_element> или защита заложника от спасения
+ за <b><sc_element sys_idtf="rrel_defense_operative" > защиту </b></sc_element> ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+charge_mode
+
+=> nrel_main_idtf:
+ 	[режим заряд]
+	(*<-lang_ru;;*);
+	[charge mode]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (режим заряд) ] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+    concept_rainbow_six_siege;
+	nrel_deactivation;
+rrel_attack_operative;
+charge;
+rrel_defense_operative
+};;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Заряд - игровой режим в игре  <b><sc_element sys_idtf="concept_rainbow_six_siege" > Rainbow Six: Siege </b></sc_element>, включающий в себя
+заход на точку и  <b><sc_element sys_idtf="nrel_deactivation" > деактивация </b></sc_element> <b><sc_element sys_idtf="charge" > заряда </b></sc_element> 
+ за  <b><sc_element sys_idtf="rrel_attack_operative" > атаку </b></sc_element> или предотвращение этому
+ за <b><sc_element sys_idtf="rrel_defense_operative" > защиту </b></sc_element> ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+charge
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[заряд]
+	(*<-lang_ru;;*);
+	[charge]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (режим заряд) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Заряд -  цель команды <b><sc_element sys_idtf="rrel_attack_operative" > атаки </b></sc_element>] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+rating_mode
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[рейтинговая игра]
+	(*<-lang_ru;;*);
+	[rating mode]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (рейтинговая игра) ] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+    concept_rainbow_six_siege;
+nrel_player_rank
+};;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Рейтинговая игра - игровой режим в игре  <b><sc_element sys_idtf="concept_rainbow_six_siege" > Rainbow Six: Siege </b></sc_element>, позволяющий каллибровать <b><sc_element sys_idtf="rank" > звание игрока </b></sc_element>,
+играть с другими игроками такого же ранга, тем самым соблюдая баланс сил и поддержание интереса игроков. Данный режим играется до отрыва одной из команд в две победы.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+unrating_mode
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[безрейтинговая игра]
+	(*<-lang_ru;;*);
+	[unrating mode]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (безрейтинговая игра) ] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+    rating_mode;
+	rank;
+concept_rainbow_six_siege
+};;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Безрейтинговая игра - игровой режим в игре  <b><sc_element sys_idtf="concept_rainbow_six_siege" > Rainbow Six: Siege </b></sc_element>, позволяющий играть по правилам
+<b><sc_element sys_idtf="rating_mode" > рейтинговой игры </b></sc_element>, но без использование <b><sc_element sys_idtf="rank" > звания </b></sc_element> ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+fastgame_mode
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[быстрая игра]
+	(*<-lang_ru;;*);
+	[fast game]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (быстрая игра) ] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+	rank;
+round;
+concept_rainbow_six_siege
+};;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Быстрая игра - игровой режим в игре  <b><sc_element sys_idtf="concept_rainbow_six_siege" > Rainbow Six: Siege </b></sc_element>, позволяющий играть без использование 
+<b><sc_element sys_idtf="rank" > звания </b></sc_element>. Игра длится максимум до пяти <b><sc_element sys_idtf="round" > раундов </b></sc_element>] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+antiterror_mode
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[антитеррор]
+	(*<-lang_ru;;*);
+	[antiterror]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (антитеррор) ] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+	rank;
+concept_rainbow_six_siege;
+capture_position_mode;
+hostage_mode;
+charge_mode
+};;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Антитеррор - игровой режим в игре  <b><sc_element sys_idtf="concept_rainbow_six_siege" > Rainbow Six: Siege </b></sc_element>, позволяющий играть против компьютера в одиночку или с другими игроками
+. Также включает в себя режимы   <b><sc_element sys_idtf="charge_mode" > заряд </b></sc_element>,  <b><sc_element sys_idtf="hostage_mode" > заложник </b></sc_element>,
+ <b><sc_element sys_idtf="capture_position_mode" > захват позиции </b></sc_element>] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+nrel_deactivation
+
+<-  sc_node_norole_relation;
+<-  antisymmetric_relation;
+<|- reflexive_relation;
+<|- transitive_relation;
+<- oriented_relation;
+	 =>nrel_first_domain: operative;
+		nrel_second_domain: charge;
+=> nrel_main_idtf:     
+	 [деактивация*]   (*<-lang_ru;;*);
+      [deactivation*]  (*<-lang_en;;*); 
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (деактивация*)] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+charge;
+rrel_attack_operative
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Деактивация заряда - процесс отключения  <b><sc_element sys_idtf="charge" > заряда </b></sc_element>  после чего следует победа <b><sc_element sys_idtf="rrel_attack_operative" > атаки </b></sc_element> ](*<-lang_ru;;  => nrel_format: format_html;;*);;
+      *);;
+  *);;
+
