@@ -1,0 +1,27 @@
+quality_etg
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [качество(ETG)]
+      (*<-lang_ru;;*);
+       [quality(ETG)]
+       (*<-lang_en;;*);    
+<-indicator_etg;
+->D_quality_etg;
+->C_quality_etg;
+->B_quality_etg;
+->A_quality_etg;
+->S_quality_etg;
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (качество(ETG))] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_equipment_etg
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="quality_etg">Качество(ETG)</b></sc_element> - множество элементов, которые показывают, какая <b><sc_element sys_idtf="concept_equipment_etg">экипировка</b></sc_element> лучше другой.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);;
+
+

@@ -1,0 +1,41 @@
+concept_passive_item_etg
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [пассивный предмет(ETG)]
+      (*<-lang_ru;;*);
+       [passive item(ETG)]
+       (*<-lang_en;;*);    
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (пассивный предмет(ETG)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_gunner_etg;
+       concept_equipment_etg
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="concept_passive_item_etg">Пассивный предмет(ETG)</b></sc_element> - <b><sc_element sys_idtf="concept_item_etg">предмет</b></sc_element> <b><sc_element sys_idtf="concept_gunner_etg">оружельцев</b></sc_element>, который дает пассивный бонус.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(количество бонусов пассивного предмета(ETG))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Бонус от пассивного предмета может быть как один, так и несколько.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(бонусы от пассивного предмета(ETG))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[У некоторых пассивных предметов бонусы являются постоянными с момента подбора предмета, у других нужно выполнить некоторые условия.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;
+
+
+

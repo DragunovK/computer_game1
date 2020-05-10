@@ -1,0 +1,52 @@
+concept_weapon_etg
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [оружие(ETG)]
+      (*<-lang_ru;;*);
+       [weapon(ETG)]
+       (*<-lang_en;;*);
+<= nrel_inclusion: concept_weapon;           
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (оружие(ETG))] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_equipment_etg;
+       concept_gunner_etg
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="concept_weapon_etg">Оружие(ETG)</b></sc_element> - <b><sc_element sys_idtf="concept_equipment_etg">экипировка(ETG)</b></sc_element> <b><sc_element sys_idtf="concept_gunner_etg">оружельцев</b></sc_element>, которую они используют для зачистки комнат.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(оружие(ETG))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Если у оружия закончились все патроны, то его можно кинуть в противника.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(оружие(ETG))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Оружие может вступать в синергию с другим оружием.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  <=nrel_subdividing:
+{
+ concept_semiautomatic_weapon_etg;
+ concept_rechargeable_weapon_etg;
+ concept_beam_weapon_etg;
+ concept_automatic_weapon_etg;
+ concept_continuous_weapon_etg;
+ concept_shootin_queues_weapon_etg;
+ concept_melee_weapon_etg;
+ concept_start_weapon_etg
+};;
+
+

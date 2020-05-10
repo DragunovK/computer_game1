@@ -1,0 +1,29 @@
+concept_main_gunner_etg
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [основной оружелец(ETG)]
+      (*<-lang_ru;;*);
+       [gungeoneer(ETG)]
+       (*<-lang_en;;*);   
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (основной оружелец(ETG))] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_gunner_etg
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="concept_main_gunner_etg">основной оружелец(ETG)</b></sc_element> - <b><sc_element sys_idtf="concept_gunner_etg">оружелец</b></sc_element>, который доступен с начала игры.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(основной оружелец(ETG))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[У всех основных оружельцев есть уровень прошлое.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+

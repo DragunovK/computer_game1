@@ -1,0 +1,9 @@
+Blasphemy_etg
+=> nrel_main_idtf:
+      [Богохульство(ETG)]
+      (*<-lang_ru;;*);
+       [Blasphemy(ETG)]
+       (*<-lang_en;;*);   
+<- concept_start_weapon_etg;
+<- concept_melee_weapon_etg;;
+

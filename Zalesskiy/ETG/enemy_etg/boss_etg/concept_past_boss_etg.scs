@@ -1,0 +1,33 @@
+concept_past_boss_etg
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [босс прошлого(ETG)]
+      (*<-lang_ru;;*);
+       [boss of the past(ETG)]
+       (*<-lang_en;;*);    
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (босс прошлого(ETG))] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_computer_game;
+       concept_past_floor_etg;
+       concept_boss_etg;
+       computer_game_enter_the_gungeon
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="concept_past_boss_etg">Босс прошлого(ETG)</b></sc_element> - <b><sc_element sys_idtf="concept_boss_etg">босс(ETG)</b></sc_element> <b><sc_element sys_idtf="concept_computer_game">компьютерной игры</b></sc_element> <b><sc_element sys_idtf="computer_game_enter_the_gungeon">Enter the gungeon</b></sc_element>, который находится в <b><sc_element sys_idtf="concept_past_floor_etg">прошлом</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+  <- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(босс прошлого(ETG))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Каждое прошлое имеет одного босса, кроме одного.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);; 
+
+

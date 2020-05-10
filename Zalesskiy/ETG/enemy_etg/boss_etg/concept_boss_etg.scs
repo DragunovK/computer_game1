@@ -1,0 +1,49 @@
+concept_boss_etg
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [босс(ETG)]
+      (*<-lang_ru;;*);
+       [boss(ETG)]
+       (*<-lang_en;;*);    
+<= nrel_inclusion: concept_boss;
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (босс(ETG))] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_computer_game;
+       concept_enemy_etg;
+       concept_boss;
+       concept_gunner_etg;
+       computer_game_enter_the_gungeon
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="concept_boss_etg">Босс(ETG)</b></sc_element> - <b><sc_element sys_idtf="concept_enemy_etg">враг(ETG)</b></sc_element> <b><sc_element sys_idtf="concept_computer_game">компьютерной игры</b></sc_element> <b><sc_element sys_idtf="computer_game_enter_the_gungeon">Enter the gungeon</b></sc_element>, который противостоит <b><sc_element sys_idtf="concept_gunner_etg">оружельцам</b></sc_element> и является <b><sc_element sys_idtf="concept_boss">боссом</b></sc_element> этой игры.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(босс(ETG))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Если победить босса, не получив урон, то можно получить патрон мастера.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(босс(ETG))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Из боссов всегда выпадают кредиты Гегемонии.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  <=nrel_subdividing:
+{concept_main_boss_etg;
+ concept_secret_boss_etg;
+ concept_past_boss_etg
+};;
+
+

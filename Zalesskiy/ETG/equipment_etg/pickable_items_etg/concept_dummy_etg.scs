@@ -1,0 +1,40 @@
+concept_dummy_etg
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [пустышка(ETG)]
+      (*<-lang_ru;;*);
+       [dummy(ETG)]
+       (*<-lang_en;;*);    
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (пустышка(ETG))] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_gunner_etg;
+       concept_pickable_equipment_etg
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="concept_dummy_etg">Пустышка(ETG)</b></sc_element> - <b><sc_element sys_idtf="concept_pickable_equipment_etg">подбираемая экипировка</b></sc_element> <b><sc_element sys_idtf="concept_gunner_etg">оружельцев</b></sc_element>, которая помогает избежать атак врагов в трудной ситуации.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(пустышка(ETG))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Пустышка при активации заставляет все вражеские пули исчезнуть, прекратить огонь врагов на некоторое время, а также она отталкивает врагов вокруг оружельца и наносит им незначительный урон.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(пустышка(ETG))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Пустышка при активации открывает секретные проходы, если такие имеются в комнате.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;
+
+

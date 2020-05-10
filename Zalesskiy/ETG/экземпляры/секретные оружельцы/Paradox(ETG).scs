@@ -1,0 +1,20 @@
+Paradox_etg
+=> nrel_main_idtf:
+      [Парадокс(ETG)]
+      (*<-lang_ru;;*);
+       [Paradox(ETG)]
+       (*<-lang_en;;*);   
+<- concept_secret_gunner_etg;
+=> nrel_start_weapon_etg: random_gun_etg;       
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Описание (Парадокс(ETG))] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_secret_gunner_etg
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="Paradox_etg">Парадокс(ETG)</b></sc_element> - один из <b><sc_element sys_idtf="concept_secret_gunner_etg">секретных оружелецев</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);;

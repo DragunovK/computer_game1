@@ -1,0 +1,9 @@
+Budget_Revolver_etg
+=> nrel_main_idtf:
+      [Бюджетный револьвер(ETG)]
+      (*<-lang_ru;;*);
+       [Budget Revolver(ETG)]
+       (*<-lang_en;;*);   
+<- concept_start_weapon_etg;
+<- concept_semiautomatic_weapon_etg;;
+

@@ -1,0 +1,45 @@
+concept_currency_etg
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [валюта(ETG)]
+      (*<-lang_ru;;*);
+       [currency(ETG)]
+       (*<-lang_en;;*);    
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (валюта(ETG))] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_gunner_etg;
+       concept_pickable_equipment_etg;
+       concept_equipment_etg
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="concept_currency_etg">Валюта(ETG)</b></sc_element> - <b><sc_element sys_idtf="concept_pickable_equipment_etg">подбираемая экипировка</b></sc_element> <b><sc_element sys_idtf="concept_gunner_etg">оружельцев</b></sc_element>, которая обменивается на другую <b><sc_element sys_idtf="concept_equipment_etg">экипировку</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(валюта(ETG))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Валюта автоматически подбирается без контакта с оружельцем после зачистки комнаты или подбирается вручную оружельцем путём контакта с ней.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(валюта(ETG))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Некоторые персонажи в качестве валюты принимают не гильзы и кредиты Гегемонии, а иную экипировку.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+  <=nrel_subdividing:
+{concept_sleeve_etg;
+ concept_Gegemons_credit_etg
+};;
+
+

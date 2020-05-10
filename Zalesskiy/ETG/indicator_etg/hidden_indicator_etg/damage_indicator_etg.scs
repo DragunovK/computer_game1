@@ -1,0 +1,21 @@
+damage_indicator_etg
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [урон(ETG)]
+      (*<-lang_ru;;*);
+       [damage(ETG)]
+       (*<-lang_en;;*);    
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (урон(ETG))] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+      hidden_indicator_etg;
+      concept_weapon_etg
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="damage_indicator_etg">Урон(ETG)</b></sc_element> - <b><sc_element sys_idtf="hidden_indicator_etg">скрытый показатель(ETG)</b></sc_element>, который влияет на ущерб, наносимый <b><sc_element sys_idtf="concept_weapon_etg">оружием(ETG)</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);;
+

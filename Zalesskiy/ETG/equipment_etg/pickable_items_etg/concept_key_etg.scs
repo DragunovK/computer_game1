@@ -1,0 +1,21 @@
+concept_key_etg
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [ключ(ETG)]
+      (*<-lang_ru;;*);
+       [key(ETG)]
+       (*<-lang_en;;*);    
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (ключ(ETG))] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_gunner_etg;
+       concept_pickable_equipment_etg
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="concept_key_etg">Ключ(ETG)</b></sc_element> - <b><sc_element sys_idtf="concept_pickable_equipment_etg">подбираемая экипировка</b></sc_element> <b><sc_element sys_idtf="concept_gunner_etg">оружельцев</b></sc_element>, которая позволяет открывать замки и сундуки.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);;
+

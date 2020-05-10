@@ -1,0 +1,48 @@
+concept_pickable_equipment_etg
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [подбираемый предмет(ETG)]
+      (*<-lang_ru;;*);
+       [pickable equipment(ETG)]
+       (*<-lang_en;;*);    
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (подбираемый предмет(ETG)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_gunner_etg;
+       concept_equipment_etg
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="concept_pickable_equipment_etg">подбираемый предмет(ETG)</b></sc_element> - <b><sc_element sys_idtf="concept_equipment_etg">экипировка</b></sc_element> <b><sc_element sys_idtf="concept_gunner_etg">оружельцев</b></sc_element>, которая валяется на земле и дает бонусы при их подборе.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(подбираемый экипировка(ETG))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Все подбираемые предметы являются расходуемыми.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(подбираемая экипировка(ETG))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[В отличие от любой другой экипировки, подбираемая экипировка может выпасть после зачистки комнаты.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+<=nrel_subdividing:
+{concept_heart_container_etg;
+ concept_armor_etg;
+ concept_ammunition_etg;
+ concept_currency_etg;
+ concept_key_etg;
+ concept_dummy_etg
+};;
+
+

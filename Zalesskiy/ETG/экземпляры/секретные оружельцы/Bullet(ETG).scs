@@ -1,0 +1,20 @@
+Bullet_etg
+=> nrel_main_idtf:
+      [Пуля(ETG)]
+      (*<-lang_ru;;*);
+       [Bullet(ETG)]
+       (*<-lang_en;;*);   
+<- concept_secret_gunner_etg;
+=> nrel_start_weapon_etg: Blasphemy_etg;       
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Описание (Пуля(ETG))] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_secret_gunner_etg
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="Bullet_etg">Пуля(ETG)</b></sc_element> - один из <b><sc_element sys_idtf="concept_secret_gunner_etg">секретных оружелецев</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);;

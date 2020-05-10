@@ -1,0 +1,44 @@
+concept_item_etg
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [предмет(ETG)]
+      (*<-lang_ru;;*);
+       [item(ETG)]
+       (*<-lang_en;;*);    
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (предмет(ETG)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_gunner_etg;
+       concept_equipment_etg
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="concept_item_etg">Предмет(ETG)</b></sc_element> - <b><sc_element sys_idtf="concept_equipment_etg">экипировка</b></sc_element> <b><sc_element sys_idtf="concept_gunner_etg">оружельцев</b></sc_element>, которая дает бонусы.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(проклятый предмет(ETG))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Некоторые предметы являются проклятыми, от них исходит темная аура. Такие предметы при подборе увеличивают показатель проклятия.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(крутой предмет(ETG))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Некоторые предметы при подборе увеличивают показатель крутости, такие предметы не имеют визуальных отличий от обычных.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);
+<=nrel_subdividing:
+{concept_passive_item_etg;
+ concept_active_item_etg
+};;
+
+

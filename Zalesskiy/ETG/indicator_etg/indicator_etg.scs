@@ -1,0 +1,22 @@
+indicator_etg
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [показатель(ETG)]
+      (*<-lang_ru;;*);
+       [indicator(ETG)]
+       (*<-lang_en;;*);    
+<-parameter;
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (качество(ETG))] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       computer_game_enter_the_gungeon
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="indicator_etg">Показатель(ETG)</b></sc_element> - множество элементов, которые отображают параметры сущностей, связанных с <b><sc_element sys_idtf="computer_game_enter_the_gungeon">Enter the gungeon</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);;
+
+

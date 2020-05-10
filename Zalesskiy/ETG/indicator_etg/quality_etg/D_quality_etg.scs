@@ -1,0 +1,10 @@
+D_quality_etg
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [D качество(ETG)]
+      (*<-lang_ru;;*);
+       [D quality(ETG)]
+       (*<-lang_en;;*);;    
+
+
+

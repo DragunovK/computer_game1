@@ -1,0 +1,20 @@
+Gunslinger_etg
+=> nrel_main_idtf:
+      [Стрелок(ETG)]
+      (*<-lang_ru;;*);
+       [Gunslinger(ETG)]
+       (*<-lang_en;;*);   
+<- concept_secret_gunner_etg;
+=> nrel_start_weapon_etg: Slinger_etg;       
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Описание (Стрелок(ETG))] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_secret_gunner_etg
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="Gunslinger_etg">Стрелок(ETG)</b></sc_element> - один из <b><sc_element sys_idtf="concept_secret_gunner_etg">секретных оружелецев</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);;

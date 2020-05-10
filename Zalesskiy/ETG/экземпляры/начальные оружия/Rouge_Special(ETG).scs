@@ -1,0 +1,9 @@
+Rouge_Special_etg
+=> nrel_main_idtf:
+      [Бродяга особого назначения(ETG)]
+      (*<-lang_ru;;*);
+       [Rouge Special(ETG)]
+       (*<-lang_en;;*);   
+<- concept_start_weapon_etg;
+<- concept_semiautomatic_weapon_etg;;
+

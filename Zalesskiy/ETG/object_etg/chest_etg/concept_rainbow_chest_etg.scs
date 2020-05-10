@@ -1,0 +1,34 @@
+concept_rainbow_chest_etg
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [радужный сундук(ETG)]
+      (*<-lang_ru;;*);
+       [rainbow chest(ETG)]
+       (*<-lang_en;;*);    
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (радужный сундук(ETG))] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_computer_game;
+       concept_chest_etg;
+       computer_game_enter_the_gungeon
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="concept_rainbow_chest_etg">Радужный сундук(ETG)</b></sc_element> - <b><sc_element sys_idtf="concept_chest_etg">сундук(ETG)</b></sc_element> <b><sc_element sys_idtf="concept_computer_game">компьютерной игры</b></sc_element> <b><sc_element sys_idtf="computer_game_enter_the_gungeon">Enter the gungeon</b></sc_element>, который даёт несколько вещей на выбор.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(радужный сундук(ETG))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Радужные сундуки имеют 0.0333% шанс заменить обычный сундук.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+
+
+
+

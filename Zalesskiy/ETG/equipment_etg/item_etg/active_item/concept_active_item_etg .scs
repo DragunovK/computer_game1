@@ -1,0 +1,41 @@
+concept_active_item_etg
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [активный предмет(ETG)]
+      (*<-lang_ru;;*);
+       [active item(ETG)]
+       (*<-lang_en;;*);    
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (активный предмет(ETG)] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_gunner_etg;
+       concept_equipment_etg
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="concept_active_item_etg">Активный предмет(ETG)</b></sc_element> - <b><sc_element sys_idtf="concept_item_etg">предмет</b></sc_element> <b><sc_element sys_idtf="concept_gunner_etg">оружельцев</b></sc_element>, который дает бонус при активации предмета.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(перезарядка активного предмета(ETG))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[После активации активного предмета его необходимо перезарядить для следующей активации.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(способ перезарядки активного предмета(ETG))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Активный предмет перезаряжается путём нанесения урона противникам.](*<-lang_ru;; => nrel_format: format_html;;*);;
+      *);;
+  *);;
+
+
+

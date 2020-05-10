@@ -1,0 +1,9 @@
+Robots_right_hand_etg
+=> nrel_main_idtf:
+      [Правая рука робота(ETG)]
+      (*<-lang_ru;;*);
+       [Robot's right hand(ETG)]
+       (*<-lang_en;;*);   
+<- concept_start_weapon_etg;
+<- concept_semiautomatic_weapon_etg;;
+

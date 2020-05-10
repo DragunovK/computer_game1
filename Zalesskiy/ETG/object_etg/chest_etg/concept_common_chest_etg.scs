@@ -1,0 +1,35 @@
+concept_common_chest_etg
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [обычный сундук(ETG)]
+      (*<-lang_ru;;*);
+       [common chest(ETG)]
+       (*<-lang_en;;*);    
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (обычный сундук(ETG))] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_computer_game;
+       concept_main_floor_etg;
+       concept_chest_etg;
+       computer_game_enter_the_gungeon
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="concept_common_chest_etg">Обычный сундук(ETG)</b></sc_element> - <b><sc_element sys_idtf="concept_chest_etg">сундук(ETG)</b></sc_element> <b><sc_element sys_idtf="concept_computer_game">компьютерной игры</b></sc_element> <b><sc_element sys_idtf="computer_game_enter_the_gungeon">Enter the gungeon</b></sc_element>, который всегда находится на <b><sc_element sys_idtf="concept_main_floor_etg">основных этажах</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+<- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(обычный сундук(ETG))] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[В обычном сундуке может оказаться записка Находчивого Крыса.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+      *);;
+  *);;
+
+
+
+

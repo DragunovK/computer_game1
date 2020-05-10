@@ -1,0 +1,52 @@
+computer_game_enter_the_gungeon
+=> nrel_main_idtf: [Enter the gungeon] (* <- lang_en;; *);
+=> nrel_main_idtf: [Вход в оружелье] (* <- lang_ru;; *);
+=> nrel_idtf:
+      [ETG]
+      (*<-lang_en;;*);
+<- concept_computer_game;
+<- concept_roguelike;
+=> nrel_platform: concept_microsoft_windows;  
+=> nrel_platform: concept_xbox_one;
+=> nrel_platform: concept_PS4; 
+=> nrel_platform: concept_nintendo_switch;
+=> nrel_publisher: company_devolver_digital;
+=> nrel_developer: company_dodge_roll;
+=> nrel_publication_date: date_2016;
+<- concept_setting_fantasy;
+<- concept_setting_anti_utopia_of_future;
+=> nrel_game_camera: concept_two_dimensional_top_view;
+=> nrel_plot: [Enter the Gungeon is set in the Gungeon, an eldritch dungeon on a distant planet named Gunymede, inhabited by living bullets and other strange gun-related lifeforms. At an unspecified point in the past, a giant bullet from the sky destroyed a fortress, and its resulting magic created a weapon of legendary proportions: The Gun That Can Kill The Past. The fortress was rebuilt with the highest of security measures to guard the gun, and adventurers known as "gungeoneers" hailed from places over the galaxy to claim their chance at changing their past. The player can play as eight gungeoneers, each with their own stories and regrets, as they decide to enter the fortress and descend into the Gungeon to seek the legendary gun in order to defeat their past.];
+<- concept_multiplayer_game;
+<- concept_singleplayer_game;
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+	=> nrel_using_constants:{
+          concept_game_company;
+          concept_game_genre;
+          concept_platform;
+          nrel_plot;
+          concept_singleplayer_game;
+          concept_multiplayer_game
+	};;
+		=> nrel_main_idtf: [Опр.(Enter the gungeon)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example: 
+		 [<b><sc_element sys_idtf="computer_game_enter_the_gungeon">Enter the gungeon</b></sc_element> - <b><sc_element sys_idtf="concept_computer_game">компьютерная игра</b></sc_element> с видом сверху в <b><sc_element sys_idtf="concept_game_genre">жанре</b></sc_element> <b><sc_element sys_idtf="concept_roguelike">рогалик</b></sc_element>, выпущена <b><sc_element sys_idtf="concept_game_company">компанией</b></sc_element> Devolver Digital в 2016 году на <b><sc_element sys_idtf="concept_platform">платформах</b></sc_element> <b><sc_element sys_idtf="concept_microsoft_windows">Windows</b></sc_element>, <b><sc_element sys_idtf="concept_xbox_one">xbox one</b></sc_element>  и <b><sc_element sys_idtf="concept_playstation_4">playstation 4</b></sc_element>. <b><sc_element sys_idtf="concept_singleplayer_game">Одиночная</b></sc_element> и <b><sc_element sys_idtf="concept_multiplayer_game">многопользовательская</b></sc_element> с <b><sc_element sys_idtf="nrel_plot">сюжетом</b></sc_element>. Распространяется небесплатно.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://image/etg.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;
+
+

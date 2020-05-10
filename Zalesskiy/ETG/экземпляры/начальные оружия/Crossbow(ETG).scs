@@ -1,0 +1,9 @@
+Crossbow_etg
+=> nrel_main_idtf:
+      [Арбалет(ETG)]
+      (*<-lang_ru;;*);
+       [Crossbow(ETG)]
+       (*<-lang_en;;*);   
+<- concept_start_weapon_etg;
+<- concept_semiautomatic_weapon_etg;;
+

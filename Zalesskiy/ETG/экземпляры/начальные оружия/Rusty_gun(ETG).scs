@@ -1,0 +1,9 @@
+Rusty_Sidearm_etg
+=> nrel_main_idtf:
+      [Ржавый пистолет(ETG)]
+      (*<-lang_ru;;*);
+       [Rusty Sidearm(ETG)]
+       (*<-lang_en;;*);   
+<- concept_start_weapon_etg;
+<- concept_semiautomatic_weapon_etg;;
+

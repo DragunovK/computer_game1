@@ -1,0 +1,27 @@
+hidden_indicator_etg
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+      [скрытый показатель(ETG)]
+      (*<-lang_ru;;*);
+       [hidden indicator(ETG)]
+       (*<-lang_en;;*);    
+<-indicator_etg;
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (скрытый показатель(ETG))] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+      player
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="hidden_indicator_etg">Скрытый показатель(ETG)</b></sc_element> - множество элементов, которые явно не отображаются для <b><sc_element sys_idtf="player">игрока</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);
+ <=nrel_subdividing:
+{coolness_indicator_etg;
+ curse_indicator_etg;
+ damage_indicator_etg
+};;
+
+

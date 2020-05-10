@@ -1,0 +1,21 @@
+Hunter_etg
+=> nrel_main_idtf:
+      [Охотница(ETG)]
+      (*<-lang_ru;;*);
+       [Hunter(ETG)]
+       (*<-lang_en;;*);   
+<- concept_main_gunner_etg;
+=> nrel_start_weapon_etg: Rusty_Sidearm_etg;  
+=> nrel_start_weapon_etg: Crossbow_etg;     
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Описание (Охотница(ETG))] (* <- lang_ru;; *);;
+    => nrel_using_constants: {
+       concept_main_gunner_etg
+};; 
+      <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [<b><sc_element sys_idtf="Hunter_etg">Охотница(ETG)</b></sc_element> - один из <b><sc_element sys_idtf="concept_main_gunner_etg">основных оружелецев</b></sc_element>.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+   *);;
