@@ -23,7 +23,7 @@ nrel_fraction
     };;
 <= nrel_sc_text_translation: ... (*
       -> rrel_example:
-[<b><sc_element sys_idtf="nrel_fraction">Фракция</sc_element> в <b><sc_element sys_idtf="concept_MMO">массовой многопользовательской ролевой онлайн-игре</sc_element> — группа, к которой <sc_element sys_idtf="concept_character">персонаж</sc_element> принадлежит с момента создания.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+[<b><sc_element sys_idtf="nrel_fraction">Фракция</sc_element></b> в <b><sc_element sys_idtf="concept_MMO">массовой многопользовательской ролевой онлайн-игре</sc_element></b> — группа, к которой <sc_element sys_idtf="concept_character">персонаж</sc_element> принадлежит с момента создания.] (* <- lang_ru;; => nrel_format: format_html;; *);;
     *);;
    *);
 => nrel_definitional_domain: ... (*

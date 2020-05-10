@@ -4,15 +4,11 @@ computer_game_warcraft_human_and_orcs
 => nrel_idtf: [«Военное ремесло: орки и люди»] (* <- lang_ru;; *);
 <- concept_computer_game;
 <- concept_RTS;
-=> nrel_platform: {consept_mac_os;
-concept_ms_dos;
-PlayStation
-};
-=> nrel_publisher: 
-{
-company_interplay_entertainment;
-company_blizzard
-};
+=> nrel_platform: consept_mac_os;
+=> nrel_platform: concept_ms_dos;
+=> nrel_platform: PlayStation;
+=> nrel_publisher: company_interplay_entertainment;
+=> nrel_publisher: company_blizzard;
 => nrel_developer: company_blizzard;
 => nrel_publication_date: date_1994;
 <- concept_setting_fantasy;

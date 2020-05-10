@@ -5,11 +5,10 @@ computer_game_warcraft_2_beyond_the_dark_portal
 
 <- concept_computer_game;
 <- concept_RTS;
-=> nrel_platform: {consept_mac_os;
-concept_ms_dos;
-concept_windows;
-playstation
-};
+=> nrel_platform: consept_mac_os;
+=> nrel_platform: concept_ms_dos;
+=> nrel_platform: concept_windows;
+=> nrel_platform: playstation;
 => nrel_publisher: company_ubisoft;
 => nrel_publisher:company_blizzard;
 => nrel_developer: company_cyberlore_studios;

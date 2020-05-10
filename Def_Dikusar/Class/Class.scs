@@ -28,7 +28,7 @@ concept_development
     };;
 <= nrel_sc_text_translation: ... (*
       -> rrel_example:
-[<b><sc_element sys_idtf="nrel_class">Класс персонажа</sc_element> — архетип персонажа ролевых игр, определяющий его умения и направление развития.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+[<b><sc_element sys_idtf="nrel_class">Класс персонажа</sc_element></b> — архетип персонажа ролевых игр, определяющий его умения и направление развития.] (* <- lang_ru;; => nrel_format: format_html;; *);;
     *);;
    *);
 => nrel_definitional_domain: ... (*

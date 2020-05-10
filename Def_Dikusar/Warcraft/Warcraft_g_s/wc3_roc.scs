@@ -8,13 +8,10 @@ computer_game_warcraft_3_reign_of_chaos
 => nrel_platform: concept_windows;
 => nrel_platform: consept_mac_os;
 =>nrel_localizer: company_softclub;
-=> nrel_publisher: 
-{
-company_sierra_entertainment;
-company_blizzard;
-company_soft_club;
-company_capcom 
-};
+=> nrel_publisher:company_sierra_entertainment;
+=> nrel_publisher:company_blizzard;
+=> nrel_publisher:company_soft_club;
+=> nrel_publisher:company_capcom;
 => nrel_developer: company_blizzard;
 => nrel_publication_date: date_2002;
 <- concept_setting_fantasy;
