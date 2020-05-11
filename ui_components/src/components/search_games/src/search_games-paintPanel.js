@@ -10,6 +10,41 @@ function change_genre(new_value) {
 	selected_genre = new_value;
 }
 
+function _initLinks() {
+
+	links = document.getElementsByClassName("link_internal"); //Находим все ссылки на странице
+
+	for (let i = 0; i < links.length; i++) {
+
+		links[i].addEventListener("click", function (e)
+		{
+			e.preventDefault();
+			_LinkClick(e.target.getAttribute("href"));
+		});
+	}
+ }
+
+ function _LinkClick(sctpID) {
+	let addr;
+	// SCWeb.core.Server.resolveScAddr(['ui_main_menu'], function (keynodes) {
+		addr = parseInt(sctpID);	
+		SCWeb.core.Server.resolveScAddr(["ui_menu_view_full_semantic_neighborhood"],
+		function (data) {
+			// Get command of ui_menu_view_full_semantic_neighborhood
+			var cmd = data["ui_menu_view_full_semantic_neighborhood"];
+			// Simulate click on ui_menu_view_full_semantic_neighborhood button
+			SCWeb.core.Main.doCommand(cmd,
+			[addr], function (result) {
+				// waiting for result
+				if (result.question != undefined) {
+					// append in history
+					SCWeb.ui.WindowManager.appendHistoryItem(result.question);
+				}
+			});
+		});
+
+ }
+
 
 function find(self,container) {
 
@@ -141,6 +176,7 @@ Example.PaintPanel.prototype = {
 			insertIntoTable +='</tr>';
 		}
 		container.append('<table id = "table" style = "border: 1px solid black  border-collapse: collapse">' + insertIntoTable + '</table>');
+		_initLinks();
 		return true;
 	},
 
