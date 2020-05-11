@@ -64,6 +64,18 @@ function find(self,container) {
 
 	let publisher_filter = document.getElementById("publisher_filter").value;
 
+	let developer_filter = document.getElementById("developer_filter").value;
+	
+	let platform_filter =  document.getElementById("platform_filter").value;
+
+
+	let collectionOfPublisherSctpID;
+
+	let collectionOfDeveloperSctpID;
+
+	let collectionOfPlatformSctpID;
+
+
     let getAllGamesID = self._moba();
 	
 		let getAllGamesName = getAllGamesID.then((array) => {
@@ -78,17 +90,35 @@ function find(self,container) {
 			return self._getName(array);
 		})
 
-    Promise.all([getAllGamesName, getAllGamePublisherName]).then((result) => {
+
+		let getAllGameDeveloperID = getAllGamesID.then(self._developer);
+
+		let getAllGameDeveloperName = getAllGameDeveloperID.then((array) => {
+			 collectionOfDeveloperSctpID = array;
+			 return self._getName(array);
+		 })
+	
+		let getAllGamePlatformID = getAllGamesID.then(self._platform);
+	
+		let getAllGamePlatformName = getAllGamePlatformID.then((array) => {
+			 collectionOfPlatformSctpID = array;
+			 return self._getName(array);
+		})
+		Promise.all([getAllGamesName, getAllGamePublisherName, getAllGameDeveloperName, getAllGamePlatformName]).then((result) => {
 
 			setTimeout(function(){
 				setTimeout(function(){
-					let sizeOfResult = Math.max(result[0].length, result[1].length);
+					let sizeOfResult = Math.max(result[0].length, result[1].length,result[2].length, result[3].length);
 	
 					let gamesName = [];
 					let publishersName = [];
-				
+					let developersName = [];
+					let platformsName = [];
+	
 					let newCollectionOfGameSctpID  = [];
 					let newCollectionOfPublisherSctpID = [];
+					let newCollectionOfDeveloperSctpID = []
+					let newCollectionOfPlatformSctpID = [];
 	
 					for (let i = 0; i < sizeOfResult; i++) {
 						let game_name_filter_condition = (result[0][i].toLowerCase().includes(game_name_filter.toLowerCase()));
@@ -101,7 +131,23 @@ function find(self,container) {
 							}
 						}
 	
-						if (game_name_filter_condition && publisher_filter_condition) {
+						let developer_filter_condition;
+						for ( let j = 0; j < result[2][i].length; j += 1 ) {
+							developer_filter_condition = (result[2][i][j].toLowerCase().includes(developer_filter.toLowerCase()));
+							if (developer_filter_condition) {
+								break;
+							}
+						}
+						let platform_filter_condition;
+	
+						for ( let j = 0; j < result[3][i].length; j += 1 ) {
+							platform_filter_condition = (result[3][i][j].toLowerCase().includes(platform_filter.toLowerCase()));
+							if (platform_filter_condition) {
+								break;
+							}
+						}
+	
+						 if (game_name_filter_condition && publisher_filter_condition && developer_filter_condition && platform_filter_condition) {
 	
 							gamesName.push(result[0][i]);
 							newCollectionOfGameSctpID.push(collectionOfGameSctpID[i]);
@@ -109,16 +155,22 @@ function find(self,container) {
 							publishersName.push(result[1][i]);
 							newCollectionOfPublisherSctpID.push(collectionOfPublisherSctpID[i]);
 	
-						 }
+							developersName.push(result[2][i]);
+							newCollectionOfDeveloperSctpID.push(collectionOfDeveloperSctpID[i]);
+	
+							platformsName.push(result[3][i]);
+							newCollectionOfPlatformSctpID.push(collectionOfPlatformSctpID[i]);
+					 }
 					}
-					self._configurateTable(gamesName,publishersName, newCollectionOfGameSctpID, newCollectionOfPublisherSctpID,  container);
+					self._configurateTable(gamesName,publishersName, developersName, platformsName, newCollectionOfGameSctpID, newCollectionOfPublisherSctpID, newCollectionOfDeveloperSctpID, newCollectionOfPlatformSctpID,  container);
 				},500)
 			},2200)
-		
-
+			
+	
 		})
 	}
 
+	
 Example.PaintPanel = function (containerId) {
     this.containerId = containerId;
 };
@@ -133,21 +185,23 @@ Example.PaintPanel.prototype = {
         var container = $('#' + containerId);
 
         var self = this;
-		container.append(`
-			<div class = "">
-				Дополнительные настройки поиска
-				<br>
-				<p>
-					<select class = "select_genre" onchange="change_genre(this.value);">
-						<option value = "concept_computer_game">Любой жанр</option>
-						<option value = "concept_MOBA" >MOBA</option>
-						<option value = "concept_horror" >horror</option>
-						<option value = "concept_MMORPG" >MMORPG</option>
-					</select>
-					<input type = "text" id = "publisher_filter" placeholder = "Фильтр издателя">
-				</p>
-			</div>`
-		);
+				container.append(`
+				<div class = "">
+					Дополнительные настройки поиска
+					<br>
+					<p>
+						<select class = "select_genre" onchange="change_genre(this.value);">
+							<option value = "concept_computer_game">Любой жанр</option>
+							<option value = "concept_MOBA" >MOBA</option>
+							<option value = "concept_horror" >horror</option>
+							<option value = "concept_MMORPG" >MMORPG</option>
+						</select>
+						<input type = "text" id = "publisher_filter" placeholder = "Фильтр издателя">
+						<input type = "text" id = "developer_filter" placeholder = "Фильтр разработчика">
+						<input type = "text" id = "platform_filter" placeholder = "Фильтр платформы">
+					</p>
+				</div>`
+			);
 		
 		container.append('<div><input type = "text" id = "search_text_field" placeholder = "Введите название игры" display:inline-block> <button id = "find_by_text" type = "button" display:inline-block>FIND</button></div>');
 		setStyles(container);
@@ -163,7 +217,7 @@ Example.PaintPanel.prototype = {
 		});
 	},
 
-	_configurateTable: function(array_of_game_names,array_of_publishers, collectionOfGameSctpID, publishersSctpID, container){
+	_configurateTable: function(array_of_game_names,array_of_publishers, array_of_developers, array_of_platforms, collectionOfGameSctpID, publishersSctpID, DeveloperSctpID, PlatformSctpID, container){
 		console.log("Составляем таблицу");
 
 		if(container[0].lastChild === document.getElementsByTagName("table")[0]){
@@ -171,7 +225,7 @@ Example.PaintPanel.prototype = {
 			container[0].lastChild.remove();
 		}
 
-		let insertIntoTable = `<tr><th onclick="sortTable(0)">название игры</th><th onclick="sortTable(1)">издатель</th></tr>`;
+		let insertIntoTable = `<tr><th onclick="sortTable(0)">название игры</th><th onclick="sortTable(1)">издатель</th><th onclick="sortTable(2)">разработчик</th><th onclick="sortTable(3)">платформа</th></tr>`;
 
 	
 
@@ -183,6 +237,18 @@ Example.PaintPanel.prototype = {
 			insertIntoTable +=`<td style = "border: 1px solid black">`;
 			for(let j = 0; j < array_of_publishers[i].length; j += 1) {
 				insertIntoTable +=`<a href = "${publishersSctpID[i][j]}" class = "link_internal"> ${array_of_publishers[i][j]}</a>`;
+			}
+			insertIntoTable +=`</td>`;
+
+			insertIntoTable +=`<td style = "border: 1px solid black">`;
+			for(let j = 0; j < array_of_developers[i].length; j += 1) {
+				insertIntoTable +=`<a href = "${DeveloperSctpID[i][j]}" class = "link_internal"> ${array_of_developers[i][j]}</a>`;
+			}
+			insertIntoTable +=`</td>`;
+
+			insertIntoTable +=`<td style = "border: 1px solid black">`;
+			for(let j = 0; j < array_of_platforms[i].length; j += 1) {
+				insertIntoTable +=`<a href = "${PlatformSctpID[i][j]}" class = "link_internal"> ${array_of_platforms[i][j]}</a>`;
 			}
 			insertIntoTable +=`</td>`;
 
@@ -277,6 +343,78 @@ Example.PaintPanel.prototype = {
 			});
 		});
 		return promise;
+	},
+
+	_platform: function(array_of_games_SCTP_ID) {
+		
+		let platformsSctpID = [];
+		let promise = new Promise(function(resolve, reject) {
+			SCWeb.core.Server.resolveScAddr(['nrel_platform'], function (keynodes) {
+
+				let platform_nrel = keynodes['nrel_platform'];
+				
+	
+				for( let i = 0; i < array_of_games_SCTP_ID.length; i += 1 ) {
+					
+					platformsSctpID[i] = [];
+				
+					let main_menu_addr = array_of_games_SCTP_ID[i];
+					window.sctpClient.iterate_elements(SctpIteratorType.SCTP_ITERATOR_5F_A_A_A_F, [
+						main_menu_addr,
+						sc_type_arc_common | sc_type_const,
+						sc_type_node | sc_type_const,/// платформа
+						sc_type_arc_access | sc_type_const | sc_type_arc_pos | sc_type_arc_perm,
+						platform_nrel])
+					.done(function(identifiers){
+						for (let j = 0; j < identifiers.length; j += 1 ) {
+							platformsSctpID[i][j] = identifiers[j][2];
+						}
+						if(platformsSctpID.length ===  array_of_games_SCTP_ID.length ){
+							resolve(platformsSctpID);
+						} else if (identifiers.length === 0){
+							reject("netu izdatelya")
+						}
+					})
+				}
+			});
+		});
+		return promise;
+	}, 
+
+	_developer: function(array_of_games_SCTP_ID){
+		let developersSctpID = [];
+		let promise = new Promise(function(resolve, reject) {
+			SCWeb.core.Server.resolveScAddr(['nrel_developer'], function (keynodes) {
+
+				let developer_nrel = keynodes['nrel_developer'];
+				
+	
+				for( let i = 0; i < array_of_games_SCTP_ID.length; i += 1 ) {
+
+					developersSctpID[i] = [];
+				
+					let main_menu_addr = array_of_games_SCTP_ID[i];
+					window.sctpClient.iterate_elements(SctpIteratorType.SCTP_ITERATOR_5F_A_A_A_F, [
+						main_menu_addr,
+						sc_type_arc_common | sc_type_const,
+						sc_type_node | sc_type_const,/// компания-разработчик
+						sc_type_arc_access | sc_type_const | sc_type_arc_pos | sc_type_arc_perm,
+						developer_nrel])
+					.done(function(identifiers){
+						for (let j = 0; j < identifiers.length; j += 1 ) {
+							developersSctpID[i][j] = identifiers[j][2];
+						}
+						if(developersSctpID.length ===  array_of_games_SCTP_ID.length ){
+							resolve(developersSctpID);
+						} else if (identifiers.length === 0){
+							reject("netu izdatelya")
+						}
+					})
+				}
+			});
+		});
+		return promise;
+
 	},
 
 	_publishers: function(array_of_games_SCTP_ID){
