@@ -5,14 +5,14 @@ concept_apex_weapon_devotion
 
 <- concept_apex_weapon_machine_gun;
 
-=> nrel__weapon_fire_mode: concept_apex_fire_mode_auto;
-=> nrel__weapon_bullets_per_burst: [отсутствует];
+=> nrel_weapon_fire_mode: concept_apex_fire_mode_auto;
+=> nrel_weapon_bullets_per_burst: [отсутствует];
 => nrel_apex_projectiles_per_shot: 1;
 => nrel_apex_projectiles_shape: [отсутствует];
-=> nrel__weapon_ammo_type: concept_apex_ammo_energy_ammo;
+=> nrel_weapon_ammo_type: concept_apex_ammo_experimental_ammo;
 
-=> nrel__weapon_rate_of_fire: 900;
-=> nrel__weapon_damage_per_second: 255;
+=> nrel_weapon_rate_of_fire: 900;
+=> nrel_weapon_damage_per_second: 255;
 
 
 //Default legend | all helmet levels DAMAGE
@@ -49,8 +49,8 @@ concept_apex_weapon_devotion
 
 
 //Other parameters
-=> nrel__weapon_headshot_damage_increase_ratio: 2;
-=> nrel__weapon_recoil_type: concept_apex_recoil_vertical_plus_curve_left_and_right;
+=> nrel_weapon_headshot_damage_increase_ratio: 2;
+=> nrel_weapon_recoil_type: concept_apex_recoil_vertical_plus_curve_left_and_right;
 
 //Different types of magazines | magazine capacity
 => nrel_apex_default_magazine_capacity: 36;
@@ -61,17 +61,10 @@ concept_apex_weapon_devotion
 
 //Attachments | hopups & others
 => nrel_weapon_attachment: concept_apex_attachment_barrel_stabilizer;
-=> nrel_weapon_attachment: concept_apex_attachment_extended_energy_mag;
 => nrel_weapon_attachment: concept_apex_attachment_standard_stock;
-=> nrel_weapon_attachment: concept_apex_attachment_hopup_turbocharger;
 
 //Attachments | Optics
-=> nrel_weapon_attachment: concept_apex_attachment_1x_holo;
-=> nrel_weapon_attachment: concept_apex_attachment_1x_hcog;
 => nrel_weapon_attachment: concept_apex_attachment_2x_hcog;
-=> nrel_weapon_attachment: concept_apex_attachment_1x_2x_holo;
-=> nrel_weapon_attachment: concept_apex_attachment_3x_hcog;
-=> nrel_weapon_attachment: concept_apex_attachment_2x_4x_aog;
 
 
 
@@ -81,10 +74,10 @@ concept_apex_weapon_devotion
 	=> nrel_main_idtf: [Опр. (РП "Преданность")] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
-       		-> [РП "Преданность" - пулемет, который использует энергетические патроны, имеет только автоматический тип стрельбы и имеет уникальную механику "раскрутки"] (* <- lang_ru;; *);;
+       		-> [РП "Преданность" - пулемет, который использует энергетические патроны, имеет только автоматический тип стрельбы, уникальную механику "раскрутки" и его можно получить только из эирдропа] (* <- lang_ru;; *);;
 	*);;
 	<= nrel_using_constants: {
-		concept_apex_ammo_energy_ammo;
+		concept_apex_ammo_experimental_ammo;
 		concept_apex_weapon_machine_gun;
         concept_apex_fire_mode_auto
 	};;

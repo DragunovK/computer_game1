@@ -9,7 +9,7 @@ concept_apex_weapon_charge_rifle
 => nrel_weapon_bullets_per_burst: [отсутствует];
 => nrel_apex_projectiles_per_shot: 1;
 => nrel_apex_projectiles_shape: [отсутствует];
-=> nrel_weapon_ammo_type: concept_apex_ammo_energy_ammo;
+=> nrel_weapon_ammo_type: concept_apex_ammo_sniper_ammo;
 
 => nrel_weapon_rate_of_fire: 30;
 => nrel_weapon_damage_per_second: [информация отсутствует];
@@ -53,7 +53,7 @@ concept_apex_weapon_charge_rifle
 => nrel_weapon_recoil_type: concept_apex_recoil_minor_recoil;
 
 //Different types of magazines | magazine capacity
-=> nrel_apex_default_magazine_capacity: 12;
+=> nrel_apex_default_magazine_capacity: 4;
 => nrel_apex_common_magazine_capacity: [отсутствует];
 => nrel_apex_rare_magazine_capacity: [отсутствует];
 => nrel_apex_epic_magazine_capacity: [отсутствует];
@@ -81,10 +81,10 @@ concept_apex_weapon_charge_rifle
 	=> nrel_main_idtf: [Опр. (Энерговинтовка)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
-       		-> [Энерговинтовка - снайперская винтовка, которая использует энергетические патроны, имеет только одиночный тип стрельбы и имеет уникальную механику "зарядки" выстрела] (* <- lang_ru;; *);;
+       		-> [Энерговинтовка - снайперская винтовка, которая использует энергетические патроны, имеет только одиночный тип стрельбы и уникальную механику "зарядки" выстрела] (* <- lang_ru;; *);;
 	*);;
 	<= nrel_using_constants: {
-		concept_apex_ammo_energy_ammo;
+		concept_apex_ammo_sniper_ammo;
 		concept_apex_weapon_sniper_rifle;
         concept_apex_fire_mode_single
 	};;

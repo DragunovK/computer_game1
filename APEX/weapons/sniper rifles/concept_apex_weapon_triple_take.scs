@@ -9,7 +9,7 @@ concept_apex_weapon_triple_take
 => nrel_weapon_bullets_per_burst: [отсутствует];
 => nrel_apex_projectiles_per_shot: 3;
 => nrel_apex_projectiles_shape: concept_horizontal_line;
-=> nrel_weapon_ammo_type: concept_apex_ammo_energy_ammo;
+=> nrel_weapon_ammo_type: concept_apex_ammo_sniper_ammo;
 
 => nrel_weapon_rate_of_fire: 88;
 => nrel_weapon_damage_per_second: 101;
@@ -60,7 +60,7 @@ concept_apex_weapon_triple_take
 
 
 //Attachments | hopups & others
-=> nrel_weapon_attachment: concept_apex_attachment_extended_energy_mag;
+=> nrel_weapon_attachment: concept_apex_attachment_extended_sniper_mag;
 => nrel_weapon_attachment: concept_apex_attachment_sniper_stock;
 => nrel_weapon_attachment: concept_apex_attachment_hopup_precision_choke;
 
@@ -86,7 +86,7 @@ concept_apex_weapon_triple_take
        		-> [Тройной эффект - снайперская винтовка, которая использует энергетические патроны, имеет только одиночный тип стрельбы и стреляет 3 снаряда за один выстрел] (* <- lang_ru;; *);;
 	*);;
 	<= nrel_using_constants: {
-		concept_apex_ammo_energy_ammo;
+		concept_apex_ammo_sniper_ammo;
 		concept_apex_weapon_sniper_rifle;
         concept_apex_fire_mode_single;
 		nrel_apex_projectiles_per_shot
