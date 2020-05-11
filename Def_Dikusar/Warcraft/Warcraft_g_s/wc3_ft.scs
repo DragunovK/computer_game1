@@ -8,19 +8,16 @@ computer_game_warcraft_3_the_frozen_throne
 => nrel_platform: concept_windows;
 => nrel_platform: consept_mac_os;
 =>nrel_localizer: company_softclub;
-=> nrel_publisher: 
-{
-company_sierra_entertainment;
-company_blizzard;
-company_soft_club;
-company_capcom 
-};
+=> nrel_publisher:company_sierra_entertainment;
+=> nrel_publisher:company_blizzard;
+=> nrel_publisher:company_soft_club;
+=> nrel_publisher:company_capcom;
 => nrel_developer: company_blizzard;
 <=nrel_addition:computer_game_warcraft_3_reign_of_chaos;
 => nrel_publication_date: date_2003;
 <- concept_setting_fantasy;
 => nrel_game_camera: concept_three_dimensional_top_view;
-=> nrel_plot: [События дополнения продолжают сюжет <b><sc_element sys_idtf="computer_game_warcraft_3_reign_of_chaos">Warcraft III: Reign of Chaos</sc_element>. После битвы на горе Хиджал расы Азерота стали возвращаться к мирной жизни. Однако последствия Третьей Войны порождают новые конфликты. Как и в предыдущей части, сюжетная линия представлена в виде кампаний, которые образуют общий сюжет. ] (* <- lang_ru;; => nrel_format: format_html;; *); 
+=> nrel_plot: [События дополнения продолжают сюжет <b><sc_element sys_idtf="computer_game_warcraft_3_reign_of_chaos">Warcraft III: Reign of Chaos</sc_element></b>. После битвы на горе Хиджал расы Азерота стали возвращаться к мирной жизни. Однако последствия Третьей Войны порождают новые конфликты. Как и в предыдущей части, сюжетная линия представлена в виде кампаний, которые образуют общий сюжет. ] (* <- lang_ru;; => nrel_format: format_html;; *); 
 <-concept_multiplayer_game;
 <-concept_singleplayer_game;
 <- rrel_key_sc_element: ...

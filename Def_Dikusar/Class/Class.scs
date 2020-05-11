@@ -1,4 +1,4 @@
-nrel_class
+nrel_character_class
 <- sc_node_norole_relation;
 <- binary_relation;
 <- oriented_relation;
@@ -28,14 +28,14 @@ concept_development
     };;
 <= nrel_sc_text_translation: ... (*
       -> rrel_example:
-[<b><sc_element sys_idtf="nrel_class">Класс персонажа</sc_element> — архетип персонажа ролевых игр, определяющий его умения и направление развития.] (* <- lang_ru;; => nrel_format: format_html;; *);;
+[<b><sc_element sys_idtf="nrel_class">Класс персонажа</sc_element></b> — архетип персонажа ролевых игр, определяющий его умения и направление развития.] (* <- lang_ru;; => nrel_format: format_html;; *);;
     *);;
    *);
 => nrel_definitional_domain: ... (*
         <= nrel_combination:
 {
 concept_character;
-concept_archetype
+concept_character_class
 };;
 *);
 
@@ -66,3 +66,10 @@ concept_archetype
 class -> Death_Knight;;
 character -> Artas;;
 nrel_class -> (Artas => Death_Knight);;
+
+concept_character_class
+
+=> nrel_main_idtf:[Класс персонажа] (* <- lang_ru;; *);
+=> nrel_main_idtf:[Character Class] (* <- lang_en;; *);
+
+<- sc_node_not_relation;;

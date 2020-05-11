@@ -92,3 +92,26 @@ game_character_sargeras
 	*);;
 *);
 <- sc_node_not_relation;;
+
+game_character_illidan
+
+=>nrel_fraction:warcraft_night_elves;
+=> nrel_main_idtf:
+      [Иллидан ]
+      (*<-lang_ru;;*);
+       [Illidan ]
+       (*<-lang_en;;*);
+=> nrel_idtf: [Illidan Stormrage] (*<-lang_en;;*);
+=> nrel_idtf: [Иллидан Ярость Бури] (*<-lang_ru;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://Illidan.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+<- sc_node_not_relation;;
