@@ -18,11 +18,9 @@ concept_computer_game_resident_evil_1
 =>nrel_publisher: company_capcom;
 =>nrel_developer: company_capcom;
 company_nextech;
-=>nrel_platform: {
-concept_windows;
-concept_nintendo_ds;
-concept_playstation_1
-};
+=>nrel_platform: concept_windows;
+=>nrel_platform: concept_nintendo_ds;
+=>nrel_platform: concept_playstation_1;
 
 
 <- rrel_key_sc_element: ... (*

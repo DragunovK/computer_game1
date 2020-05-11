@@ -1,0 +1,136 @@
+company_valve => nrel_main_idtf: [Valve] (* <- lang_en;; *);; //
+
+Valve => nrel_main_idtf: [Valve] (* <- lang_en;; *);; //
+
+Valve_Corporation => nrel_main_idtf: [Valve] (* <- lang_en;; *);; //
+
+company_hi_rez => nrel_main_idtf: [Hi-Rez] (* <- lang_en;; *);;
+
+company_s2_games => nrel_main_idtf: [S2 Games] (* <- lang_en;; *);;
+
+company_super_evil_megacorp => nrel_main_idtf: [Super Evil Megacorp] (* <- lang_en;; *);;
+
+company_capcom => nrel_main_idtf: [Capcom] (* <- lang_en;; *);;
+
+company_blizzard  => nrel_main_idtf: [Blizard] (* <- lang_en;; *);;
+
+company_Blizzard_Entertainment => nrel_main_idtf: [Blizard] (* <- lang_en;; *);;
+
+
+
+company_ubisoft => nrel_main_idtf: [Ubisoft] (* <- lang_en;; *);;
+
+company_Ubisoft => nrel_main_idtf: [Ubisoft] (* <- lang_en;; *);;
+
+company_Square_enix => nrel_main_idtf: [Square Enix] (* <- lang_en;; *);;
+
+company_Activision => nrel_main_idtf: [Activision] (* <- lang_en;; *);;
+
+company_activision => nrel_main_idtf: [Activision] (* <- lang_en;; *);;
+
+company_Lucasarts => nrel_main_idtf: [Lucas Arts] (* <- lang_en;; *);;
+
+Sierra_Enterteiment => nrel_main_idtf: [Sierra Entertainment] (* <- lang_en;; *);;
+
+company_CD_Project_Red => nrel_main_idtf: [CD Project Red] (* <- lang_en;; *);;
+
+company_From_Software => nrel_main_idtf: [FromSoftware] (* <- lang_en;; *);;
+
+// 
+company_From_software => nrel_main_idtf: [FromSoftware] (* <- lang_en;; *);;
+
+company_Studio_MDHR_Entertaiment  => nrel_main_idtf: [MDHR Entertaiment] (* <- lang_en;; *);;
+
+company_Bandai_namco => nrel_main_idtf: [Bandai Namco Entertainment] (* <- lang_en;; *);;
+
+company_firaxis_games  => nrel_main_idtf: [Firaxis games] (* <- lang_en;; *);;
+
+company_SONY => nrel_main_idtf: [Sony] (* <- lang_en;; *);;
+
+company_sony_computer_entertaiment => nrel_main_idtf: [Sony] (* <- lang_en;; *);;
+
+company_microsoft_studios => nrel_main_idtf: [Microsoft Studios] (* <- lang_en;; *);;
+
+
+company_Electronic_arts => nrel_main_idtf: [Electronic Arts] (* <- lang_en;; *);;
+
+Electronic_Arts  => nrel_main_idtf: [Electronic Arts] (* <- lang_en;; *);;
+
+company_elctronic_arts => nrel_main_idtf: [Electronic Arts] (* <- lang_en;; *);;
+
+company_bethesda_game_studios => nrel_main_idtf:[Bethesda] (* <- lang_en;; *);;
+
+
+
+company_Wargaming.net => nrel_main_idtf: [Wargaming.net] (* <- lang_en;; *);;
+
+company_nival  => nrel_main_idtf: [Nival] (* <- lang_en;; *);;
+
+company_epic_games  => nrel_main_idtf: [Epic Games] (* <- lang_en;; *);;
+
+company_Eidos_interactive  => nrel_main_idtf: [Eidos Interactive] (* <- lang_en;; *);;
+
+company_novii_disk  => nrel_main_idtf: [Новый диск] (* <- lang_ru;; *);;
+
+company_1c => nrel_main_idtf: [1C] (* <- lang_en;; *);;
+ 
+ company_riot_games => nrel_main_idtf: [Riot games] (* <- lang_en;; *);;
+
+ company_softclub => nrel_main_idtf: [softclub] (* <- lang_en;; *);;
+
+ company_aspyr_media  => nrel_main_idtf: [Aspyr Media ] (* <- lang_en;; *);;
+
+ aspyr  => nrel_main_idtf: [Aspyr Media ] (* <- lang_en;; *);;
+
+ company_sega  => nrel_main_idtf: [SEGA] (* <- lang_en;; *);;
+
+ konami => nrel_main_idtf: [Konami] (* <- lang_en;; *);;
+
+ company_2k_games => nrel_main_idtf: [2K Games] (* <- lang_en;; *);;
+
+
+
+
+
+
+
+
+
+Gearbox_Software => nrel_main_idtf: [Gearbox Software] (* <- lang_en;; *);;
+
+company_crytek => nrel_main_idtf: [Crytek GmbH] (* <- lang_en;; *);;
+
+
+company_capcom_rd_division => nrel_main_idtf: [Capcom] (* <- lang_en;; *);;
+
+company_capcom_rd_division_4 => nrel_main_idtf: [Capcom] (* <- lang_en;; *);;
+
+company_Avalanche_studios => nrel_main_idtf: [Avalanche Studios Group] (* <- lang_en;; *);;
+
+// кто-то попутал компании 
+company_nextech => nrel_main_idtf: [Nex Entertainment] (* <- lang_en;; *);;
+
+company_EA_DICE => nrel_main_idtf: [DICE] (* <- lang_en;; *);;
+
+
+company_Radical_Entertainment  => nrel_main_idtf: [Radical Entertainment] (* <- lang_en;; *);;
+
+
+
+company_cyberlore_studios => nrel_main_idtf: [Cyberlore] (* <- lang_en;; *);;
+
+company_Respawn_enterteiment => nrel_main_idtf: [Respawn Entertainment] (* <- lang_en;; *);;
+
+company_Pandemic_Studios => nrel_main_idtf: [Pandemic Studios] (* <- lang_en;; *);;
+
+company_moon_studios => nrel_main_idtf: [Moon Studios] (* <- lang_en;; *);;
+
+company_koch_media => nrel_main_idtf: [Koch Media GmbH] (* <- lang_en;; *);;
+
+company_starbreeze_publishing => nrel_main_idtf: [Starbreeze Studios] (* <- lang_en;; *);;
+
+company_505_games => nrel_main_idtf: [505 Games] (* <- lang_en;; *);;
+
+company_soft_club  => nrel_main_idtf: [SOFT club] (* <- lang_en;; *);;
+
+company_infinity_ward => nrel_main_idtf: [Infinity Ward] (* <- lang_en;; *);;

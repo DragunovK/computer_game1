@@ -1,0 +1,83 @@
+xbox_360 => nrel_main_idtf: [XBOX 360] (* <- lang_en;; *);;
+ 
+concept_xbox_360 => nrel_main_idtf: [XBOX 360] (* <- lang_en;; *);;
+
+xbox => nrel_main_idtf: [XBOX] (* <- lang_en;; *);;
+
+xbox_one => nrel_main_idtf: [XBOX ONE] (* <- lang_en;; *);;
+
+concept_xbox_one  => nrel_main_idtf: [XBOX ONE] (* <- lang_en;; *);;
+
+concept_xbox360 => nrel_main_idtf: [XBOX 360] (* <- lang_en;; *);;
+
+
+concept_microsoft_windows => nrel_main_idtf: [Windows] (* <- lang_en;; *);;
+
+concept_windows => nrel_main_idtf: [Windows] (* <- lang_en;; *);;
+
+concept_window =>  nrel_main_idtf: [NU ETO UZE TOCHNO OKNO] (* <- lang_en;; *);;
+
+
+
+playstation_3 => nrel_main_idtf: [PlayStation] (* <- lang_en;; *);;
+
+concept_PS4 => nrel_main_idtf: [PlayStation 4] (* <- lang_en;; *);;
+
+concept_playstation_3 => nrel_main_idtf: [PlayStation 3] (* <- lang_en;; *);;
+
+concept_playstation_4 => nrel_main_idtf: [PlayStation 4] (* <- lang_en;; *);;
+
+concept_playstation_2 => nrel_main_idtf: [PlayStation 2] (* <- lang_en;; *);;
+
+playstation_2 => nrel_main_idtf: [PlayStation 2] (* <- lang_en;; *);;
+
+concept_playstation_1 => nrel_main_idtf: [PlayStation 1] (* <- lang_en;; *);;
+
+PlayStation  => nrel_main_idtf: [PlayStation] (* <- lang_en;; *);;
+
+playstation=> nrel_main_idtf: [PlayStation] (* <- lang_en;; *);;
+
+playstation_4 => nrel_main_idtf: [PlayStation 4] (* <- lang_en;; *);;
+
+
+concept_mac => nrel_main_idtf: [Mac os] (* <- lang_en;; *);;
+
+concept_mac_os => nrel_main_idtf: [Mac os] (* <- lang_en;; *);;
+
+consept_mac_os => nrel_main_idtf: [Mac os] (* <- lang_en;; *);;
+
+concept_mac_os_X => nrel_main_idtf: [Mac os 10] (* <- lang_en;; *);;
+
+android  => nrel_main_idtf: [android] (* <- lang_en;; *);;
+
+concept_android => nrel_main_idtf: [android] (* <- lang_en;; *);;
+
+
+
+ios  => nrel_main_idtf: [IOS] (* <- lang_en;; *);;
+
+
+concept_ms_dos => nrel_main_idtf: [MS-DOS] (* <- lang_en;; *);;
+
+concept_linux => nrel_main_idtf: [Linux] (* <- lang_en;; *);;
+
+
+
+
+
+
+
+
+concept_dreamcast => nrel_main_idtf: [Dreamcast] (* <- lang_en;; *);;
+
+
+concept_nintendo_ds => nrel_main_idtf: [Nintendo DS] (* <- lang_en;; *);;
+
+concept_nintendo_64 => nrel_main_idtf: [Nintendo 64] (* <- lang_en;; *);;
+
+concept_nintendo_switch => nrel_main_idtf: [Nintendo Switch] (* <- lang_en;; *);;
+
+
+
+
+n_gage=> nrel_main_idtf: [N-Gage] (* <- lang_en;; *);;

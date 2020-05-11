@@ -14,13 +14,11 @@ concept_computer_game_half_life_2_episode_two
 => nrel_game_engine:  	Source;
 => nrel_publisher: Valve;
 => nrel_developer: Valve;
-=> nrel_platform: {
-concept_windows;
-concept_linux;
-concept_mac_os;
-concept_playstation3;
-concept_xbox360
-};
+=> nrel_platform: concept_windows;
+=> nrel_platform: concept_linux;
+=> nrel_platform: concept_mac_os;
+=> nrel_platform: concept_playstation3;
+=> nrel_platform: concept_xbox360;
 
 <- rrel_key_sc_element: ... (*
 	<- definition;;

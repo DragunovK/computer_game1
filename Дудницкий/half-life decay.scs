@@ -14,9 +14,7 @@ concept_computer_game_half_life_decay
 => nrel_game_engine:  	GoldSource;
 => nrel_publisher: Sierra_Enterteiment;
 => nrel_developer: Gearbox_Software;
-=> nrel_platform: {
-concept_playstation_2
-};
+=> nrel_platform: concept_playstation_2;
 
 <- rrel_key_sc_element: ... (*
 	<- definition;;

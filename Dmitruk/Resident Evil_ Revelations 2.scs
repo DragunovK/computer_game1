@@ -19,14 +19,12 @@ concept_computer_game_resident_evil_revalations_2
 =>nrel_publisher: company_capcom;
 =>nrel_publisher: company_sony_computer_entertaiment;
 =>nrel_developer: company_capcom;
-=>nrel_platform: {
-concept_windows;
-concept_nintendo_switch;
-concept_xbox_360;
-concept_playstation_3;
-concept_playstation_4;
-concept_xbox_one
-};
+=>nrel_platform: concept_windows;
+=>nrel_platform: concept_nintendo_switch;
+=>nrel_platform: concept_xbox_360;
+=>nrel_platform: concept_playstation_3;
+=>nrel_platform: concept_playstation_4;
+=>nrel_platform: concept_xbox_one;
 
 
 <- rrel_key_sc_element: ... (*

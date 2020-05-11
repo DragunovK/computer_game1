@@ -16,11 +16,9 @@ concept_computer_game_half_life_opposing_force
 Sierra_Enterteiment;
 => nrel_developer: Valve_Corporation;
 Gearbox_Software;
-=> nrel_platform: {
-concept_windows;
-concept_linux;
-concept_mac_os_X
-};
+=> nrel_platform: concept_windows;
+=> nrel_platform: concept_linux;
+=> nrel_platform: concept_mac_os_X;
 
 <- rrel_key_sc_element: ... (*
 	<- definition;;

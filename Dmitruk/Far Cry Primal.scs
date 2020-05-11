@@ -19,11 +19,9 @@ concept_computer_game_far_cry_primal
 =>nrel_publisher: company_ubisoft;
 =>nrel_developer: company_ubisoft;
 =>nrel_localizer: company_logrus;
-=>nrel_platform: {
-concept_windows;
-concept_xbox_one;
-concept_playstation_4
-};
+=>nrel_platform: concept_windows;
+=>nrel_platform: concept_xbox_one;
+=>nrel_platform: concept_playstation_4;
 
 <- rrel_key_sc_element: ... (*
     <- definition;;
