@@ -14,11 +14,11 @@ concept_computer_game_half_life_2_lost_coast
 => nrel_game_engine:  	Source;
 => nrel_publisher: Valve_Corporation;
 => nrel_developer: Valve_Corporation;
-=> nrel_platform: {
-concept_windows;
-concept_linux;
-concept_mac_os
-};
+
+=> nrel_platform: concept_windows;
+=> nrel_platform: concept_linux;
+=> nrel_platform: concept_mac_os;
+
 
 <- rrel_key_sc_element: ... (*
 	<- definition;;

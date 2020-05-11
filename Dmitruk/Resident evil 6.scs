@@ -19,12 +19,10 @@ concept_computer_game_resident_evil_6
 =>nrel_game_engine: mt_framework;
 =>nrel_publisher: company_capcom;
 =>nrel_developer: company_capcom;
-=>nrel_platform: {
-concept_windows;
-concept_nintendo_switch;
-concept_xbox_360;
-concept_playstation_3
-};
+=>nrel_platform: concept_windows;
+=>nrel_platform: concept_nintendo_switch;
+=>nrel_platform: concept_xbox_360;
+=>nrel_platform: concept_playstation_3;
 
 
 <- rrel_key_sc_element: ... (*

@@ -14,9 +14,7 @@ concept_computer_game_half_life_alyx
 => nrel_game_engine:  	Source2;
 => nrel_publisher: Valve_Corporation;
 => nrel_developer: Valve_Corporation;
-=> nrel_platform: {
-concept_window
-};
+=> nrel_platform: concept_window;
 
 <- rrel_key_sc_element: ... (*
 	<- definition;;

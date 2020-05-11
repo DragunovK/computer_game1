@@ -18,11 +18,9 @@ concept_computer_game_crysis_3
 =>nrel_publisher: company_electronic_arts;
 =>nrel_developer: company_crytek;
 =>nrel_localizer: company_soft_club;
-=>nrel_platform: {
-concept_windows;
-concept_xbox_360;
-concept_playstation_3
-};
+=>nrel_platform: concept_windows;
+=>nrel_platform: concept_xbox_360;
+=>nrel_platform: concept_playstation_3;
 
 
 <- rrel_key_sc_element: ... (*

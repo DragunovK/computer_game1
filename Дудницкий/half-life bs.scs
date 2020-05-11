@@ -16,12 +16,10 @@ concept_computer_game_half_life_blue_shift
 Sierra_Enterteiment;
 => nrel_developer: Valve_Corporation;
 Gearbox_Software;
-=> nrel_platform: {
-concept_windows;
-concept_linux;
-concept_mac_os_X;
-concept_dreamcast
-};
+=> nrel_platform: concept_windows;
+=> nrel_platform: concept_linux;
+=> nrel_platform: concept_mac_os_X;
+=> nrel_platform: concept_dreamcast;
 
 <- rrel_key_sc_element: ... (*
 	<- definition;;

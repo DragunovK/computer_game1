@@ -17,12 +17,10 @@ concept_computer_game_resident_evil_2
 =>nrel_game_engine: mt_framework;
 =>nrel_publisher: company_capcom;
 =>nrel_developer: company_capcom_rd_division_4;
-=>nrel_platform: {
-concept_windows;
-concept_nintendo_64;
-concept_playstation_1;
-concept_playstation_3
-};
+=>nrel_platform: concept_windows;
+=>nrel_platform: concept_nintendo_64;
+=>nrel_platform: concept_playstation_1;
+=>nrel_platform: concept_playstation_3;
 
 
 <- rrel_key_sc_element: ... (*

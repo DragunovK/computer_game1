@@ -18,11 +18,9 @@ concept_computer_game_far_cry_2
 =>nrel_publisher: company_ubisoft;
 =>nrel_developer: company_ubisoft;
 =>nrel_localizer: company_buka;
-=>nrel_platform: {
-concept_windows;
-concept_xbox_360;
-concept_playstation_3
-};
+=>nrel_platform:  concept_windows;
+=>nrel_platform:  concept_xbox_360;
+=>nrel_platform:  concept_playstation_3;
 
 <- rrel_key_sc_element: ... (*
     <- definition;;

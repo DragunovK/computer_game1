@@ -15,15 +15,14 @@ concept_multiplayer_game;
 => nrel_game_engine:  	Source;
 => nrel_publisher: Valve_Corporation;
 => nrel_developer: Valve_Corporation;
-=> nrel_platform: {
-concept_windows;
-concept_linux;
-concept_mac_os;
-concept_xbox;
-concept_xbox_360;
-concept_playstation_3;
-concept_amdroid
-};
+
+=> nrel_platform: concept_windows;
+=> nrel_platform: concept_linux;
+=> nrel_platform: concept_mac_os;
+=> nrel_platform: concept_xbox;
+=> nrel_platform: concept_xbox_360;
+=> nrel_platform: concept_playstation_3;
+=> nrel_platform: concept_amdroid;
 
 <- rrel_key_sc_element: ... (*
 	<- definition;;

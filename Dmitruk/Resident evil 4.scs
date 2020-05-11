@@ -18,14 +18,13 @@ concept_computer_game_resident_evil_4
 =>nrel_game_engine: mt_framework;
 =>nrel_publisher: company_capcom;
 =>nrel_developer: company_capcom_rd_division_4;
-=>nrel_platform: {
-concept_windows;
-concept_xbox_one;
-concept_nintendo_switch;
-concept_playstation_4;
-concept_playstation_2;
-concept_playstation_3
-};
+
+=>nrel_platform: concept_windows;
+=>nrel_platform: concept_xbox_one;
+=>nrel_platform: concept_nintendo_switch;
+=>nrel_platform: concept_playstation_4;
+=>nrel_platform: concept_playstation_2;
+=>nrel_platform: concept_playstation_3;
 
 
 <- rrel_key_sc_element: ... (*
