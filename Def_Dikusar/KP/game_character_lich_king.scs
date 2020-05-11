@@ -40,7 +40,7 @@ game_character_lich_king
 		 <b><sc_element sys_idtf="concept_race_orc">орка</sc_element></b>, 
 		 <b><sc_element sys_idtf="concept_class_shaman">шамана</sc_element></b> 
 		 <b><sc_element sys_idtf="concept_warcraft_the_scourge">Нер'зула</sc_element></b>, чтоб тот поднял армию 
-		 <b><sc_element sys_idtf="concept_wconcept_warcraft_undead">нежити</sc_element></b> и завоевал 
+		 <b><sc_element sys_idtf="concept_concept_warcraft_undead">нежити</sc_element></b> и завоевал 
 		 <b><sc_element sys_idtf="concept_warcraft_azeroth">Азерот</sc_element></b> для 
 		 <b><sc_element sys_idtf="concept_the_burning_legion">Пылающего Легиона</sc_element></b>.]  (* <- lang_ru;; => nrel_format: format_html;; *);;
 	*);;
