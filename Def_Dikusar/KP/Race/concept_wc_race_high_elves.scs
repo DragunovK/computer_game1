@@ -16,7 +16,7 @@ concept_wc_race_high_elves
     => nrel_main_idtf:
       [Утв.(Высшие эльфы)] (* <- lang_ru;; *);;
       => nrel_using_constants: {
-      warcraft_night_elves;
+      concept_warcraft_night_elves;
       concept_warcraft_kalimdor;
       concept_warcraft_eastern_kingdoms
 };;
@@ -25,7 +25,7 @@ concept_wc_race_high_elves
 [Высшие эльфы, или кель'дораи (дарнасск. - 
 дети благородного происхождения ; талассийск. - 
 высокие или высшие эльфы) - раса, что произошла 
-от Высокорожденных <b><sc_element sys_idtf="warcraft_night_elves">ночных эльфов</sc_element></b>, 
+от Высокорожденных <b><sc_element sys_idtf="concept_warcraft_night_elves">ночных эльфов</sc_element></b>, 
 которые оставив <b><sc_element sys_idtf="concept_warcraft_kalimdor">Калимдор</sc_element></b>, поселились на континенте 
 <b><sc_element sys_idtf="concept_warcraft_eastern_kingdoms">Восточные Королевства</sc_element></b> и основали королевство Кель'Талас.](*<-lang_ru;; => nrel_format: format_html;;*);;
       *);;

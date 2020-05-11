@@ -11,7 +11,7 @@ concept_warcraft_kalimdor
       concept_warcraft_azeroth;
       concept_warcraft_northrend;
 	  concept_warcraft_eastern_kingdoms;
-      warcraft_night_elves;
+      	  concept_warcraft_night_elves;
 	  concept_race_orc;
 	  concept_wc_race_tauren;
 	  concept_wc_race_trolls;
@@ -26,7 +26,7 @@ concept_warcraft_kalimdor
 		 [Калимдор — один из континентов мира <b><sc_element sys_idtf="concept_warcraft_azeroth">Азерот</sc_element></b>. 
 		 Он расположен к западу от <b><sc_element sys_idtf="concept_warcraft_eastern_kingdoms">Восточных Королевств</sc_element></b> 
 		 и к юго-востоку от <b><sc_element sys_idtf="concept_warcraft_northrend">Нордскола</sc_element></b>. Между континентами 
-		 раскинуло свои воды Великое море. Калимдор — дом <b><sc_element sys_idtf="warcraft_night_elves">ночных эльфов</sc_element></b>, 
+		 раскинуло свои воды Великое море. Калимдор — дом <b><sc_element sys_idtf="concept_warcraft_night_elves">ночных эльфов</sc_element></b>, 
 		 <b><sc_element sys_idtf="concept_race_orc">орков</sc_element></b>, <b><sc_element sys_idtf="concept_wc_race_tauren">тауренов</sc_element></b>, 
 		 <b><sc_element sys_idtf="concept_wc_race_trolls">троллей</sc_element></b> и 
 		 <b><sc_element sys_idtf="concept_wc_race_draenei">дренеев</sc_element></b>. 

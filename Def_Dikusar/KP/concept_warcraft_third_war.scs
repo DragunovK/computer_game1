@@ -1,0 +1,43 @@
+// concept_warcraft_third_war		
+
+// => nrel_main_idtf:[Третья война] (* <- lang_ru;; *);
+// => nrel_main_idtf:[Third War] (* <- lang_en;; *);
+
+// <- rrel_key_sc_element: ...
+// (*
+// 	<- definition;;
+// 		=> nrel_main_idtf: [Опр.(Калимдор)] (* <- lang_ru;; *);;
+// 		=> nrel_using_constants: {
+//       concept_warcraft_azeroth;
+//       concept_warcraft_northrend;
+// 	  concept_warcraft_eastern_kingdoms;
+//       	  concept_warcraft_night_elves;
+// 	  concept_race_orc;
+// 	  concept_wc_race_tauren;
+// 	  concept_wc_race_trolls;
+// 	  concept_wc_race_draenei;
+// 	  concept_wc_race_ogres;
+// 	  concept_wc_race_centaurs;
+// 	  concept_wc_race_nagas;
+// 	  concept_warcraft_demons  
+// };;
+// 		<= nrel_sc_text_translation: ...
+// 	(*   -> rrel_example:
+// 		 [Третья Война - это конфликт между смертными расами 
+// Азерота и Пылающим Легионом. В отличии от предыдущих войн, события этой войны развернуться на землях Восточных Королевств и Калимдора. В войне вернутся древние ночные эльфы, все события которых были рассказаны в Warcraft III: Reign of Chaos.]  (* <- lang_ru;; => nrel_format: format_html;; *);;
+// 	*);;
+// *);
+
+// <- rrel_key_sc_element: ...
+// (*
+// 	<- illustration;;
+// 	<= nrel_sc_text_translation: ...
+// 	(*
+// 		-> rrel_example: "file://third_war.jpg"
+// 		(*
+// 			=> nrel_format: format_jpg;;
+// 		*);;
+// 	*);;
+// *);
+
+// <- concept_location;;

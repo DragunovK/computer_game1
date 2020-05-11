@@ -1,0 +1,64 @@
+game_character_lich_king		
+
+=> nrel_main_idtf:[Король лич] (* <- lang_ru;; *);
+=> nrel_main_idtf:[Lich king] (* <- lang_en;; *);
+=> nrel_idtf: [король мёртвых] (* <- lang_ru;; *);
+=> nrel_idtf: [воин] (* <- lang_ru;; *);
+
+<-concept_game_object;
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(король лич)] (* <- lang_ru;; *);;
+		=> nrel_using_constants: {
+      concept_warcraft_the_scourge
+};;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [Король-лич является владыкой и повелителем <b><sc_element sys_idtf="concept_warcraft_the_scourge">Плети</sc_element></b>, 
+		 которой он телепатически правит со своего Ледяного трона, стоящего на верхушке Цитадели Ледяной Короны.]  (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+		=> nrel_main_idtf: [Утв.(корорь лич)] (* <- lang_ru;; *);;
+		=> nrel_using_constants: {
+      concept_race_orc;
+      concept_class_shaman;
+	  concept_warcraft_the_scourge;
+	  concept_concept_warcraft_undead;
+	  concept_warcraft_azeroth;
+	  concept_the_burning_legion
+};;
+		<= nrel_sc_text_translation: ...
+	(*   -> rrel_example:
+		 [<b><sc_element sys_idtf="game_character_kiljaeden">Кил'джеден</sc_element></b> создал Короля Мертвых из духа 
+		 <b><sc_element sys_idtf="concept_race_orc">орка</sc_element></b>, 
+		 <b><sc_element sys_idtf="concept_class_shaman">шамана</sc_element></b> 
+		 <b><sc_element sys_idtf="concept_warcraft_the_scourge">Нер'зула</sc_element></b>, чтоб тот поднял армию 
+		 <b><sc_element sys_idtf="concept_concept_warcraft_undead">нежити</sc_element></b> и завоевал 
+		 <b><sc_element sys_idtf="concept_warcraft_azeroth">Азерот</sc_element></b> для 
+		 <b><sc_element sys_idtf="concept_the_burning_legion">Пылающего Легиона</sc_element></b>.]  (* <- lang_ru;; => nrel_format: format_html;; *);;
+	*);;
+*);
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://lich_king.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+
+<- sc_node_not_relation;;
+
+

@@ -30,25 +30,13 @@ concept_resource_food
 	*);;
 *);
 
-<- rrel_key_sc_element: ...
-(*
-	<- definition;;
-		=> nrel_main_idtf: [Опр.(золото)] (* <- lang_ru;; *);;
-		=> nrel_using_constants: {
-      nrel_ingame_currency
-};;
-		<= nrel_sc_text_translation: ...
-	(*   -> rrel_example:
-		 [Золото во многих играх может выступать в качестве <b><sc_element sys_idtf="nrel_ingame_currency">внутриигровой валюты</sc_element></b>.]  (* <- lang_ru;; => nrel_format: format_html;; *);;
-	*);;
-*);
 
 <- rrel_key_sc_element: ...
 (*
 	<- illustration;;
 	<= nrel_sc_text_translation: ...
 	(*
-		-> rrel_example: "file://gold.jpg"
+		-> rrel_example: "file://food.jpg"
 		(*
 			=> nrel_format: format_jpg;;
 		*);;

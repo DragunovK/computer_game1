@@ -67,6 +67,8 @@ concept_game_object
     [Игровой объект] (* <- lang_ru;; *);
     [Game object] (* <- lang_en;; *);;
 
+//zxc
+
 
 
 
