@@ -1,0 +1,50 @@
+concept_ring_of_protection <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Ring of Protection]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Ring of Protection]
+      (*<-lang_en;;*);
+
+	<- item_dota2;
+
+	=>nrel_price: 150;
+	=>nrel_is_a_part: 
+		concept_urn_of_shadows;
+		concept_buckler;
+		
+	=>nrel_passive_ability: passive_ability_ring_of_protection;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Ring of Protection)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Мерцающее кольцо, защищающее своего носителя.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Ring of Protection)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Отлично подойдет героем с основным атрибутом сила, в ранней стадии игры.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/ring_of_protection.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

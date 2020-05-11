@@ -1,0 +1,6 @@
+concept_spirit_vessel <- sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Spirit Vessel](* <-lang_en; lang_ru;; *);
+
+	<- item_dota2;;

@@ -1,0 +1,51 @@
+concept_platemail <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Platemail]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Platemail]
+      (*<-lang_en;;*); 
+
+	<- item_dota2;
+
+	=>nrel_price: 1400;
+	=>nrel_passive_ability: passive_ability_platemail;
+
+	=>nrel_is_a_part:
+			concept_shivas_guard;
+			concept_assault_cuirass;
+			concept_lotus_orb;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Platemail)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Толстые металлические пластины, полностью защищающие верхнюю часть тела.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Platemail)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Отлично подойдет против героев с большим физическим уроном.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/platemail.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

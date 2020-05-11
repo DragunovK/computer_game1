@@ -1,0 +1,52 @@
+concept_belt_of_strength <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Belt of Strength]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Пояс силы]
+      (*<-lang_ru;;*); 
+
+	<- item_dota2;
+
+	=>nrel_price: 450;
+	=>nrel_is_a_part: 
+		concept_power_treads;
+		concept_necronomicon;
+		concept_skull_basher;
+		concept_sange;
+		
+	=>nrel_passive_ability: passive_ability_belt_of_strength;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Пояс силы)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Ценный аксессуар для улучшения выживаемости..] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Пояс силы)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Данный предмет отлично подойдет героям, у которых основная характеристика сила, в ранней и средней стадии игры.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/belt_of_strength.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

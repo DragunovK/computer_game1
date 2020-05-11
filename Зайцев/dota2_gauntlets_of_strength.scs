@@ -1,0 +1,50 @@
+concept_gauntlets_of_strength <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Gauntlets of strength]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Рукавицы силы]
+      (*<-lang_ru;;*); 
+
+	<- item_dota2;
+
+	=>nrel_price: 145;
+	=>nrel_is_a_part: 
+		Bracer;
+		Soul_Ring;
+		
+	=>nrel_passive_ability: passive_ability_gauntlets_of_strength;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Руковицы силы)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Шипованные кожаные перчатки, которые дают грубую силу.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Руковицы силы)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Руковицы силы отлично подойдут героям в ранней стадии игры, у которых основная характеристика сила.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/gauntlets_of_strength.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

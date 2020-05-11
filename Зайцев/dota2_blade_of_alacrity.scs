@@ -1,0 +1,51 @@
+concept_blade_of_alacrity <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Blade of Alacrity]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Blade of Alacrity]
+      (*<-lang_en;;*);
+
+	<- item_dota2;
+
+	=>nrel_price: 1000;
+	=>nrel_is_a_part: 
+		concept_yasha;
+		concept_aghanims_scepter;
+		concept_diffusal_blade;
+		
+	=>nrel_passive_ability: passive_ability_blade_of_alacrity;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Blade of Alacrity)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Длинный клинок, наделенный магией времени.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Blade of Alacrity)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Данный предмет отлично подойдет героям, у которых основная характеристика ловкость, в средней стадии игры.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/blade_of_alacrity.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

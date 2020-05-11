@@ -1,0 +1,50 @@
+concept_band_of_elvenskin <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Band of Elvenskin]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Band of Elvenskin]
+      (*<-lang_en;;*); 
+
+	<- item_dota2;
+
+	=>nrel_price: 450;
+	=>nrel_is_a_part: 
+		concept_yasha;
+		concept_dragon_lance;
+		
+	=>nrel_passive_ability: passive_ability_band_of_elvenskin;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Band of Elvenskin)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Эластичная ткань часто используется из-за малого веса и облегчения передвижения.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Band of Elvenskin)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Данный предмет отлично подойдет героям, у которых основная характеристика ловкость, в ранней и средней стадии игры.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/band_of_elvenskin.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

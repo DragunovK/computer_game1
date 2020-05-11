@@ -1,0 +1,54 @@
+concept_ring_of_regen <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Ring of Regen]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Кольцо Регена]
+      (*<-lang_ru;;*);
+
+	<- item_dota2;
+
+	=>nrel_price: 225;
+	=>nrel_is_a_part: 
+		concept_headdress;
+		concept_force_staff;
+		concept_hood_of_defiance;
+		concept_soul_ring;
+		concept_tranquil_boots;
+		concept_meteor_hammer;
+		
+	=>nrel_passive_ability: passive_ability_ring_of_regen;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Кольцо Регена)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Гномы считают, что это кольцо приносит удачу.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Кольцо Регена)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Данный предмет отлично подойдет героям, у которых низкий хп реген в начале игры.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/ring_of_regen.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

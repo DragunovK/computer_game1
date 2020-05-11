@@ -1,0 +1,49 @@
+concept_mantle_of_intelligence <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Mantle of intelligence]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Мантия разума]
+      (*<-lang_ru;;*); 
+
+	<- item_dota2;
+
+	=>nrel_price: 145;
+	=>nrel_is_a_part: 
+		Null_Talisman;
+		
+	=>nrel_passive_ability: passive_ability_mantle_of_intelligence;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Мантия разума)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Прекрасная сапфировая мантия, которую королевы носили из поколения в поколение.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Мантия разума)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Мантия разума отлично подойдет героям в ранней стадии игры, у которых основная характеристика интеллект.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/mantle_of_intelligence.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

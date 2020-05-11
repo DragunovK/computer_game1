@@ -1,0 +1,6 @@
+concept_euls_scepter_of_divinity <- sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Eul's Scepter of Divinity](* <-lang_en; lang_ru;; *);
+
+	<- item_dota2;;

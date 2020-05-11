@@ -1,0 +1,16 @@
+nrel_lifetime
+
+	=> nrel_first_domain: item;
+	=> nrel_second_domain: lifetime; 
+
+	<-sc_node_norole_relation;
+	<-oriented_relation;
+	<-binary_relation;
+	<-antisymmetric_relation;
+	<-antireflexive_relation;
+
+=> nrel_main_idtf:	
+      [lifetime*]
+      (*<-lang_en;;*);
+      [Время жизни*]
+	(*<-lang_ru;;*);;

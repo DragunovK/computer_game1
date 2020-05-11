@@ -1,0 +1,55 @@
+concept_staff_of_wizardry <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Staff of Wizardry]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Staff of Wizardry]
+      (*<-lang_en;;*);
+
+	<- item_dota2;
+
+	=>nrel_price: 1000;
+	=>nrel_is_a_part: 
+		concept_aghanims_scepter;
+		concept_meteor_hammer;
+		concept_dagon;
+		concept_euls_scepter_of_divinity;
+		concept_force_staff;
+		concept_rod_of_atos;
+		concept_kaya;
+		
+	=>nrel_passive_ability: passive_ability_staff_of_wizardry;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Staff of Wizardry)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Посох, наделенный магическими силами, переданными от древних магов.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Staff of Wizardry)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Данный предмет отлично подойдет героям, у которых основная характеристика интеллект, в средней стадии игры.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/staff_of_wizardry.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

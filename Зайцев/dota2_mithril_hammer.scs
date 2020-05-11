@@ -1,0 +1,52 @@
+concept_mithril_hammer <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Mithril Hammer]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Mithril Hammer]
+      (*<-lang_en;;*);
+
+	<- item_dota2;
+
+	=>nrel_price: 1600;
+	=>nrel_is_a_part: 
+		concept_black_king_bar;
+		concept_maelstrom;
+		concept_desolator;
+		concept_skull_basher;
+		
+	=>nrel_passive_ability: passive_ability_mithril_hammer;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Mithril Hammer)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Молот, скованный из чистейшего мифрила.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Mithril Hammer)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Отлично подойдет керри героям, которым нужем дополнительный урон.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/mithril_hammer.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

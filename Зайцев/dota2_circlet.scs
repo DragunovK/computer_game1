@@ -1,0 +1,52 @@
+concept_circlet <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Circlet]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Браслет]
+      (*<-lang_ru;;*); 
+
+	<- item_dota2;
+
+	=>nrel_price: 155;
+	=>nrel_is_a_part: 
+		Null_Talisman;
+		concept_wraith_band;
+		Bracer;
+		Urn_of_Shadows;
+		
+	=>nrel_passive_ability: passive_ability_circlet;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Браслет)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Элегантный браслет, предназначенный для человеческих принцесс.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Браслет)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Браслет отлично подойдет всем героям в ранней стадии игры, не зависимо от их основной характеристики.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/circlet.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

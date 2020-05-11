@@ -1,0 +1,50 @@
+concept_cloak <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Cloak]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Плащ]
+      (*<-lang_en;;*);
+
+	<- item_dota2;
+
+	=>nrel_price: 550;
+	=>nrel_is_a_part: 
+		concept_hood_of_defiance;
+		concept_glimmer_cape;
+		
+	=>nrel_passive_ability: passive_ability_cloak;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Плащ)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Мантия, созданная из магического материала, который развеивает любое заклинание.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Плащ)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Отлично подойдет против героев, у которых есть магические способности.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/cloak.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

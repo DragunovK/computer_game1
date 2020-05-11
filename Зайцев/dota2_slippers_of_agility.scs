@@ -1,0 +1,49 @@
+concept_slippers_of_agility <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Slippers of Agility]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Тапочки ловкости]
+      (*<-lang_ru;;*); 
+
+	<- item_dota2;
+
+	=>nrel_price: 145;
+	=>nrel_is_a_part: 
+		concept_wraith_band;
+		
+	=>nrel_passive_ability: passive_ability_slippers_of_agility;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Тапочки ловкости)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Легкие тапочки, сделанные из кожи паука, обостряют ваше чутье.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Тапочки ловкости)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Тапочки ловкости отлично подойдут героям в ранней стадии игры, у которых основная характеристика ловкость.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/slippers_of_agility.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

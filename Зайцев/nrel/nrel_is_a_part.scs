@@ -1,0 +1,13 @@
+nrel_is_a_part
+
+	<-sc_node_norole_relation;
+	<-oriented_relation;
+	<-binary_relation;
+	<-antisymmetric_relation;
+	<-antireflexive_relation;
+
+=> nrel_main_idtf:	
+      [is_a_part*]
+      (*<-lang_en;;*);
+      [это часть*]
+	(*<-lang_ru;;*);;

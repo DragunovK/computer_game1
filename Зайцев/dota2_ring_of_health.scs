@@ -1,0 +1,51 @@
+concept_ring_of_health <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Ring of Health]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Кольцо Здоровья]
+      (*<-lang_ru;;*);
+
+	<- item_dota2;
+
+	=>nrel_price: 825;
+	=>nrel_is_a_part: 
+		concept_perseverance;
+		concept_vanguard;
+		concept_hood_of_defiance;
+		
+	=>nrel_passive_ability: passive_ability_ring_of_health;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Кольцо Здоровья)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Блестящее кольцо, найденное под трупом толстого полурослика.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Кольцо Здоровья)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Плотным героям, стремящимся доминировать на линии, отлично подойдет покупка раннего Ring of Health.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/ring_of_health.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

@@ -1,0 +1,50 @@
+concept_branch <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Iron Branch]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Ветка]
+      (*<-lang_ru;;*); 
+
+	<- item_dota2;
+
+	=>nrel_price: 50;
+	=>nrel_lifetime: 20;
+	=>nrel_range_of_application: 400;
+	=>nrel_is_a_part: concept_magic_wand;
+	=>nrel_passive_ability: passive_ability_branch;
+	=>nrel_active_ability: active_ability_branch;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(ветка)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [ветка дарует владельцу полезные качества благодаря свойствам железного дерева, от которого она отрублена.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Полезность ветки)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Ветка полезна в начале игры, первые 5-10 минут.] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/iron_branch.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

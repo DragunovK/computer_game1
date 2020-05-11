@@ -1,0 +1,52 @@
+concept_void_stone <- sc_node_not_relation;
+
+=> nrel_main_idtf:	
+      [Void Stone]
+      (*<-lang_en;;*);
+=> nrel_idtf:
+      [Пустотный камень]
+      (*<-lang_ru;;*);
+
+	<- item_dota2;
+
+	=>nrel_price: 825;
+	=>nrel_is_a_part: 
+		concept_perseverance;
+		concept_euls_scepter_of_divinity;
+		concept_aether_lens;
+		concept_scythe_of_vyse;
+		
+	=>nrel_passive_ability: passive_ability_void_stone;
+
+
+<- rrel_key_sc_element: ...
+(*
+	<- definition;;
+		=> nrel_main_idtf: [Опр.(Пустотный камень)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...
+		(*
+			-> [Это драгоценное кольцо, источающее энергию, раньше использовали для связи с нижними магическими мирами.] 
+			(* <-lang_ru;; *);;
+		*);;
+*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- statement;;
+	=> nrel_main_idtf: [Утв. (Пустотный камень)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> [Отлично подойдет всем героям, у которых основная характеристика интеллект] (* <- lang_ru;; *);;
+	*);;
+*);
+
+<- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://images/void_stone.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);;

@@ -1,0 +1,8 @@
+Urn_of_Shadows
+
+	<-sc_node_not_relation;
+
+	=> nrel_main_idtf:
+		[Urn of Shadows](* <-lang_en; lang_ru;; *);
+
+	<- item_dota2;;
