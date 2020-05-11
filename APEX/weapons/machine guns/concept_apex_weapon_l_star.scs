@@ -9,7 +9,7 @@ concept_apex_weapon_l_star
 => nrel_weapon_bullets_per_burst: [отсутствует];
 => nrel_apex_projectiles_per_shot: 1;
 => nrel_apex_projectiles_shape: [отсутствует];
-=> nrel_weapon_ammo_type: concept_apex_ammo_experimental_ammo;
+=> nrel_weapon_ammo_type: concept_apex_ammo_energy_ammo;
 
 => nrel_weapon_rate_of_fire: 720;
 => nrel_weapon_damage_per_second: 228;
@@ -66,10 +66,10 @@ concept_apex_weapon_l_star
 	=> nrel_main_idtf: [Опр. (ЭП L-STAR)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 	(*
-       		-> [ЭП L-STAR - пулемет, который использует специальноые энергетические патроны, имеет только автоматический тип стрельбы и его можно получить только из эирдропа.] (* <- lang_ru;; *);;
+       		-> [ЭП L-STAR - пулемет, который использует энергетические патроны, имеет только автоматический тип стрельбы и уникальную механику перегрева.] (* <- lang_ru;; *);;
 	*);;
 	<= nrel_using_constants: {
-		concept_apex_ammo_experimental_ammo;
+		concept_apex_ammo_energy_ammo;
 		concept_apex_weapon_machine_gun;
         concept_apex_fire_mode_auto
 	};;

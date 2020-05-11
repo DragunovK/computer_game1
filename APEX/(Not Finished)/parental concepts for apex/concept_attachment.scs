@@ -1,6 +1,6 @@
 concept_attachment
 => nrel_main_idtf: [attachment] (* <- lang_en;; *);
-=> nrel_main_idtf: [мод для оружия] (* <- lang_ru;; *);
+=> nrel_main_idtf: [модификация для оружия] (* <- lang_ru;; *);
 
 <= nrel_subdividing: ...
 (*

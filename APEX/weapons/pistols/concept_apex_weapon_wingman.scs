@@ -54,9 +54,9 @@ concept_apex_weapon_wingman
 
 //Different types of magazines | magazine capacity
 => nrel_apex_default_magazine_capacity: 4;
-=> nrel_apex_common_magazine_capacity: 6;
-=> nrel_apex_rare_magazine_capacity: 8;
-=> nrel_apex_epic_magazine_capacity: 10;
+=> nrel_apex_common_magazine_capacity: 5;
+=> nrel_apex_rare_magazine_capacity: 6;
+=> nrel_apex_epic_magazine_capacity: 7;
 
 
 //Attachments | hopups & others
