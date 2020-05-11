@@ -1,0 +1,106 @@
+nrel_armor_cathegory
+
+<-  sc_node_norole_relation;
+<-  antisymmetric_relation;
+<|- reflexive_relation;
+<- transitive_relation;
+<- oriented_relation;
+
+=>nrel_definitional_domain: concept_rainbow_six_siege;
+
+	 =>nrel_first_domain: operative;
+		nrel_second_domain: armor;
+=>nrel_main_idtf:
+ 	[категория брони*]  (* <- lang_ru;; *);
+	[armor cathegory* ] (* <- lang_en;; *);
+
+<-rrel_key_sc_element: ... (*
+ 	<- definition;;
+	=>nrel_main_idtf:
+	[Опр. (категория брони*)] (* <- lang_ru;; *);;
+	=>nrel_using_constants: {
+	concept_rainbow_six_siege;
+     operative
+};;
+<=nrel_sc_text_translation: ... (*
+	-> rrel_example:
+[Категория брони - показатель устойчивости и скорости оперативника в игре <b><sc_element sys_idtf="concept_rainbow_six_siege" > Rainbow Six: Siege </b></sc_element>](* <- lang_ru;; => nrel_format: format_html;; *);;
+   *);;
+  *);;
+
+armor
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[броня]
+	(*<-lang_ru;;*);
+	[armor]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (броня) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Броня - уровень устойчивости перед попаданиями ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+low_armor
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[низкая броня]
+	(*<-lang_ru;;*);
+	[low armor]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (низкая броня) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Низкая броня - позволяет быстро перемещаться по карте, но при этом выдерживать меньше урона] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+middle_armor
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[средняя броня]
+	(*<-lang_ru;;*);
+	[middle armor]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (средняя броня) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Средняя броня - позволяет сочетать маневреность по карте и выдерживать достаточно урона] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+high_armor
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[высокая броня]
+	(*<-lang_ru;;*);
+	[high armor]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (высокая броня) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Высокая броня - снижает маневренность и позволяет выдерживать больше урона] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+

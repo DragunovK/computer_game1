@@ -1,0 +1,76 @@
+special_device
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[спецустройство]
+	(*<-lang_ru;;*);
+	[special device]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (спецустройство) ] (*<-lang_ru;;*);;
+	=> nrel_using_constants: {
+    operative
+};;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Спецустройство - вспомогательное устройство <b><sc_element sys_idtf="operative" >  оперативника  </b></sc_element>, позволяющее поражать цели, закрывать видимость, разведывать местность и т.д. ] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+
+nrel_unique_device
+
+<-sc_node_norole_relation;
+
+<-  antisymmetric_relation;
+<|- reflexive_relation;
+<|- transitive_relation;
+<- oriented_relation;
+	 =>nrel_first_domain: operative;
+		nrel_second_domain: special_device;
+=> nrel_main_idtf:     
+	 [уникальное устройство оперативника*]   (*<-lang_ru;;*);
+      [unique operative device*]  (*<-lang_en;;*); 
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (уникальное устройство оперативника*)] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+		reinforcement
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Уникальное устройство оперативника - определенное устройство, привязанное к каждому оперативнику и воздействующее на разные механики игры, укрепления и разведку](*<-lang_ru;; *);;
+      *);;
+  *);;
+
+nrel_device
+
+<-sc_node_norole_relation;
+
+<-  antisymmetric_relation;
+<|- reflexive_relation;
+<|- transitive_relation;
+<- oriented_relation;
+	 =>nrel_first_domain: operative;
+		nrel_second_domain: special_device;
+=> nrel_main_idtf:     
+	 [устройство оперативника*]   (*<-lang_ru;;*);
+      [ device*]  (*<-lang_en;;*); 
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (устройство оперативника*)] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+		reinforcement
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Устройство оперативника - устройство, которое имеет оперативник и воздействующее на разные механики игры, укрепления и разведку](*<-lang_ru;; *);;
+      *);;
+  *);;
+

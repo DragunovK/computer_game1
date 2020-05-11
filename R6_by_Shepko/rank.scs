@@ -1,0 +1,42 @@
+nrel_player_rank
+
+<-  sc_node_norole_relation;
+<-  antisymmetric_relation;
+<|- reflexive_relation;
+<|- transitive_relation;
+<- oriented_relation;
+	 =>nrel_first_domain: player;
+		nrel_second_domain: rank;
+=> nrel_main_idtf:     
+	 [звание игрока*]   (*<-lang_ru;;*);
+      [player rank*]  (*<-lang_en;;*); 
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (звание игрока*)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Звание игрока - тэг, определяющий преобладание в игре над другими игроками ](*<-lang_ru;;  => nrel_format: format_html;;*);;
+      *);;
+  *);;
+
+rank
+
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+ 	[звание]
+	(*<-lang_ru;;*);
+	[rank]
+ 	(*<-lang_en;;*);
+
+<-rrel_key_sc_element: ... (*
+	<- definition;;
+	=>nrel_main_idtf :
+	[Опр. (спецустройство) ] (*<-lang_ru;;*);;
+	 <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+	[Звание - множество определенных маркировок игрока по мастерству в игре] (* <- lang_ru;; => nrel_format: format_html;; *);;
+    *);;
+ *);;
+

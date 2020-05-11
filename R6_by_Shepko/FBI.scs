@@ -1,0 +1,117 @@
+FBI_SWAT
+
+<-concept_rainbow_six_siege;
+<-special_forces;
+
+=>nrel_location: USA;;
+USA<-country;;
+
+FBI_SWAT<=nrel_inclusion: {
+rrel_defense_operative: Castle;
+rrel_defense_operative: Pulse;
+rrel_attack_operative: Thermite;
+rrel_attack_operative: Ash
+};;
+operative
+->Thermite;
+->Pulse;
+->Castle;
+->Ash;;
+
+Pulse
+
+=>nrel_armor_cathegory:low_armor;
+
+<=nrel_device: 
+	barbed_wire;
+<=nrel_device: 	
+	C4;
+
+
+<=nrel_unique_device:{
+rrel_scouting: heartbeat_sensor
+};;
+
+special_device
+	->heartbeat_sensor;;
+
+heartbeat_sensor
+=> nrel_main_idtf:     
+	 [датчик сердцебиения]   (*<-lang_ru;;*);;
+
+Ash
+
+=>nrel_armor_cathegory:low_armor;
+
+<=nrel_device:
+	breach_charge;
+<=nrel_device:
+	stun_grenade;
+
+<=nrel_unique_device:{
+rrel_wall_breacher: breaching_rounds
+};;
+
+special_device
+	->breaching_rounds;
+	->stun_grenade;;
+
+
+breaching_rounds
+=> nrel_main_idtf:     
+	 [пробивной снаряд]   (*<-lang_ru;;*);;
+
+stun_grenade
+=> nrel_main_idtf:     
+	 [светошумовая граната]   (*<-lang_ru;;*);;
+
+Castle
+
+=>nrel_armor_cathegory: middle_armor;
+
+<=nrel_device:
+	bulletproof_camera;
+<=nrel_device:
+	impact_grenade;
+
+<=nrel_unique_device:{
+rrel_reinforce_attachment: armor_panel
+};;
+
+special_device
+	->impact_grenade;
+	->bulletproof_camera;
+	->armor_panel;;
+
+armor_panel
+=> nrel_main_idtf:     
+	 [бронированная пластина]   (*<-lang_ru;;*);;
+
+bulletproof_camera
+=> nrel_main_idtf:     
+	 [пуленепробиваемая камера]   (*<-lang_ru;;*);;
+
+impact_grenade
+=> nrel_main_idtf:     
+	 [ударная граната]   (*<-lang_ru;;*);;
+
+Thermite
+
+=>nrel_armor_cathegory: middle_armor;
+
+<=nrel_device:
+	claymore;
+<=nrel_device:
+	stun_grenade;
+
+<=nrel_unique_device:{
+rrel_stuning: exothermic_charge
+};;
+
+special_device
+	->exothermic_charge;;
+
+exothermic_charge
+=> nrel_main_idtf:     
+	 [экхотермический заряд]   (*<-lang_ru;;*);;
+

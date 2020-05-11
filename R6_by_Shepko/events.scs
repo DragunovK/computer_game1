@@ -1,0 +1,45 @@
+nrel_kill
+
+<-  sc_node_norole_relation;
+<-  symmetric_relation;
+<- reflexive_relation;
+<|- transitive_relation;
+<- oriented_relation;
+	 =>nrel_first_domain: operative;
+		nrel_second_domain: operative;
+=> nrel_main_idtf:     
+	 [убийство*]   (*<-lang_ru;;*);
+      [kill*]  (*<-lang_en;;*); 
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (убийство*)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Убийство - вывод противника из игры ](*<-lang_ru;;  => nrel_format: format_html;;*);;
+      *);;
+  *);;
+
+rrel_event_time
+
+<-sc_node_role_relation;
+
+=> nrel_main_idtf:     
+	 [время события']   (*<-lang_ru;;*);
+      [event time']  (*<-lang_en;;*); 
+
+<- rrel_key_sc_element: ... (*
+    <- definition;;
+    => nrel_main_idtf:
+      [Опр. (время события')] (* <- lang_ru;; *);;
+ => nrel_using_constants: {
+	concept_rainbow_six_siege;
+	operative;
+	rrel_defense_operative
+    };;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+[Время события - время в которое произошло событие](*<-lang_ru;;  => nrel_format: format_html;;*);;
+      *);;
+  *);;
