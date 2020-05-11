@@ -45,6 +45,18 @@ function _initLinks() {
 
  }
 
+ function setStyles(el){
+	el.append(`<style style="display:none">
+	th, td {
+		padding: 0px 15px 0px 5px ;
+	  }
+	td {
+		width: 300px;
+		word-break: break-all;
+	}
+    </style>`);
+}
+
 
 function find(self,container) {
 
@@ -138,6 +150,7 @@ Example.PaintPanel.prototype = {
 		);
 		
 		container.append('<div><input type = "text" id = "search_text_field" placeholder = "Введите название игры" display:inline-block> <button id = "find_by_text" type = "button" display:inline-block>FIND</button></div>');
+		setStyles(container);
 
 
 		SCWeb.core.Server.resolveScAddr(['ui_menu_na_keynodes'], function (keynodes) {
