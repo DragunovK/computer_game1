@@ -20,7 +20,7 @@ game_character_thrall
 	*);;
 *);
 
-<- sc_node_not_relation;;
+<- concept_character;;
 
 game_character_tyrande
 
@@ -46,7 +46,7 @@ game_character_tyrande
 		*);;
 	*);;
 *);
-<- sc_node_not_relation;;
+<- concept_character;;
 
 game_character_sylvanas
 
@@ -69,7 +69,7 @@ game_character_sylvanas
 		*);;
 	*);;
 *);
-<- sc_node_not_relation;;
+<- concept_character;;
 
 game_character_sargeras
 
@@ -91,7 +91,7 @@ game_character_sargeras
 		*);;
 	*);;
 *);
-<- sc_node_not_relation;;
+<- concept_character;;
 
 game_character_illidan
 
@@ -114,4 +114,49 @@ game_character_illidan
 		*);;
 	*);;
 *);
-<- sc_node_not_relation;;
+<- concept_character;;
+
+
+game_character_nerzul
+
+=>nrel_fraction:concept_race_orc;
+=> nrel_main_idtf:
+      [Нер'зул]
+      (*<-lang_ru;;*);
+       [Ner'zhul]
+       (*<-lang_en;;*);
+=> nrel_idtf: [Нерзул] (*<-lang_en;;*);
+
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://nerzul.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+<- concept_character;;
+
+game_character_kiljaeden
+
+=>nrel_fraction:concept_the_burning_legion;
+=> nrel_main_idtf:
+      [Кил'джеден]
+      (*<-lang_ru;;*);
+       [Kil'jaeden]
+       (*<-lang_en;;*);
+<- rrel_key_sc_element: ...
+(*
+	<- illustration;;
+	<= nrel_sc_text_translation: ...
+	(*
+		-> rrel_example: "file://kiljaeden.jpg"
+		(*
+			=> nrel_format: format_jpg;;
+		*);;
+	*);;
+*);
+<- concept_character;;
