@@ -1,4 +1,4 @@
-format_ui_game_search_json.scs
+format_ui_game_search_json
 <- sc_node_not_relation;
 <- format;
 => nrel_main_idtf: 

@@ -1,0 +1,11 @@
+{
+     "sources": [
+        
+        "src/search_games-common.js",
+        "src/search_games-paintPanel.js"
+    ],
+
+    "component": "src/search_games-component.js",
+
+    "target": "static/components/js/search_games/search_games.js"
+}
