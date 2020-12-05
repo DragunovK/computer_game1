@@ -1,0 +1,418 @@
+scp_program -> proc_simular_game (*
+
+	-> rrel_params: .proc_simular_game_params (*
+	-> rrel_1: rrel_in: _parameter;;
+	-> rrel_2: rrel_in: _answer;;
+	*);;
+
+	-> rrel_operators: .proc_simular_game_operator_set (*
+
+	-> rrel_init: .simular_operator1 (*
+	<- genEl;;
+	-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _cur_game;;
+	=> nrel_goto: .simular_operator2;;
+	*);;
+
+	-> .simular_operator2 (*
+	<- varAssign;;
+	-> rrel_1: rrel_assign: rrel_scp_var: _cur_game;;
+	-> rrel_2: rrel_fixed: rrel_scp_const: _parameter;;
+	=> nrel_goto: .simular_operator2_5;;
+	*);;
+
+	-> .simular_operator2_5 (*
+	<- genElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_fixed: rrel_scp_const: _parameter;;
+	=> nrel_goto: .simular_operator3;;
+	*);;
+
+	-> .simular_operator3 (*
+	<- genEl;;
+	-> rrel_1: rrel_assign: rrel_node: rrel_scp_var: rrel_link: _kol_simular;;
+	=> nrel_goto: .pris_znach;;
+	*);;
+
+	-> .pris_znach (*
+	<- varAssign;;
+	-> rrel_1: rrel_assign: rrel_link: rrel_scp_var: _kol_simular;;
+	-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+	=> nrel_goto: .simular_operator3_1;;
+	*);;
+
+	-> .simular_operator3_1 (*
+	<- searchSetStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_const: concept_game_genre;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _genre;;
+	-> rrel_set_3: rrel_assign: rrel_scp_var: _genres;;
+	=> nrel_goto: .simular_operator3_2;;
+	*);;
+
+	-> .simular_operator3_2 (*
+	<- searchElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _genres;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _erase_arc;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _cur_genre;;
+	=> nrel_then: .simular_operator3_3;;
+	=> nrel_else: .simular_print_error;;
+	*);;
+
+	-> .simular_operator3_3 (*
+	<- eraseEl;;
+	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _erase_arc;;
+	=> nrel_goto: .simular_operator3_4;;
+	*);;
+
+	-> .simular_operator3_4 (*
+	<- searchElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _cur_genre;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: _cur_game;;
+	=> nrel_then: .simular_operator4_1;;
+	=> nrel_else: .simular_operator3_2;;
+	*);;
+
+	-> .simular_operator4_1 (*
+	<- searchSetStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_const: concept_setting;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _setting;;
+	-> rrel_set_3: rrel_assign: rrel_scp_var: _settings;;
+	=> nrel_goto: .simular_operator4_2;;
+	*);;
+
+	-> .simular_operator4_2 (*
+	<- searchElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _settings;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _erase_arc;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _cur_setting;;
+	=> nrel_then: .simular_operator4_3;;
+	=> nrel_else: .simular_print_error;;
+	*);;
+
+	-> .simular_operator4_3 (*
+	<- eraseEl;;
+	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _erase_arc;;
+	=> nrel_goto: .simular_operator4_4;;
+	*);;
+
+	-> .simular_operator4_4 (*
+	<- searchElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _cur_setting;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: _cur_game;;
+	=> nrel_then: .simular_operator4;;
+	=> nrel_else: .simular_operator4_2;;
+	*);;
+
+	-> .simular_operator4 (*
+	<- searchSetStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_const: concept_computer_game;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _game;;
+	-> rrel_set_3: rrel_assign: rrel_scp_var: _games;;
+	=> nrel_goto: .simular_operator5;;
+	*);;
+
+	-> .simular_operator5 (*
+	<- searchElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _games;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _erase_arc;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _game;;
+	=> nrel_then: .simular_operator5_5;;
+	=> nrel_else: .proc_simular_game_operator_return;;
+	*);;
+
+	-> .simular_operator5_5 (*
+	<- eraseEl;;
+	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _erase_arc;;
+	=> nrel_goto: .simular_operator5_5_1;;
+	*);;
+
+	-> .simular_operator5_5_1 (*
+	<- contAssign;;
+	-> rrel_1: rrel_fixed: rrel_link: rrel_scp_var: _kol_simular;;
+	-> rrel_2: rrel_fixed: rrel_scp_const: [0];;
+	=> nrel_goto: .simular_operator6;;
+	*);;
+
+	-> .simular_operator6 (*
+	<- searchElStr5;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _game;;
+	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _platform_game;;
+	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_platform;;
+	=> nrel_then: .simular_operator7;;
+	=> nrel_else: .simular_operator10;;
+	*);;
+
+	-> .simular_operator7 (*
+	<- searchElStr5;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _cur_game;;
+	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _platform_cur_game;;
+	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_platform;;
+	=> nrel_then: .simular_operator8;;
+	=> nrel_else: .simular_operator10;;
+	*);;
+	
+	-> .simular_operator8 (*
+	<- ifCoin;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _platform_game;;
+	-> rrel_2: rrel_fixed: rrel_scp_var: _platform_cur_game;;
+	=> nrel_then: .simular_operator9;;
+	=> nrel_else: .simular_operator10;;
+	*);;
+	
+	-> .simular_operator9 (*
+	<- contAdd;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _kol_simular;;
+	-> rrel_2: rrel_fixed: rrel_scp_var: _kol_simular;;
+	-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+	=> nrel_goto: .simular_operator10;;
+	*);;
+
+	-> .simular_operator10 (*
+	<- searchElStr5;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _game;;
+	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _publisher_game;;
+	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_publisher;;
+	=> nrel_then: .simular_operator11;;
+	=> nrel_else: .simular_operator14;;
+	*);;
+
+	-> .simular_operator11 (*
+	<- searchElStr5;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _cur_game;;
+	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _publisher_cur_game;;
+	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_publisher;;
+	=> nrel_then: .simular_operator12;;
+	=> nrel_else: .simular_operator14;;
+	*);;
+	
+	-> .simular_operator12 (*
+	<- ifCoin;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _publisher_game;;
+	-> rrel_2: rrel_fixed: rrel_scp_var: _publisher_cur_game;;
+	=> nrel_then: .simular_operator13;;
+	=> nrel_else: .simular_operator14;;
+	*);;
+	
+	-> .simular_operator13 (*
+	<- contAdd;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _kol_simular;;
+	-> rrel_2: rrel_fixed: rrel_scp_var: _kol_simular;;
+	-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+	=> nrel_goto: .simular_operator14;;
+	*);;
+
+	
+	-> .simular_operator14 (*
+	<- searchElStr5;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _game;;
+	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _developer_game;;
+	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_developer;;
+	=> nrel_then: .simular_operator15;;
+	=> nrel_else: .simular_operator18;;
+	*);;
+
+	-> .simular_operator15 (*
+	<- searchElStr5;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _cur_game;;
+	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _developer_cur_game;;
+	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_developer;;
+	=> nrel_then: .simular_operator16;;
+	=> nrel_else: .simular_operator18;;
+	*);;
+	
+	-> .simular_operator16 (*
+	<- ifCoin;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _developer_game;;
+	-> rrel_2: rrel_fixed: rrel_scp_var: _developer_cur_game;;
+	=> nrel_then: .simular_operator17;;
+	=> nrel_else: .simular_operator18;;
+	*);;
+	
+	-> .simular_operator17 (*
+	<- contAdd;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _kol_simular;;
+	-> rrel_2: rrel_fixed: rrel_scp_var: _kol_simular;;
+	-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+	=> nrel_goto: .simular_operator18;;
+	*);;
+
+
+	-> .simular_operator18 (*
+	<- searchElStr5;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _game;;
+	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _engine_game;;
+	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_game_engine;;
+	=> nrel_then: .simular_operator19;;
+	=> nrel_else: .simular_operator22;;
+	*);;
+
+	-> .simular_operator19 (*
+	<- searchElStr5;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _cur_game;;
+	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _engine_cur_game;;
+	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_game_engine;;
+	=> nrel_then: .simular_operator20;;
+	=> nrel_else: .simular_operator22;;
+	*);;
+	
+	-> .simular_operator20 (*
+	<- ifCoin;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _engine_game;;
+	-> rrel_2: rrel_fixed: rrel_scp_var: _engine_cur_game;;
+	=> nrel_then: .simular_operator21;;
+	=> nrel_else: .simular_operator22;;
+	*);;
+	
+	-> .simular_operator21 (*
+	<- contAdd;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _kol_simular;;
+	-> rrel_2: rrel_fixed: rrel_scp_var: _kol_simular;;
+	-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+	=> nrel_goto: .simular_operator22;;
+	*);;
+
+	-> .simular_operator22 (*
+	<- searchElStr5;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _game;;
+	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _camera_game;;
+	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_game_camera;;
+	=> nrel_then: .simular_operator23;;
+	=> nrel_else: .simular_operator26;;
+	*);;
+
+	-> .simular_operator23 (*
+	<- searchElStr5;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _cur_game;;
+	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _camera_cur_game;;
+	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_game_camera;;
+	=> nrel_then: .simular_operator24;;
+	=> nrel_else: .simular_operator26;;
+	*);;
+	
+	-> .simular_operator24 (*
+	<- ifCoin;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _camera_game;;
+	-> rrel_2: rrel_fixed: rrel_scp_var: _camera_cur_game;;
+	=> nrel_then: .simular_operator25;;
+	=> nrel_else: .simular_operator26;;
+	*);;
+	
+	-> .simular_operator25 (*
+	<- contAdd;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _kol_simular;;
+	-> rrel_2: rrel_fixed: rrel_scp_var: _kol_simular;;
+	-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+	=> nrel_goto: .simular_operator26;;
+	*);;
+
+	-> .simular_operator26 (*
+	<- searchElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _cur_genre;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: _game;;
+	=> nrel_then: .simular_operator27;;
+	=> nrel_else: .simular_operator28;;
+	*);;
+
+	-> .simular_operator27 (*
+	<- contAdd;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _kol_simular;;
+	-> rrel_2: rrel_fixed: rrel_scp_var: _kol_simular;;
+	-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+	=> nrel_goto: .simular_operator28;;
+	*);;
+
+	-> .simular_operator28 (*
+	<- searchElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _cur_setting;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: _game;;
+	=> nrel_then: .simular_operator29;;
+	=> nrel_else: .simular_operator100;;
+	*);;
+
+
+	-> .simular_operator29 (*
+	<- contAdd;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _kol_simular;;
+	-> rrel_2: rrel_fixed: rrel_scp_var: _kol_simular;;
+	-> rrel_3: rrel_fixed: rrel_scp_const: [1];;
+	=> nrel_goto: .simular_operator100;;
+	*);;
+
+	-> .simular_operator100 (*
+	<- ifGr;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _kol_simular;;
+	-> rrel_2: rrel_fixed: rrel_scp_const: [3];;
+	=> nrel_then: .simular_operator100_5;;
+	=> nrel_else: .simular_operator5;;
+	*);;
+
+	-> .simular_operator100_5 (*
+	<- ifCoin;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _game;;
+	-> rrel_2: rrel_fixed: rrel_scp_var: _parameter;;
+	=> nrel_then: .simular_operator5;;
+	=> nrel_else: .simular_operator101;;
+	*);;
+	
+	-> .simular_operator101 (*
+	<- genElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: _game;;
+	=> nrel_goto: .simular_operator102;;
+	*);;
+
+	-> .simular_operator102 (*
+	<- genElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_const: _parameter;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _add_arc;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: _game;;
+	=> nrel_goto: .simular_operator103;;
+	*);;
+
+	-> .simular_operator103 (*
+	<- genElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: _add_arc;;
+	=> nrel_goto: .simular_operator5;;
+	*);;
+
+	-> .simular_print_error (*
+	<- print;;
+	-> rrel_1: rrel_fixed: rrel_scp_const: [error];;
+	=> nrel_goto: .proc_simular_game_operator_return;;
+	*);;
+
+	-> .proc_simular_game_operator_return (*
+	<- return;;
+	*);;
+	*);;
+*);;
