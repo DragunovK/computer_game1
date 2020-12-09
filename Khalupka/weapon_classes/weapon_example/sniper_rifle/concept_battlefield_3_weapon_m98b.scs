@@ -47,7 +47,7 @@ concept_battlefield_3_weapon_m98b
 
 
 => nrel_battlefield_3_weapon_max_damage: 100.0;
-=> nrel_battlefield_3_weapon_max_damage: 59.0;
+=> nrel_battlefield_3_weapon_min_damage: 59.0;
 => nrel_battlefield_3_weapon_tactical_reload_time: 2.90;
 => nrel_battlefield_3_weapon_full_reload_time: 4.80;
 => nrel_battlefield_3_weapon_magazine_capacity: 5;

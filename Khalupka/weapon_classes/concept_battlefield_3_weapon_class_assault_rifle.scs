@@ -80,9 +80,5 @@ concept_battlefield_3_weapon_class_assault_rifle
 	};;
 *);
 
-
-=> nrel_battlefield_3_weapon_max_damage: 25.0;
-=> nrel_battlefield_3_weapon_max_damage: 18.4;
-
 <- sc_node_not_relation;;
 

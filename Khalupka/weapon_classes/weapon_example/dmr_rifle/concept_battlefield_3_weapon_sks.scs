@@ -51,7 +51,7 @@ concept_battlefield_3_weapon_sks
 
 
 => nrel_battlefield_3_weapon_max_damage: 34.0;
-=> nrel_battlefield_3_weapon_max_damage: 30.0;
+=> nrel_battlefield_3_weapon_min_damage: 30.0;
 => nrel_battlefield_3_weapon_tactical_reload_time: 2.30;
 => nrel_battlefield_3_weapon_full_reload_time: 3.50;
 => nrel_battlefield_3_weapon_magazine_capacity: 45;
