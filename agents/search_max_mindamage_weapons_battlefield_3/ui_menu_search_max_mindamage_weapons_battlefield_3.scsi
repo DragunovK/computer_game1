@@ -1,0 +1,26 @@
+ui_menu_search_min_damage_weapons_battlefield_3
+
+<- ui_user_command_class_atom; 
+ui_user_command_class_view_kb;
+
+=> nrel_main_idtf: 
+	[Найти оружие с мин уроном больше заданного] (* <- lang_ru;; *);
+	[Request search] (* <- lang_en;; *);
+
+=> ui_nrel_command_template:
+[*
+		question_search_battlefield3 _-> ._question_search_battlefield3_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._question_search_battlefield3_instance _<- question;;
+	*];
+
+=> ui_nrel_command_lang_template: 
+	[Запрос поиска: $ui_arg_1] (* <- lang_ru;; *);
+	[Request of search: $ui_arg_1] (* <- lang_en;; *);;
+
+/*ui_main_menu <= nrel_ui_commands_decomposition: .ui_main_menu_decomposition
+(*
+	-> ui_menu_search_equipment;;
+*);;*/

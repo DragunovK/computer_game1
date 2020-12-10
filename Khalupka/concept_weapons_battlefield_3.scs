@@ -4,7 +4,7 @@ concept_battlefield_3_weapons
 
 <- concept_weapon;
 
-<= nrel_subdividing: ...
+<= nrel_subdividing: weapon_classes_bf3
 (*
 	-> concept_battlefield_3_weapon_class_assault_rifle;;
 	-> concept_battlefield_3_weapon_class_carbine;;

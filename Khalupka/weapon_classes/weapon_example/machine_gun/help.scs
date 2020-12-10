@@ -1,0 +1,13 @@
+59.0 => nrel_damage_bf3: [25];;
+100.0 => nrel_damage_bf3: [100];;
+14.3 => nrel_damage_bf3: [14.3];;
+18.4 => nrel_damage_bf3: [18.4];;
+75.0 => nrel_damage_bf3: [75.0];;
+55.0 => nrel_damage_bf3: [55.0];;
+25.0 => nrel_damage_bf3: [25];;
+17.0 => nrel_damage_bf3: [17];;
+11.0 => nrel_damage_bf3: [11];;
+34.0 => nrel_damage_bf3: [34];;
+20.0 => nrel_damage_bf3: [20];;
+
+nrel_damage_bf3 <- sc_node_norole_relation;;

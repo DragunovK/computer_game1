@@ -51,7 +51,7 @@ concept_battlefield_3_weapon_scarh
 											 concept_battlefield_3_weapon_equipment_flame_arrester;
 
 => nrel_battlefield_3_weapon_max_damage: 30.0;
-=> nrel_battlefield_3_weapon_max_damage: 17.0;
+=> nrel_battlefield_3_weapon_min_damage: 17.0;
 => nrel_battlefield_3_weapon_tactical_reload_time: 2.25;
 => nrel_battlefield_3_weapon_full_reload_time: 2.85;
 => nrel_battlefield_3_weapon_magazine_capacity: 20;
