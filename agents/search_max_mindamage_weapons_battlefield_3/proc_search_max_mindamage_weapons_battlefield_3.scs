@@ -1,0 +1,223 @@
+scp_program -> proc_search_min_damage_weapons_battlefield_3 (*
+
+	-> rrel_params: .proc_search_min_damage_weapons_battlefield_3_params (*
+	-> rrel_1: rrel_in: _parameter;;
+	-> rrel_2: rrel_in: _answer;;
+	*);;
+
+	-> rrel_operators: .proc_search_min_damage_weapons_battlefield_3_operator_set (*
+
+
+	-> rrel_init: .battlefield3_operator1 (*
+	<- genEl;;
+	-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _cur_damage;;
+	=> nrel_goto: .battlefield3_operator1_2;;
+	*);;
+
+	-> .battlefield3_operator1_2 (*
+	<- genElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _main_arc;;
+	-> rrel_3: rrel_fixed: rrel_scp_const: set_battlefield3;;
+	=>nrel_goto: .battlefield3_operator1_3;;
+	*);;
+
+	-> .battlefield3_operator1_3 (*
+	<- genElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _main_arc;;
+	=> nrel_goto: .battlefield3_operator2;;
+	*);;
+
+	-> .battlefield3_operator2 (*
+	<- varAssign;;
+	-> rrel_1: rrel_assign: rrel_scp_var: _cur_damage;;
+	-> rrel_2: rrel_fixed: rrel_scp_const: _parameter;;
+	=> nrel_goto: .battlefield3_operator3_1;;
+	*);;
+	
+	-> .battlefield3_operator3_1 (*
+	<- searchSetStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_const: weapon_classes_bf3;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _equipment;;
+	-> rrel_set_3: rrel_assign: rrel_scp_var: _equipments;;
+	=> nrel_goto: .battlefield3_operator3_2;;
+	*);;
+
+	-> .battlefield3_operator3_2 (*
+	<- searchElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _equipments;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _erase_arc;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _equipment;;
+	=> nrel_then: .battlefield3_operator3_3;;
+	=> nrel_else: .proc_search_min_damage_weapons_battlefield_3_operator_return;;
+	*);;
+
+	-> .battlefield3_operator3_3 (*
+	<- eraseEl;;
+	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _erase_arc;;
+	=> nrel_goto: .battlefield3_operator3;;
+	*);;
+
+	-> .battlefield3_operator3 (*
+	<- searchSetStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _equipment;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _weapon;;
+	-> rrel_set_3: rrel_assign: rrel_scp_var: _weapons;;
+	=> nrel_then: .battlefield3_operator4;;
+	=> nrel_else: .battlefield3_operator3_2;;
+	*);;
+
+	-> .battlefield3_operator4 (*
+	<- searchElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _weapons;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _erase_arc;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _weapon;;
+	=> nrel_then: .battlefield3_operator5;;
+	=> nrel_else: .battlefield3_operator3_2;;
+	*);;
+
+	-> .battlefield3_operator5 (*
+	<- eraseEl;;
+	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _erase_arc;;
+	=> nrel_goto: .battlefield3_operator6;;
+	*);;
+
+//    -> .battlefield3_operator6_1 (*
+//	<- searchSetStr3;;
+//	-> rrel_1: rrel_fixed: rrel_scp_const: quality_etg;;
+//	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+//	-> rrel_3: rrel_assign: rrel_scp_var: _quality;;
+//	-> rrel_set_3: rrel_assign: rrel_scp_var: _qualities;;
+//	=> nrel_then: .battlefield3_operator6_2;;
+//	=> nrel_else: .battlefield3_operator4;;
+//    *);;
+
+//    -> .battlefield3_operator6_2 (*
+//	<- searchElStr3;;
+//	-> rrel_1: rrel_fixed: rrel_scp_var: _qualities;; 
+//	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _erase_arc;;
+//	-> rrel_3: rrel_assign: rrel_scp_var: _quality;;
+//	=> nrel_then: .battlefield3_operator6_3;;
+//	=> nrel_else: .battlefield3_operator4;;
+ //   *);;
+
+/*	-> .battlefield3_operator6_3 (*
+	<- eraseEl;;
+	-> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _erase_arc;;
+	=> nrel_goto: .battlefield3_operator6;;
+	*);;
+*/
+	-> .battlefield3_operator6 (*
+	<- searchElStr5;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _weapon;; 
+	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc4;;
+	-> rrel_3: rrel_assign: rrel_scp_var: _max_d;;
+	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc5;;
+	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_battlefield_3_weapon_min_damage;;
+	=> nrel_then: .battlefield3_operator7;;
+	=> nrel_else: .battlefield3_operator4;;
+	*);;
+
+	-> .battlefield3_operator7 (*
+	<- searchElStr5;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _max_d;;
+	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _d_number;;
+	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_damage_bf3;;
+	=> nrel_then: .battlefield3_operator8;;
+	=> nrel_else: .battlefield3_operator4;;
+	*);;
+
+	-> .battlefield3_operator8 (*
+	<- searchElStr5;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _cur_damage;;
+	-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_assign: rrel_scp_var: rrel_link: _cur_d_number;;
+	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_damage_bf3;;
+	=> nrel_then: .battlefield3_operator9;;
+	=> nrel_else: .battlefield3_operator4;;
+	*);;
+
+	-> .battlefield3_operator9 (*
+	<- ifGr;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _d_number;;
+	-> rrel_2: rrel_fixed: rrel_scp_var: _cur_d_number;;
+	=> nrel_then: .battlefield3_operator10_1;;
+	=> nrel_else: .battlefield3_operator4;;
+	*);;
+
+	-> .battlefield3_operator10_1 (*
+	<- genElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_const: set_battlefield3;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _wbf3_arc;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: _weapon;;
+	=>nrel_goto: .battlefield3_operator10_2;;
+	*);;
+
+	-> .battlefield3_operator10_2 (*
+	<- genElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc6;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: _wbf3_arc;;
+	=> nrel_goto: .battlefield3_operator10_5;;
+	*);;
+
+/*	-> .battlefield3_operator10_3 (*
+	<- genElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _q_arc;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: _quality;;
+	=> nrel_goto: .battlefield3_operator10_4;;
+	*);;
+
+	-> .battlefield3_operator10_4 (*
+	<- genElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc6;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: _q_arc;;
+	=> nrel_goto: .battlefield3_operator10_5;;
+	*);;
+*/
+	-> .battlefield3_operator10_5 (*
+	<- genElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _weaponbf3_arc;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: _weapon;;
+	=> nrel_goto: .battlefield3_operator10;;
+	*);;
+
+/*	-> .battlefield3_operator10_6 (*
+	<- searchElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _quality;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _qual_weapon_arc;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: _weapon;;
+	=> nrel_goto: .battlefield3_operator10_7;;
+	*);;
+
+	-> .battlefield3_operator10_7 (*
+	<- genElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _qual_weapon_arc;;
+	=> nrel_goto: .battlefield3_operator10;;
+	*);;
+*/
+	-> .battlefield3_operator10 (*
+	<- genElStr3;;
+	-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+	-> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _weaponbf3_arc;;
+	=> nrel_goto: .battlefield3_operator4;;
+	*);;
+
+	-> .proc_search_min_damage_weapons_battlefield_3_operator_return (*
+	<- return;;
+	*);;
+*);;
+*);;

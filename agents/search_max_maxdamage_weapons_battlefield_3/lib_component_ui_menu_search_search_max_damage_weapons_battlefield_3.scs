@@ -1,0 +1,12 @@
+lib_component_ui_menu_search_max_damage_weapons_battlefield_3
+=> nrel_main_idtf:
+	[Компонент библиотеки. Команда пользовательского интерфейса для поиска макс оружия battlefield3]
+	(* <- lang_ru;; *);
+	[Library component. User interface command of search the max weapon battlefield3]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+<- library_of_atomic_reusable_components;
+<- library_of_reusable_components_of_knowledge_bases;;
+
+lib_component_ui_menu_find_publisher  = [*^"file://ui_menu_search_max_damage_weapons_battlefield_3.scsi"*];; 

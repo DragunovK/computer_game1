@@ -43,7 +43,7 @@ concept_battlefield_3_weapon_m416
 					     concept_battlefield_3_weapon_equipment_flame_arrester;
 
 => nrel_battlefield_3_weapon_max_damage: 25.0;
-=> nrel_battlefield_3_weapon_max_damage: 18.4;
+=> nrel_battlefield_3_weapon_min_damage: 18.4;
 => nrel_battlefield_3_weapon_tactical_reload_time: 1.90;
 => nrel_battlefield_3_weapon_full_reload_time: 2.50;
 => nrel_battlefield_3_weapon_magazine_capacity: 30;
