@@ -1,0 +1,10 @@
+concept_computer_game_resident_evil_2_2019
+
+	=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_core_i5_4460;;
+		-> rrel_gpu: geforce_gtx_760;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [8];;
+		*);;
+	*);;

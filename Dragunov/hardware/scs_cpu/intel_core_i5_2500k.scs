@@ -1,0 +1,5 @@
+intel_core_i5_2500k <- concept_cpu;
+=> nrel_main_idtf: [Intel Core i5 2500k](*<- lang_ru;;*);
+=> nrel_main_idtf: [Intel Core i5 2500k](*<- lang_en;;*);
+=> nrel_logical_cores_count: [4];
+=> nrel_clock_mhz: [3700];;

@@ -1,0 +1,4 @@
+geforce_gtx_titan_z <- concept_video_adapter;
+=> nrel_main_idtf: [GeForce GTX Titan Z](*<- lang_ru;;*);
+=> nrel_main_idtf: [GeForce GTX Titan Z](*<- lang_en;;*);
+=> nrel_tflops: [8.122];;

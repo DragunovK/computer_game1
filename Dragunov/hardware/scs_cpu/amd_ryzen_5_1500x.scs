@@ -1,0 +1,5 @@
+amd_ryzen_5_1500x <- concept_cpu;
+=> nrel_main_idtf: [AMD Ryzen 5 1500X](*<- lang_ru;;*);
+=> nrel_main_idtf: [AMD Ryzen 5 1500X](*<- lang_en;;*);
+=> nrel_logical_cores_count: [8];
+=> nrel_clock_mhz: [3700];;

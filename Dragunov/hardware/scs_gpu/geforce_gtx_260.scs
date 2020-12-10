@@ -1,0 +1,4 @@
+geforce_gtx_260 <- concept_video_adapter;
+=> nrel_main_idtf: [GeForce GTX 260](*<- lang_ru;;*);
+=> nrel_main_idtf: [GeForce GTX 260](*<- lang_en;;*);
+=> nrel_tflops: [0.715392];;

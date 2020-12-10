@@ -1,0 +1,10 @@
+computer_game_ori_and_the_blind_forest
+
+	=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_core_2_duo_e4500;;
+		-> rrel_gpu: geforce_gt_240;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [4];;
+		*);;
+	*);;

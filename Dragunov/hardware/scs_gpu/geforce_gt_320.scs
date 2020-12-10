@@ -1,0 +1,4 @@
+geforce_gt_320 <- concept_video_adapter;
+=> nrel_main_idtf: [GeForce GT 320](*<- lang_ru;;*);
+=> nrel_main_idtf: [GeForce GT 320](*<- lang_en;;*);
+=> nrel_tflops: [0.28123000000000004];;

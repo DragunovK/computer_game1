@@ -1,0 +1,5 @@
+intel_core_i7_6820hk <- concept_cpu;
+=> nrel_main_idtf: [Intel Core i7-6820HK](*<- lang_ru;;*);
+=> nrel_main_idtf: [Intel Core i7-6820HK](*<- lang_en;;*);
+=> nrel_logical_cores_count: [8];
+=> nrel_clock_mhz: [3600];;

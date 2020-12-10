@@ -1,0 +1,10 @@
+concept_computer_game_resident_evil_5
+
+=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_core_i5_3570;;
+		-> rrel_gpu: geforce_gtx_650;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [4];;
+		*);;
+*);;

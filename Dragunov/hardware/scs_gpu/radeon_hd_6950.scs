@@ -1,0 +1,4 @@
+radeon_hd_6950 <- concept_video_adapter;
+=> nrel_main_idtf: [Radeon HD 6950](*<- lang_ru;;*);
+=> nrel_main_idtf: [Radeon HD 6950](*<- lang_en;;*);
+=> nrel_tflops: [2.2528];;

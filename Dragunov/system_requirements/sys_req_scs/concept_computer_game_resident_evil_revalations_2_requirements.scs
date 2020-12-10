@@ -1,0 +1,10 @@
+concept_computer_game_resident_evil_revalations_2
+
+	=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_core_2_duo_e6700;;
+		-> rrel_gpu: geforce_8800_gts;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [2];;
+		*);;
+	*);;

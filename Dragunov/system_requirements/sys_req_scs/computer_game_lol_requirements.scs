@@ -1,0 +1,10 @@
+computer_game_lol
+
+=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_pentium_4;;
+		-> rrel_gpu: radeon_hd_5670;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [2];;
+		*);;
+*);;

@@ -1,0 +1,10 @@
+computer_game_hon
+
+=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_core_2_duo_e4400;;
+		-> rrel_gpu: geforce_7800_gtx;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [3];;
+		*);;
+*);;

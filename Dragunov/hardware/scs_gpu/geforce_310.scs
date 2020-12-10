@@ -1,0 +1,4 @@
+geforce_310 <- concept_video_adapter;
+=> nrel_main_idtf: [GeForce 310](*<- lang_ru;;*);
+=> nrel_main_idtf: [GeForce 310](*<- lang_en;;*);
+=> nrel_tflops: [0.06729600000000001];;

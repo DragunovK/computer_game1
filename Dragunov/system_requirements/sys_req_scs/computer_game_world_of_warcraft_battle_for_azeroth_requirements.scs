@@ -1,0 +1,10 @@
+computer_game_world_of_warcraft_battle_for_azeroth
+
+=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: fx_8300;;
+		-> rrel_gpu: geforce_gtx_760;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [4];;
+		*);;
+*);;

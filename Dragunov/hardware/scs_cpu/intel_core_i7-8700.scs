@@ -1,0 +1,5 @@
+intel_core_i7_8700 <- concept_cpu;
+=> nrel_main_idtf: [Intel Core i7-8700](*<- lang_ru;;*);
+=> nrel_main_idtf: [Intel Core i7-8700](*<- lang_en;;*);
+=> nrel_logical_cores_count: [12];
+=> nrel_clock_mhz: [4600];;

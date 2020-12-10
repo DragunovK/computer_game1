@@ -1,0 +1,4 @@
+geforcertx_2060_super <- concept_video_adapter;
+=> nrel_main_idtf: [GeForceRTX 2060 Super](*<- lang_ru;;*);
+=> nrel_main_idtf: [GeForceRTX 2060 Super](*<- lang_en;;*);
+=> nrel_tflops: [7.181];;

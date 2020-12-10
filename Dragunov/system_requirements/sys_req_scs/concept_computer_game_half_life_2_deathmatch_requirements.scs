@@ -1,0 +1,10 @@
+concept_computer_game_half_life_2_deathmatch
+
+=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_pentium_4;;
+		-> rrel_gpu: radeon_hd_4350;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [0.512];;
+		*);;
+*);;

@@ -1,0 +1,3 @@
+rrel_cpu <- sc_node_role_relation;
+=> nrel_main_idtf: [ЦП'] (* <- lang_ru;; *);
+=> nrel_main_idtf: [CPU'] (* <- lang_en;; *);;

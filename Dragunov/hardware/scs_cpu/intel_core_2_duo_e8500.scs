@@ -1,0 +1,5 @@
+intel_core_2_duo_e8500 <- concept_cpu;
+=> nrel_main_idtf: [Intel Core 2 Duo E8500](*<- lang_ru;;*);
+=> nrel_main_idtf: [Intel Core 2 Duo E8500](*<- lang_en;;*);
+=> nrel_logical_cores_count: [2];
+=> nrel_clock_mhz: [3160];;

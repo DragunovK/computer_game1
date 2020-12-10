@@ -1,0 +1,5 @@
+amd_athlon_240ge <- concept_cpu;
+=> nrel_main_idtf: [AMD Athlon 240GE](*<- lang_ru;;*);
+=> nrel_main_idtf: [AMD Athlon 240GE](*<- lang_en;;*);
+=> nrel_logical_cores_count: [4];
+=> nrel_clock_mhz: [3500];;

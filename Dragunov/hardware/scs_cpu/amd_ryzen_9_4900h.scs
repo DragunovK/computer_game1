@@ -1,0 +1,5 @@
+amd_ryzen_9_4900h <- concept_cpu;
+=> nrel_main_idtf: [AMD Ryzen 9 4900H](*<- lang_ru;;*);
+=> nrel_main_idtf: [AMD Ryzen 9 4900H](*<- lang_en;;*);
+=> nrel_logical_cores_count: [16];
+=> nrel_clock_mhz: [4400];;

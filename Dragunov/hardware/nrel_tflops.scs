@@ -1,0 +1,5 @@
+
+nrel_tflops <- sc_node_norole_relation;
+=> nrel_main_idtf: [производительность (TFLOPS)*](*<- lang_ru;;*);
+=> nrel_main_idtf: [performance (TFLOPS)*](*<- lang_en;;*);;
+

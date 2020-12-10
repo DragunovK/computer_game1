@@ -1,0 +1,5 @@
+fx_6350 <- concept_cpu;
+=> nrel_main_idtf: [FX-6350](*<- lang_ru;;*);
+=> nrel_main_idtf: [FX-6350](*<- lang_en;;*);
+=> nrel_logical_cores_count: [6];
+=> nrel_clock_mhz: [4200];;

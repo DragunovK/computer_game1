@@ -1,0 +1,4 @@
+geforce_fx_5200 <- concept_gpu;
+=> nrel_main_idtf: [geforce fx 5200](*<- lang_ru;;*);
+=> nrel_main_idtf: [geforce fx 5200](*<- lang_en;;*);
+=> nrel_tflops: [0.0];;

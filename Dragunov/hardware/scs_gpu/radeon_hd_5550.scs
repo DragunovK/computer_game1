@@ -1,0 +1,4 @@
+radeon_hd_5550 <- concept_video_adapter;
+=> nrel_main_idtf: [Radeon HD 5550](*<- lang_ru;;*);
+=> nrel_main_idtf: [Radeon HD 5550](*<- lang_en;;*);
+=> nrel_tflops: [0.352];;

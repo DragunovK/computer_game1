@@ -1,0 +1,4 @@
+geforce_gtx_titan_black <- concept_video_adapter;
+=> nrel_main_idtf: [GeForce GTX Titan Black](*<- lang_ru;;*);
+=> nrel_main_idtf: [GeForce GTX Titan Black](*<- lang_en;;*);
+=> nrel_tflops: [5.121];;

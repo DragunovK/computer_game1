@@ -1,0 +1,10 @@
+computer_game_warcraft_2_tides_of_darkness
+
+=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_pentium_3;;
+		-> rrel_gpu: geforce_fx_5200;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [0.256];;
+		*);;
+*);;

@@ -1,0 +1,10 @@
+computer_game_call_of_duty
+
+=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: fx_6300;;
+		-> rrel_gpu: geforce_gtx_670;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [8];;
+		*);;
+*);;

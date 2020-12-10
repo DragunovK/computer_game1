@@ -1,0 +1,10 @@
+computer_game_just_cause_1
+
+=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_pentium_4;;
+		-> rrel_gpu: geforce_7600_gt;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [0.256];;
+		*);;
+*);;

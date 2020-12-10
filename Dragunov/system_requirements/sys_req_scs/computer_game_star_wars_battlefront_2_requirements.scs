@@ -1,0 +1,10 @@
+computer_game_star_wars_battlefront_2
+
+=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_core_i5_6600k;;
+		-> rrel_gpu: geforce_gtx_660;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [8];;
+		*);;
+*);;

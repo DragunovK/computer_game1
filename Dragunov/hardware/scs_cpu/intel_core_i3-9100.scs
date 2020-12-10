@@ -1,0 +1,5 @@
+intel_core_i3_9100 <- concept_cpu;
+=> nrel_main_idtf: [Intel Core i3-9100](*<- lang_ru;;*);
+=> nrel_main_idtf: [Intel Core i3-9100](*<- lang_en;;*);
+=> nrel_logical_cores_count: [4];
+=> nrel_clock_mhz: [4200];;

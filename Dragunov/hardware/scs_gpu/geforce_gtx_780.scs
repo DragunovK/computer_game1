@@ -1,0 +1,4 @@
+geforce_gtx_780 <- concept_video_adapter;
+=> nrel_main_idtf: [GeForce GTX 780](*<- lang_ru;;*);
+=> nrel_main_idtf: [GeForce GTX 780](*<- lang_en;;*);
+=> nrel_tflops: [3.977];;

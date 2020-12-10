@@ -1,0 +1,4 @@
+geforce_gtx_660_ti <- concept_video_adapter;
+=> nrel_main_idtf: [GeForce GTX 660 Ti](*<- lang_ru;;*);
+=> nrel_main_idtf: [GeForce GTX 660 Ti](*<- lang_en;;*);
+=> nrel_tflops: [2.46];;

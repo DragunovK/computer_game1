@@ -1,0 +1,4 @@
+geforce_2_mx_400 <- concept_gpu;
+=> nrel_main_idtf: [GeForce 2 mx 400](*<- lang_ru;;*);
+=> nrel_main_idtf: [GeForce 2 mx 400](*<- lang_en;;*);
+=> nrel_tflops: [0.0];;

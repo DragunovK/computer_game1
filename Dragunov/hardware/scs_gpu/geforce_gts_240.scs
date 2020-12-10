@@ -1,0 +1,4 @@
+geforce_gts_240 <- concept_video_adapter;
+=> nrel_main_idtf: [GeForce GTS 240](*<- lang_ru;;*);
+=> nrel_main_idtf: [GeForce GTS 240](*<- lang_en;;*);
+=> nrel_tflops: [0.55432];;

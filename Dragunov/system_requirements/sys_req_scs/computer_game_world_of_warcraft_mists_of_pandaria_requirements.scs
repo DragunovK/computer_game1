@@ -1,0 +1,10 @@
+computer_game_world_of_warcraft_mists_of_pandaria
+
+=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_core_i5_760;;
+		-> rrel_gpu: geforce_gtx_560;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [4];;
+		*);;
+*);;

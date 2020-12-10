@@ -1,0 +1,5 @@
+intel_core_i5_9600k <- concept_cpu;
+=> nrel_main_idtf: [Intel Core i5-9600K](*<- lang_ru;;*);
+=> nrel_main_idtf: [Intel Core i5-9600K](*<- lang_en;;*);
+=> nrel_logical_cores_count: [6];
+=> nrel_clock_mhz: [4600];;

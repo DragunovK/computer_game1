@@ -1,0 +1,5 @@
+intel_core_i9_9980hk <- concept_cpu;
+=> nrel_main_idtf: [Intel Core i9-9980HK](*<- lang_ru;;*);
+=> nrel_main_idtf: [Intel Core i9-9980HK](*<- lang_en;;*);
+=> nrel_logical_cores_count: [16];
+=> nrel_clock_mhz: [5000];;

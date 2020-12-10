@@ -1,0 +1,5 @@
+intel_core_i7_6700t <- concept_cpu;
+=> nrel_main_idtf: [Intel Core i7-6700T](*<- lang_ru;;*);
+=> nrel_main_idtf: [Intel Core i7-6700T](*<- lang_en;;*);
+=> nrel_logical_cores_count: [4];
+=> nrel_clock_mhz: [3600];;

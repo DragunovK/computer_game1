@@ -1,0 +1,5 @@
+intel_pentium_3 <- concept_cpu;
+=> nrel_main_idtf: [Intel Pentium 3](*<- lang_ru;;*);
+=> nrel_main_idtf: [Intel Pentium 3](*<- lang_en;;*);
+=> nrel_logical_cores_count: [1];
+=> nrel_clock_mhz: [866];;

@@ -1,0 +1,4 @@
+geforce_gtx_970 <- concept_video_adapter;
+=> nrel_main_idtf: [GeForce GTX 970](*<- lang_ru;;*);
+=> nrel_main_idtf: [GeForce GTX 970](*<- lang_en;;*);
+=> nrel_tflops: [3.92];;

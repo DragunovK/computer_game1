@@ -1,0 +1,4 @@
+geforce_gtx_295 <- concept_video_adapter;
+=> nrel_main_idtf: [GeForce GTX 295](*<- lang_ru;;*);
+=> nrel_main_idtf: [GeForce GTX 295](*<- lang_en;;*);
+=> nrel_tflops: [1.78848];;

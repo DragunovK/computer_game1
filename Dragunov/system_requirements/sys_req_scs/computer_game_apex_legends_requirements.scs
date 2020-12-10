@@ -1,0 +1,10 @@
+computer_game_apex_legends
+
+	=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_core_i3_6300;;
+		-> rrel_gpu: geforce_gt_640_gddr5;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [6];;
+		*);;
+	*);;

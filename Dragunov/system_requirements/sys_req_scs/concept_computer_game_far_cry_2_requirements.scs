@@ -1,0 +1,10 @@
+concept_computer_game_far_cry_2
+
+	=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_pentium_d_805;;
+		-> rrel_gpu: geforce_6800;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [1];;
+		*);;
+	*);;

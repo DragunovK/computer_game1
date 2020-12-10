@@ -1,0 +1,10 @@
+computer_game_dota_2
+
+=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_pentium_d_915;;
+		-> rrel_gpu: geforce_8800_gt;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [4];;
+		*);;
+*);;

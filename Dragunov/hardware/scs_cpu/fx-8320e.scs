@@ -1,0 +1,5 @@
+fx_8320e <- concept_cpu;
+=> nrel_main_idtf: [FX-8320E](*<- lang_ru;;*);
+=> nrel_main_idtf: [FX-8320E](*<- lang_en;;*);
+=> nrel_logical_cores_count: [8];
+=> nrel_clock_mhz: [4000];;

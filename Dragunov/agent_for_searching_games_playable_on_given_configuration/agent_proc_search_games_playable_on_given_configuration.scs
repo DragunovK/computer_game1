@@ -1,0 +1,71 @@
+agent_proc_search_games_playable_on_given_configuration
+=>nrel_main_idtf: 
+	[агентная scp-программа поиска] (* <- lang_ru;; *);
+	[agent scp-program of search] (* <- lang_en;; *);
+<- agent_scp_program;;
+
+scp_program -> agent_proc_search_games_playable_on_given_configuration(*
+    -> rrel_params: ...(*
+        -> rrel_1: rrel_in: .._var_agent_proc_search_games_playable_on_given_configuration_event;;
+        -> rrel_2: rrel_in: .._var_agent_proc_search_games_playable_on_given_configuration_input_arc;;
+    *);;
+
+    -> rrel_operators: ...(*
+        -> rrel_init: ..op_118(*
+            <- searchElStr3;;
+            -> rrel_1: rrel_scp_var: rrel_assign: .._var_agent_proc_search_games_playable_on_given_configuration_temp;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: .._var_agent_proc_search_games_playable_on_given_configuration_input_arc;;
+            -> rrel_3: rrel_scp_var: rrel_assign: .._var_agent_proc_search_games_playable_on_given_configuration_question;;
+            => nrel_goto: ..op_119;;
+        *);;
+        -> ..op_119(*
+            <- searchElStr3;;
+            -> rrel_1: rrel_scp_const: rrel_fixed: question_search_games_playable_on_given_configuration;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: .._var_agent_proc_search_games_playable_on_given_configuration_arc;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: .._var_agent_proc_search_games_playable_on_given_configuration_question;;
+            => nrel_then: ..op_121;;
+            => nrel_else: ..op_120;;
+        *);;
+        -> ..op_121(*
+            <- searchElStr3;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_agent_proc_search_games_playable_on_given_configuration_question;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: .._var_agent_proc_search_games_playable_on_given_configuration_arc;;
+            -> rrel_3: rrel_assign: rrel_scp_var: .._var_agent_proc_search_games_playable_on_given_configuration_parameter;;
+            => nrel_then: ..op_122;;
+            => nrel_else: ..op_120;;
+        *);;
+        -> ..op_122(*
+            <- genEl;;
+            -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: _var_agent_proc_search_games_playable_on_given_configuration_answer;;
+            => nrel_goto: ..op_123;;
+        *);;
+        -> ..op_123(*
+            <- call;;
+            -> rrel_1: rrel_scp_const: rrel_fixed: proc_search_games_playable_on_given_configuration;;
+            -> rrel_2: rrel_scp_const: rrel_fixed: ...(*
+                -> rrel_1: rrel_fixed: rrel_scp_var: .._var_agent_proc_search_games_playable_on_given_configuration_parameter;;
+                -> rrel_2: rrel_fixed: rrel_scp_var: _var_agent_proc_search_games_playable_on_given_configuration_answer;;
+            *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: .._var_agent_proc_search_games_playable_on_given_configuration_op123_descr;;
+            => nrel_goto: ..op_125;;
+        *);;
+        -> ..op_125(*
+            <- waitReturn;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_agent_proc_search_games_playable_on_given_configuration_op123_descr;;
+            => nrel_goto: ..op_124;;
+        *);;
+        -> ..op_124(*
+            <- genElStr5;;
+            -> rrel_1: rrel_scp_var: rrel_fixed: .._var_agent_proc_search_games_playable_on_given_configuration_question;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_const: rrel_common: .._var_agent_proc_search_games_playable_on_given_configuration_arc;;
+            -> rrel_3: rrel_scp_var: rrel_fixed: _var_agent_proc_search_games_playable_on_given_configuration_answer;;
+            -> rrel_4: rrel_scp_var: rrel_assign: rrel_pos_const_perm: .._var_agent_proc_search_games_playable_on_given_configuration_arc;;
+            -> rrel_5: rrel_scp_const: rrel_fixed: nrel_answer;;
+            => nrel_goto: ..op_120;;
+        *);;
+        -> ..op_120(*
+            <- return;;
+        *);;
+    *);;
+*);;
+

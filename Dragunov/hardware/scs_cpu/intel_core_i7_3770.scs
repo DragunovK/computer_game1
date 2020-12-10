@@ -1,0 +1,5 @@
+intel_core_i7_3770 <- concept_cpu;
+=> nrel_main_idtf: [Intel Core i7 3770](*<- lang_ru;;*);
+=> nrel_main_idtf: [Intel Core i7 3770](*<- lang_en;;*);
+=> nrel_logical_cores_count: [8];
+=> nrel_clock_mhz: [3900];;

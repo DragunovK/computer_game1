@@ -1,0 +1,4 @@
+radeon_hd_4890 <- concept_video_adapter;
+=> nrel_main_idtf: [Radeon HD 4890](*<- lang_ru;;*);
+=> nrel_main_idtf: [Radeon HD 4890](*<- lang_en;;*);
+=> nrel_tflops: [1.36];;

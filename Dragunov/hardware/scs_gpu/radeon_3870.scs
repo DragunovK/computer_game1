@@ -1,0 +1,4 @@
+radeon_3870 <- concept_gpu;
+=> nrel_main_idtf: [Radeon 3870](*<- lang_ru;;*);
+=> nrel_main_idtf: [Radeon 3870](*<- lang_en;;*);
+=> nrel_tflops: [0.496];;

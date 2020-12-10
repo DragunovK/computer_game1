@@ -1,0 +1,4 @@
+titan_xp <- concept_video_adapter;
+=> nrel_main_idtf: [Titan Xp](*<- lang_ru;;*);
+=> nrel_main_idtf: [Titan Xp](*<- lang_en;;*);
+=> nrel_tflops: [12.15];;

@@ -1,0 +1,4 @@
+geforce_gtx_570 <- concept_video_adapter;
+=> nrel_main_idtf: [GeForce GTX 570](*<- lang_ru;;*);
+=> nrel_main_idtf: [GeForce GTX 570](*<- lang_en;;*);
+=> nrel_tflops: [1.4054];;

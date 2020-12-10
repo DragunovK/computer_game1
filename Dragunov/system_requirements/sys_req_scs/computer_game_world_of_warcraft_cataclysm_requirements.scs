@@ -1,0 +1,10 @@
+computer_game_world_of_warcraft_cataclysm
+
+=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_pentium_4;;
+		-> rrel_gpu: radeon_9500;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [1];;
+		*);;
+*);;

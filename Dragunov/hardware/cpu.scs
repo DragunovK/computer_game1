@@ -1,0 +1,12 @@
+concept_cpu <- sc_node_not_relation;
+=> nrel_main_idtf: [Процессор](*<- lang_ru;;*);
+=> nrel_main_idtf: [CPU](*<- lang_en;;*);;
+
+nrel_logical_cores_count <- sc_node_norole_relation;
+=> nrel_main_idtf: [количество логических ядер*](*<- lang_ru;;*);
+=> nrel_main_idtf: [logical cores count*](*<- lang_en;;*);;
+
+nrel_clock_mhz<- sc_node_norole_relation;
+=> nrel_main_idtf: [частота*](*<- lang_ru;;*);
+=> nrel_main_idtf: [frequency*](*<- lang_en;;*);;
+

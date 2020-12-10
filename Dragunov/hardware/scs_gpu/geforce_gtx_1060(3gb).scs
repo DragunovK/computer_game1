@@ -1,0 +1,4 @@
+geforce_gtx_1060_3gb <- concept_video_adapter;
+=> nrel_main_idtf: [GeForce GTX 1060(3GB)](*<- lang_ru;;*);
+=> nrel_main_idtf: [GeForce GTX 1060(3GB)](*<- lang_en;;*);
+=> nrel_tflops: [2.331];;

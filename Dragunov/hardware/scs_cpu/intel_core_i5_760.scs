@@ -1,0 +1,5 @@
+intel_core_i5_760 <- concept_cpu;
+=> nrel_main_idtf: [Intel Core i5 760](*<- lang_ru;;*);
+=> nrel_main_idtf: [Intel Core i5 760](*<- lang_en;;*);
+=> nrel_logical_cores_count: [4];
+=> nrel_clock_mhz: [2800];;

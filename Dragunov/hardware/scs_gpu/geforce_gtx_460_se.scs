@@ -1,0 +1,4 @@
+geforce_gtx_460_se <- concept_video_adapter;
+=> nrel_main_idtf: [GeForce GTX 460 SE](*<- lang_ru;;*);
+=> nrel_main_idtf: [GeForce GTX 460 SE](*<- lang_en;;*);
+=> nrel_tflops: [0.7487999999999999];;

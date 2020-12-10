@@ -1,0 +1,10 @@
+computer_game_warcraft_3_reforged
+
+	=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_core_i3_530;;
+		-> rrel_gpu: geforce_gts_450;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [4];;
+		*);;
+	*);;

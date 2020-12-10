@@ -1,0 +1,4 @@
+geforce_7300_gt <- concept_gpu;
+=> nrel_main_idtf: [GeForce 7300 GT](*<- lang_ru;;*);
+=> nrel_main_idtf: [GeForce 7300 GT](*<- lang_en;;*);
+=> nrel_tflops: [0.0];;

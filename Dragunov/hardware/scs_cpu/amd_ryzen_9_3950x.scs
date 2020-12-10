@@ -1,0 +1,5 @@
+amd_ryzen_9_3950x <- concept_cpu;
+=> nrel_main_idtf: [AMD Ryzen 9 3950X](*<- lang_ru;;*);
+=> nrel_main_idtf: [AMD Ryzen 9 3950X](*<- lang_en;;*);
+=> nrel_logical_cores_count: [32];
+=> nrel_clock_mhz: [4700];;

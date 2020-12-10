@@ -1,0 +1,10 @@
+computer_game_smite
+
+=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_core_2_duo_e6600;;
+		-> rrel_gpu: geforce_8800_gtx;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [3];;
+		*);;
+*);;

@@ -1,0 +1,4 @@
+geforce_gtx_280 <- concept_video_adapter;
+=> nrel_main_idtf: [GeForce GTX 280](*<- lang_ru;;*);
+=> nrel_main_idtf: [GeForce GTX 280](*<- lang_en;;*);
+=> nrel_tflops: [0.93312];;

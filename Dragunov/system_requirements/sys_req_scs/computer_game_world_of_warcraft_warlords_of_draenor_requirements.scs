@@ -1,0 +1,10 @@
+computer_game_world_of_warcraft_warlords_of_draenor
+
+	=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_core_i5_2400;;
+		-> rrel_gpu: geforce_gtx_470;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [2];;
+		*);;
+	*);;

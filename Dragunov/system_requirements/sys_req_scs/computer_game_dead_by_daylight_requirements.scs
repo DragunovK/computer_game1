@@ -1,0 +1,10 @@
+computer_game_dead_by_daylight
+
+=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_core_i3_4170;;
+		-> rrel_gpu: geforce_gtx_460;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [6];;
+		*);;
+*);;

@@ -1,0 +1,683 @@
+scp_program -> get_cpu_number_characteristic(*
+    -> rrel_params: ...(*
+        -> rrel_1: rrel_in: .._var_get_cpu_number_characteristic_cpu;;
+        -> rrel_2: rrel_out: .._var_get_cpu_number_characteristic_characteristic;;
+    *);;
+
+    -> rrel_operators: ...(*
+        -> rrel_init: ..op_2(*
+            <- genEl;;
+            -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: .._var_get_cpu_number_characteristic_addendum_1;;
+            => nrel_goto: ..op_3;;
+        *);;
+        -> ..op_3(*
+            <- genEl;;
+            -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: .._var_get_cpu_number_characteristic_addendum_2;;
+            => nrel_goto: ..op_4;;
+        *);;
+        -> ..op_4(*
+            <- searchElStr5;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_get_cpu_number_characteristic_cpu;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_const: rrel_common: .._var_get_cpu_number_characteristic_arc;;
+            -> rrel_3: rrel_scp_var: rrel_assign: .._var_get_cpu_number_characteristic_num_of_logical_cores;;
+            -> rrel_4: rrel_scp_var: rrel_assign: rrel_pos_const_perm: .._var_get_cpu_number_characteristic_arc;;
+            -> rrel_5: rrel_scp_const: rrel_fixed: nrel_logical_cores_count;;
+            => nrel_goto: ..op_5;;
+        *);;
+        -> ..op_5(*
+            <- searchElStr5;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_get_cpu_number_characteristic_cpu;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_const: rrel_common: .._var_get_cpu_number_characteristic_arc;;
+            -> rrel_3: rrel_scp_var: rrel_assign: .._var_get_cpu_number_characteristic_clock_speed;;
+            -> rrel_4: rrel_scp_var: rrel_assign: rrel_pos_const_perm: .._var_get_cpu_number_characteristic_arc;;
+            -> rrel_5: rrel_scp_const: rrel_fixed: nrel_clock_mhz;;
+            => nrel_goto: ..op_6;;
+        *);;
+        -> ..op_6(*
+            <- varAssign;;
+            -> rrel_1: rrel_assign: rrel_scp_var: .._var_get_cpu_number_characteristic_normalization_term_cores;;
+            -> rrel_2: rrel_scp_const: rrel_fixed: [0.0035];;
+            => nrel_goto: ..op_7;;
+        *);;
+        -> ..op_7(*
+            <- contMult;;
+            -> rrel_1: rrel_scp_var: rrel_assign: .._var_get_cpu_number_characteristic_addendum_1;;
+            -> rrel_2: rrel_scp_var: rrel_fixed: .._var_get_cpu_number_characteristic_num_of_logical_cores;;
+            -> rrel_3: rrel_scp_var: rrel_fixed: .._var_get_cpu_number_characteristic_normalization_term_cores;;
+            => nrel_goto: ..op_8;;
+        *);;
+        -> ..op_8(*
+            <- varAssign;;
+            -> rrel_1: rrel_assign: rrel_scp_var: .._var_get_cpu_number_characteristic_normalization_term_clock;;
+            -> rrel_2: rrel_scp_const: rrel_fixed: [0.000065];;
+            => nrel_goto: ..op_9;;
+        *);;
+        -> ..op_9(*
+            <- contMult;;
+            -> rrel_1: rrel_scp_var: rrel_assign: .._var_get_cpu_number_characteristic_addendum_2;;
+            -> rrel_2: rrel_scp_var: rrel_fixed: .._var_get_cpu_number_characteristic_clock_speed;;
+            -> rrel_3: rrel_scp_var: rrel_fixed: .._var_get_cpu_number_characteristic_normalization_term_clock;;
+            => nrel_goto: ..op_10;;
+        *);;
+        -> ..op_10(*
+            <- contAdd;;
+            -> rrel_1: rrel_scp_var: rrel_assign: .._var_get_cpu_number_characteristic_characteristic;;
+            -> rrel_2: rrel_scp_var: rrel_fixed: .._var_get_cpu_number_characteristic_addendum_1;;
+            -> rrel_3: rrel_scp_var: rrel_fixed: .._var_get_cpu_number_characteristic_addendum_2;;
+            => nrel_goto: ..op_10_1;;
+        *);;
+        -> ..op_10_1(*
+            <- contMult;;
+            -> rrel_1: rrel_scp_var: rrel_fixed: .._var_get_cpu_number_characteristic_addendum_1;;
+            -> rrel_2: rrel_scp_var: rrel_fixed: .._var_get_cpu_number_characteristic_addendum_1;;
+            -> rrel_3: rrel_scp_const: rrel_fixed: [0];;
+            => nrel_goto: ..op_10_2;;
+        *);;
+        -> ..op_10_2(*
+            <- contMult;;
+            -> rrel_1: rrel_scp_var: rrel_fixed: .._var_get_cpu_number_characteristic_addendum_2;;
+            -> rrel_2: rrel_scp_var: rrel_fixed: .._var_get_cpu_number_characteristic_addendum_2;;
+            -> rrel_3: rrel_scp_const: rrel_fixed: [0];;
+            => nrel_goto: ..op_11;;
+        *);;
+        -> ..op_11(*
+            <- return;;
+        *);;
+    *);;
+*);;
+
+scp_program -> compare_cpu(*
+    -> rrel_params: ...(*
+        -> rrel_1: rrel_in: .._var_compare_cpu_cpu_1;;
+        -> rrel_2: rrel_in: .._var_compare_cpu_cpu_2;;
+        -> rrel_3: rrel_out: .._var_compare_cpu_verdict;;
+    *);;
+
+    -> rrel_operators: ...(*
+        -> rrel_init: ..op_14(*
+            <- genEl;;
+            -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: .._var_compare_cpu_cpu_1_characteristic;;
+            => nrel_goto: ..op_15;;
+        *);;
+        -> ..op_15(*
+            <- genEl;;
+            -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: .._var_compare_cpu_cpu_2_characteristic;;
+            => nrel_goto: ..op_16;;
+        *);;
+        -> ..op_16(*
+            <- call;;
+            -> rrel_1: rrel_scp_const: rrel_fixed: get_cpu_number_characteristic;;
+            -> rrel_2: rrel_scp_const: rrel_fixed: ...(*
+                -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_cpu_cpu_1;;
+                -> rrel_2: rrel_assign: rrel_scp_var: .._var_compare_cpu_cpu_1_characteristic;;
+            *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: .._var_compare_cpu_op16_descr;;
+            => nrel_goto: ..op_18;;
+        *);;
+        -> ..op_18(*
+            <- waitReturn;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_cpu_op16_descr;;
+            => nrel_goto: ..op_17;;
+        *);;
+        -> ..op_17(*
+            <- call;;
+            -> rrel_1: rrel_scp_const: rrel_fixed: get_cpu_number_characteristic;;
+            -> rrel_2: rrel_scp_const: rrel_fixed: ...(*
+                -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_cpu_cpu_2;;
+                -> rrel_2: rrel_assign: rrel_scp_var: .._var_compare_cpu_cpu_2_characteristic;;
+            *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: .._var_compare_cpu_op17_descr;;
+            => nrel_goto: ..op_20;;
+        *);;
+        -> ..op_20(*
+            <- waitReturn;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_cpu_op17_descr;;
+            => nrel_goto: ..op_19;;
+        *);;
+        -> ..op_19(*
+            <- ifGr;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_cpu_cpu_1_characteristic;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: .._var_compare_cpu_cpu_2_characteristic;;
+            => nrel_then: ..op_22;;
+            => nrel_else: ..op_23;;
+        *);;
+        -> ..op_22(*
+            <- varAssign;;
+            -> rrel_1: rrel_assign: rrel_scp_var: .._var_compare_cpu_verdict;;
+            -> rrel_2: rrel_scp_const: rrel_fixed: [1];;
+            => nrel_goto: ..op_21;;
+        *);;
+        -> ..op_23(*
+            <- ifEq;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_cpu_cpu_1_characteristic;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: .._var_compare_cpu_cpu_2_characteristic;;
+            => nrel_then: ..op_25;;
+            => nrel_else: ..op_26;;
+        *);;
+        -> ..op_25(*
+            <- varAssign;;
+            -> rrel_1: rrel_assign: rrel_scp_var: .._var_compare_cpu_verdict;;
+            -> rrel_2: rrel_scp_const: rrel_fixed: [1];;
+            => nrel_goto: ..op_21;;
+        *);;
+        -> ..op_26(*
+            <- varAssign;;
+            -> rrel_1: rrel_assign: rrel_scp_var: .._var_compare_cpu_verdict;;
+            -> rrel_2: rrel_scp_const: rrel_fixed: [0];;
+            => nrel_goto: ..op_21;;
+        *);;
+        -> ..op_21(*
+            <- return;;
+        *);;
+    *);;
+*);;
+
+scp_program -> get_gpu_number_characteristic(*
+    -> rrel_params: ...(*
+        -> rrel_1: rrel_in: .._var_get_gpu_number_characteristic_gpu;;
+        -> rrel_2: rrel_out: .._var_get_gpu_number_characteristic_number_characteristic;;
+    *);;
+
+    -> rrel_operators: ...(*
+        -> rrel_init: ..op_32(*
+            <- searchElStr5;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_get_gpu_number_characteristic_gpu;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_const: rrel_common: .._var_get_gpu_number_characteristic_arc;;
+            -> rrel_3: rrel_scp_var: rrel_assign: .._var_get_gpu_number_characteristic_number_characteristic;;
+            -> rrel_4: rrel_scp_var: rrel_assign: rrel_pos_const_perm: .._var_get_gpu_number_characteristic_arc;;
+            -> rrel_5: rrel_scp_const: rrel_fixed: nrel_tflops;;
+            => nrel_goto: ..op_33;;
+        *);;
+        -> ..op_33(*
+            <- return;;
+        *);;
+    *);;
+*);;
+
+scp_program -> compare_gpu(*
+    -> rrel_params: ...(*
+        -> rrel_1: rrel_in: .._var_compare_gpu_gpu_1;;
+        -> rrel_2: rrel_in: .._var_compare_gpu_gpu_2;;
+        -> rrel_3: rrel_out: .._var_compare_gpu_verdict;;
+    *);;
+
+    -> rrel_operators: ...(*
+        -> rrel_init: ..op_36(*
+            <- genEl;;
+            -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: .._var_compare_gpu_gpu_1_characteristic;;
+            => nrel_goto: ..op_37;;
+        *);;
+        -> ..op_37(*
+            <- genEl;;
+            -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: .._var_compare_gpu_gpu_2_characteristic;;
+            => nrel_goto: ..op_38;;
+        *);;
+        -> ..op_38(*
+            <- call;;
+            -> rrel_1: rrel_scp_const: rrel_fixed: get_gpu_number_characteristic;;
+            -> rrel_2: rrel_scp_const: rrel_fixed: ...(*
+                -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_gpu_gpu_1;;
+                -> rrel_2: rrel_assign: rrel_scp_var: .._var_compare_gpu_gpu_1_characteristic;;
+            *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: .._var_compare_gpu_op38_descr;;
+            => nrel_goto: ..op_40;;
+        *);;
+        -> ..op_40(*
+            <- waitReturn;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_gpu_op38_descr;;
+            => nrel_goto: ..op_39;;
+        *);;
+        -> ..op_39(*
+            <- call;;
+            -> rrel_1: rrel_scp_const: rrel_fixed: get_gpu_number_characteristic;;
+            -> rrel_2: rrel_scp_const: rrel_fixed: ...(*
+                -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_gpu_gpu_2;;
+                -> rrel_2: rrel_assign: rrel_scp_var: .._var_compare_gpu_gpu_2_characteristic;;
+            *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: .._var_compare_gpu_op39_descr;;
+            => nrel_goto: ..op_42;;
+        *);;
+        -> ..op_42(*
+            <- waitReturn;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_gpu_op39_descr;;
+            => nrel_goto: ..op_41;;
+        *);;
+        -> ..op_41(*
+            <- ifGr;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_gpu_gpu_1_characteristic;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: .._var_compare_gpu_gpu_2_characteristic;;
+            => nrel_then: ..op_44;;
+            => nrel_else: ..op_45;;
+        *);;
+        -> ..op_44(*
+            <- varAssign;;
+            -> rrel_1: rrel_assign: rrel_scp_var: .._var_compare_gpu_verdict;;
+            -> rrel_2: rrel_scp_const: rrel_fixed: [1];;
+            => nrel_goto: ..op_43;;
+        *);;
+        -> ..op_45(*
+            <- ifEq;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_gpu_gpu_1_characteristic;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: .._var_compare_gpu_gpu_2_characteristic;;
+            => nrel_then: ..op_47;;
+            => nrel_else: ..op_48;;
+        *);;
+        -> ..op_47(*
+            <- varAssign;;
+            -> rrel_1: rrel_assign: rrel_scp_var: .._var_compare_gpu_verdict;;
+            -> rrel_2: rrel_scp_const: rrel_fixed: [1];;
+            => nrel_goto: ..op_43;;
+        *);;
+        -> ..op_48(*
+            <- varAssign;;
+            -> rrel_1: rrel_assign: rrel_scp_var: .._var_compare_gpu_verdict;;
+            -> rrel_2: rrel_scp_const: rrel_fixed: [0];;
+            => nrel_goto: ..op_43;;
+        *);;
+        -> ..op_43(*
+            <- return;;
+        *);;
+    *);;
+*);;
+
+scp_program -> compare_ram(*
+    -> rrel_params: ...(*
+        -> rrel_1: rrel_in: .._var_compare_ram_ram_1;;
+        -> rrel_2: rrel_in: .._var_compare_ram_ram_2;;
+        -> rrel_3: rrel_out: .._var_compare_ram_verdict;;
+    *);;
+
+    -> rrel_operators: ...(*
+        -> rrel_init: ..op_54(*
+            <- searchElStr5;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_ram_ram_1;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_const: rrel_common: .._var_compare_ram_arc;;
+            -> rrel_3: rrel_scp_var: rrel_assign: .._var_compare_ram_ram_1_volume;;
+            -> rrel_4: rrel_scp_var: rrel_assign: rrel_pos_const_perm: .._var_compare_ram_arc;;
+            -> rrel_5: rrel_scp_const: rrel_fixed: nrel_ram_volume_gb;;
+            => nrel_goto: ..op_55;;
+        *);;
+        -> ..op_55(*
+            <- searchElStr5;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_ram_ram_2;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_const: rrel_common: .._var_compare_ram_arc;;
+            -> rrel_3: rrel_scp_var: rrel_assign: .._var_compare_ram_ram_2_volume;;
+            -> rrel_4: rrel_scp_var: rrel_assign: rrel_pos_const_perm: .._var_compare_ram_arc;;
+            -> rrel_5: rrel_scp_const: rrel_fixed: nrel_ram_volume_gb;;
+            => nrel_goto: ..op_56;;
+        *);;
+        -> ..op_56(*
+            <- ifGr;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_ram_ram_1_volume;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: .._var_compare_ram_ram_2_volume;;
+            => nrel_then: ..op_58;;
+            => nrel_else: ..op_59;;
+        *);;
+        -> ..op_58(*
+            <- varAssign;;
+            -> rrel_1: rrel_assign: rrel_scp_var: .._var_compare_ram_verdict;;
+            -> rrel_2: rrel_scp_const: rrel_fixed: [1];;
+            => nrel_goto: ..op_57;;
+        *);;
+        -> ..op_59(*
+            <- ifEq;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_ram_ram_1_volume;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: .._var_compare_ram_ram_2_volume;;
+            => nrel_then: ..op_61;;
+            => nrel_else: ..op_62;;
+        *);;
+        -> ..op_61(*
+            <- varAssign;;
+            -> rrel_1: rrel_assign: rrel_scp_var: .._var_compare_ram_verdict;;
+            -> rrel_2: rrel_scp_const: rrel_fixed: [1];;
+            => nrel_goto: ..op_57;;
+        *);;
+        -> ..op_62(*
+            <- varAssign;;
+            -> rrel_1: rrel_assign: rrel_scp_var: .._var_compare_ram_verdict;;
+            -> rrel_2: rrel_scp_const: rrel_fixed: [0];;
+            => nrel_goto: ..op_57;;
+        *);;
+        -> ..op_57(*
+            <- return;;
+        *);;
+    *);;
+*);;
+
+scp_program -> compare_tech_specs(*
+    -> rrel_params: ...(*
+        -> rrel_1: rrel_in: .._var_compare_tech_specs_sys_requirements;;
+        -> rrel_2: rrel_in: .._var_compare_tech_specs_tech_specs;;
+        -> rrel_3: rrel_out: .._var_compare_tech_specs_verdict;;
+    *);;
+
+    -> rrel_operators: ...(*
+        -> rrel_init: ..op_68(*
+            <- genEl;;
+            -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: .._var_compare_tech_specs_cpu_verdict;;
+            => nrel_goto: ..op_69;;
+        *);;
+        -> ..op_69(*
+            <- genEl;;
+            -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: .._var_compare_tech_specs_gpu_verdict;;
+            => nrel_goto: ..op_70;;
+        *);;
+        -> ..op_70(*
+            <- genEl;;
+            -> rrel_1: rrel_assign: rrel_scp_var: rrel_node: rrel_const: .._var_compare_tech_specs_ram_verdict;;
+            => nrel_goto: ..op_71;;
+        *);;
+        -> ..op_71(*
+            <- varAssign;;
+            -> rrel_1: rrel_assign: rrel_scp_var: .._var_compare_tech_specs_passage_req;;
+            -> rrel_2: rrel_scp_const: rrel_fixed: [3];;
+            => nrel_goto: ..op_72;;
+        *);;
+        -> ..op_72(*
+            <- varAssign;;
+            -> rrel_1: rrel_assign: rrel_scp_var: .._var_compare_tech_specs_passage_score;;
+            -> rrel_2: rrel_scp_const: rrel_fixed: [0];;
+            => nrel_goto: ..op_73;;
+        *);;
+        -> ..op_73(*
+            <- varAssign;;
+            -> rrel_1: rrel_assign: rrel_scp_var: .._var_compare_tech_specs_positive_verdict;;
+            -> rrel_2: rrel_scp_const: rrel_fixed: [1];;
+            => nrel_goto: ..op_74;;
+        *);;
+        -> ..op_74(*
+            <- searchElStr5;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: rrel_fixed: .._var_compare_tech_specs_sys_requirements;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_pos_const_perm: .._var_compare_tech_specs_arc;;
+            -> rrel_3: rrel_scp_var: rrel_assign: .._var_compare_tech_specs_sys_req_cpu;;
+            -> rrel_4: rrel_scp_var: rrel_assign: rrel_pos_const_perm: .._var_compare_tech_specs_arc;;
+            -> rrel_5: rrel_scp_const: rrel_fixed: rrel_cpu;;
+            => nrel_goto: ..op_75;;
+        *);;
+        -> ..op_75(*
+            <- searchElStr5;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: rrel_fixed: .._var_compare_tech_specs_sys_requirements;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_pos_const_perm: .._var_compare_tech_specs_arc;;
+            -> rrel_3: rrel_scp_var: rrel_assign: .._var_compare_tech_specs_sys_req_gpu;;
+            -> rrel_4: rrel_scp_var: rrel_assign: rrel_pos_const_perm: .._var_compare_tech_specs_arc;;
+            -> rrel_5: rrel_scp_const: rrel_fixed: rrel_gpu;;
+            => nrel_goto: ..op_76;;
+        *);;
+        -> ..op_76(*
+            <- searchElStr5;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: rrel_fixed: .._var_compare_tech_specs_sys_requirements;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_pos_const_perm: .._var_compare_tech_specs_arc;;
+            -> rrel_3: rrel_scp_var: rrel_assign: .._var_compare_tech_specs_sys_req_ram;;
+            -> rrel_4: rrel_scp_var: rrel_assign: rrel_pos_const_perm: .._var_compare_tech_specs_arc;;
+            -> rrel_5: rrel_scp_const: rrel_fixed: rrel_ram;;
+            => nrel_goto: ..op_77;;
+        *);;
+        -> ..op_77(*
+            <- searchElStr5;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: rrel_fixed: .._var_compare_tech_specs_tech_specs;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_pos_const_perm: .._var_compare_tech_specs_arc;;
+            -> rrel_3: rrel_scp_var: rrel_assign: .._var_compare_tech_specs_tech_specs_cpu;;
+            -> rrel_4: rrel_scp_var: rrel_assign: rrel_pos_const_perm: .._var_compare_tech_specs_arc;;
+            -> rrel_5: rrel_scp_const: rrel_fixed: rrel_cpu;;
+            => nrel_goto: ..op_78;;
+        *);;
+        -> ..op_78(*
+            <- searchElStr5;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: rrel_fixed: .._var_compare_tech_specs_tech_specs;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_pos_const_perm: .._var_compare_tech_specs_arc;;
+            -> rrel_3: rrel_scp_var: rrel_assign: .._var_compare_tech_specs_tech_specs_gpu;;
+            -> rrel_4: rrel_scp_var: rrel_assign: rrel_pos_const_perm: .._var_compare_tech_specs_arc;;
+            -> rrel_5: rrel_scp_const: rrel_fixed: rrel_gpu;;
+            => nrel_goto: ..op_79;;
+        *);;
+        -> ..op_79(*
+            <- searchElStr5;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: rrel_fixed: .._var_compare_tech_specs_tech_specs;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_pos_const_perm: .._var_compare_tech_specs_arc;;
+            -> rrel_3: rrel_scp_var: rrel_assign: .._var_compare_tech_specs_tech_specs_ram;;
+            -> rrel_4: rrel_scp_var: rrel_assign: rrel_pos_const_perm: .._var_compare_tech_specs_arc;;
+            -> rrel_5: rrel_scp_const: rrel_fixed: rrel_ram;;
+            => nrel_goto: ..op_80;;
+        *);;
+        -> ..op_80(*
+            <- call;;
+            -> rrel_1: rrel_scp_const: rrel_fixed: compare_cpu;;
+            -> rrel_2: rrel_scp_const: rrel_fixed: ...(*
+                -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_tech_specs_tech_specs_cpu;;
+                -> rrel_2: rrel_fixed: rrel_scp_var: .._var_compare_tech_specs_sys_req_cpu;;
+                -> rrel_3: rrel_assign: rrel_scp_var: .._var_compare_tech_specs_cpu_verdict;;
+            *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: .._var_compare_tech_specs_op80_descr;;
+            => nrel_goto: ..op_82;;
+        *);;
+        -> ..op_82(*
+            <- waitReturn;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_tech_specs_op80_descr;;
+            => nrel_goto: ..op_81;;
+        *);;
+        -> ..op_81(*
+            <- call;;
+            -> rrel_1: rrel_scp_const: rrel_fixed: compare_gpu;;
+            -> rrel_2: rrel_scp_const: rrel_fixed: ...(*
+                -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_tech_specs_tech_specs_gpu;;
+                -> rrel_2: rrel_fixed: rrel_scp_var: .._var_compare_tech_specs_sys_req_gpu;;
+                -> rrel_3: rrel_assign: rrel_scp_var: .._var_compare_tech_specs_gpu_verdict;;
+            *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: .._var_compare_tech_specs_op81_descr;;
+            => nrel_goto: ..op_84;;
+        *);;
+        -> ..op_84(*
+            <- waitReturn;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_tech_specs_op81_descr;;
+            => nrel_goto: ..op_83;;
+        *);;
+        -> ..op_83(*
+            <- call;;
+            -> rrel_1: rrel_scp_const: rrel_fixed: compare_ram;;
+            -> rrel_2: rrel_scp_const: rrel_fixed: ...(*
+                -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_tech_specs_tech_specs_ram;;
+                -> rrel_2: rrel_fixed: rrel_scp_var: .._var_compare_tech_specs_sys_req_ram;;
+                -> rrel_3: rrel_assign: rrel_scp_var: .._var_compare_tech_specs_ram_verdict;;
+            *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: .._var_compare_tech_specs_op83_descr;;
+            => nrel_goto: ..op_86;;
+        *);;
+        -> ..op_86(*
+            <- waitReturn;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_tech_specs_op83_descr;;
+            => nrel_goto: ..op_85;;
+        *);;
+        -> ..op_85(*
+            <- ifEq;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_tech_specs_cpu_verdict;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: .._var_compare_tech_specs_positive_verdict;;
+            => nrel_then: ..op_88;;
+            => nrel_else: ..op_87;;
+        *);;
+        -> ..op_88(*
+            <- contAdd;;
+            -> rrel_1: rrel_scp_var: rrel_fixed: .._var_compare_tech_specs_passage_score;;
+            -> rrel_2: rrel_scp_var: rrel_fixed: .._var_compare_tech_specs_passage_score;;
+            -> rrel_3: rrel_scp_var: rrel_fixed: .._var_compare_tech_specs_positive_verdict;;
+            => nrel_goto: ..op_87;;
+        *);;
+        -> ..op_87(*
+            <- ifEq;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_tech_specs_gpu_verdict;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: .._var_compare_tech_specs_positive_verdict;;
+            => nrel_then: ..op_91;;
+            => nrel_else: ..op_90;;
+        *);;
+        -> ..op_91(*
+            <- contAdd;;
+            -> rrel_1: rrel_scp_var: rrel_fixed: .._var_compare_tech_specs_passage_score;;
+            -> rrel_2: rrel_scp_var: rrel_fixed: .._var_compare_tech_specs_passage_score;;
+            -> rrel_3: rrel_scp_var: rrel_fixed: .._var_compare_tech_specs_positive_verdict;;
+            => nrel_goto: ..op_90;;
+        *);;
+        -> ..op_90(*
+            <- ifEq;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_tech_specs_ram_verdict;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: .._var_compare_tech_specs_positive_verdict;;
+            => nrel_then: ..op_94;;
+            => nrel_else: ..op_93;;
+        *);;
+        -> ..op_94(*
+            <- contAdd;;
+            -> rrel_1: rrel_scp_var: rrel_fixed: .._var_compare_tech_specs_passage_score;;
+            -> rrel_2: rrel_scp_var: rrel_fixed: .._var_compare_tech_specs_passage_score;;
+            -> rrel_3: rrel_scp_var: rrel_fixed: .._var_compare_tech_specs_positive_verdict;;
+            => nrel_goto: ..op_93;;
+        *);;
+        -> ..op_93(*
+            <- ifEq;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_tech_specs_passage_score;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: .._var_compare_tech_specs_passage_req;;
+            => nrel_then: ..op_97;;
+            => nrel_else: ..op_98;;
+        *);;
+        -> ..op_97(*
+            <- varAssign;;
+            -> rrel_1: rrel_assign: rrel_scp_var: .._var_compare_tech_specs_verdict;;
+            -> rrel_2: rrel_scp_const: rrel_fixed: [1];;
+            => nrel_goto: ..op_98_1;;
+        *);;
+        -> ..op_98(*
+            <- varAssign;;
+            -> rrel_1: rrel_assign: rrel_scp_var: .._var_compare_tech_specs_verdict;;
+            -> rrel_2: rrel_scp_const: rrel_fixed: [0];;
+            => nrel_goto: ..op_98_1;;
+        *);;
+        -> ..op_98_1(*
+            <- printNl;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_tech_specs_passage_score;;
+            => nrel_goto: ..op_98_2;;
+        *);;
+        -> ..op_98_2(*
+            <- contMult;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_compare_tech_specs_passage_score;;
+            -> rrel_2: rrel_fixed: rrel_scp_var: .._var_compare_tech_specs_passage_score;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: [0];;
+            => nrel_goto: ..op_96;;
+        *);;
+        -> ..op_96(*
+            <- return;;
+        *);;
+    *);;
+*);;
+
+scp_program -> proc_search_games_playable_on_given_configuration(*
+    -> rrel_params: ...(*
+        -> rrel_1: rrel_in: .._var_proc_search_games_playable_on_given_configuration_parameter;;
+        -> rrel_2: rrel_in: _var_proc_search_games_playable_on_given_configuration_answer;;
+    *);;
+
+    -> rrel_operators: ...(*
+        -> rrel_init: ..op_105_0(*
+            <- genEl;;
+            -> rrel_1: rrel_assign: rrel_node: rrel_scp_var: .._var_proc_search_games_playable_on_given_configuration_answer_set;;
+            => nrel_goto: ..op_105_1;;
+        *);;        
+        -> ..op_105_1(*
+            <- genElStr3;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _var_proc_search_games_playable_on_given_configuration_answer;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _main_arc;;
+            -> rrel_3: rrel_fixed: rrel_scp_const: .._var_proc_search_games_playable_on_given_configuration_answer_set;;
+            => nrel_goto: ..op_105_2;;
+        *);;
+        -> ..op_105_2(*
+            <- genElStr3;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _var_proc_search_games_playable_on_given_configuration_answer;;
+            -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: rrel_pos_const_perm: _main_arc;;
+            => nrel_goto: ..op_105;;
+        *);;
+        -> ..op_105(*
+            <- searchSetStr3;;
+            -> rrel_1: rrel_scp_const: rrel_fixed: concept_computer_game;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: .._var_proc_search_games_playable_on_given_configuration_arc;;
+            -> rrel_3: rrel_assign: rrel_scp_var: .._var_proc_search_games_playable_on_given_configuration_game;;
+            -> rrel_set_3: rrel_scp_var: rrel_assign: .._var_proc_search_games_playable_on_given_configuration_unused_of_op_105;;
+            => nrel_then: ..op_107;;
+            => nrel_else: ..op_106;;
+        *);;
+        -> ..op_107(*
+            <- searchElStr3;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_proc_search_games_playable_on_given_configuration_unused_of_op_105;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: .._var_proc_search_games_playable_on_given_configuration_op_105_arc;;
+            -> rrel_3: rrel_assign: rrel_scp_var: .._var_proc_search_games_playable_on_given_configuration_game;;
+            => nrel_then: ..op_109;;
+            => nrel_else: ..op_106;;
+        *);;
+        -> ..op_109(*
+            <- searchElStr5;;
+            -> rrel_1: rrel_scp_var: rrel_fixed: .._var_proc_search_games_playable_on_given_configuration_game;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_const: rrel_common: .._var_proc_search_games_playable_on_given_configuration_arc;;
+            -> rrel_3: rrel_scp_var: rrel_assign: .._var_proc_search_games_playable_on_given_configuration_sys_requirements;;
+            -> rrel_4: rrel_scp_var: rrel_assign: rrel_pos_const_perm: .._var_proc_search_games_playable_on_given_configuration_arc;;
+            -> rrel_5: rrel_scp_const: rrel_fixed: nrel_system_requirements;;
+            => nrel_then: ..op_110;;
+            => nrel_else: ..op_108;;
+        *);;
+        -> ..op_110(*
+            <- call;;
+            -> rrel_1: rrel_scp_const: rrel_fixed: compare_tech_specs;;
+            -> rrel_2: rrel_scp_const: rrel_fixed: ...(*
+                -> rrel_1: rrel_fixed: rrel_scp_var: .._var_proc_search_games_playable_on_given_configuration_sys_requirements;;
+                -> rrel_2: rrel_fixed: rrel_scp_var: .._var_proc_search_games_playable_on_given_configuration_parameter;;
+                -> rrel_3: rrel_assign: rrel_scp_var: .._var_proc_search_games_playable_on_given_configuration_verdict;;
+            *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: .._var_proc_search_games_playable_on_given_configuration_op110_descr;;
+            => nrel_goto: ..op_112;;
+        *);;
+        -> ..op_112(*
+            <- waitReturn;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_proc_search_games_playable_on_given_configuration_op110_descr;;
+            => nrel_goto: ..op_111;;
+        *);;
+        -> ..op_111(*
+            <- ifEq;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: .._var_proc_search_games_playable_on_given_configuration_verdict;;
+            -> rrel_2: rrel_scp_const: rrel_fixed: [1];;
+            => nrel_then: ..op_111_1;;
+            => nrel_else: ..op_108;;
+        *);;
+        -> ..op_111_1(*
+            <- genElStr3;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: .._var_proc_search_games_playable_on_given_configuration_answer_set;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_pos_const_perm: .._var_proc_search_games_playable_on_given_configuration_arc_2;;
+            -> rrel_3: rrel_scp_var: rrel_fixed: .._var_proc_search_games_playable_on_given_configuration_game;;
+            => nrel_goto: ..op_111_2;;
+        *);;
+        -> ..op_111_2(*
+            <- genElStr3;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _var_proc_search_games_playable_on_given_configuration_answer;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: .._var_proc_search_games_playable_on_given_configuration_arc5;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: .._var_proc_search_games_playable_on_given_configuration_arc_2;;
+            => nrel_goto: ..op_113;;
+        *);;
+        -> ..op_113(*
+            <- genElStr3;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _var_proc_search_games_playable_on_given_configuration_answer;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_pos_const_perm: .._var_proc_search_games_playable_on_given_configuration_arc;;
+            -> rrel_3: rrel_scp_var: rrel_fixed: .._var_proc_search_games_playable_on_given_configuration_game;;
+            => nrel_goto: ..op_113_1;;
+        *);;
+        -> ..op_113_1(*
+            <- genElStr3;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _var_proc_search_games_playable_on_given_configuration_answer;;
+            -> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: .._var_proc_search_games_playable_on_given_configuration_arc_1;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: .._var_proc_search_games_playable_on_given_configuration_arc;;
+            => nrel_goto: ..op_108;;
+        *);;
+        -> ..op_108(*
+            <- eraseEl;;
+            -> rrel_1: rrel_erase: rrel_scp_var: rrel_fixed: .._var_proc_search_games_playable_on_given_configuration_op_105_arc;;
+            => nrel_goto: ..op_107;;
+        *);;
+        -> ..op_106(*
+            <- return;;
+        *);;
+    *);;
+*);;
+

@@ -1,0 +1,10 @@
+computer_game_just_cause_2
+
+=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_core_2_duo_e8400;;
+		-> rrel_gpu: geforce_gts_250;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [3];;
+		*);;
+*);;

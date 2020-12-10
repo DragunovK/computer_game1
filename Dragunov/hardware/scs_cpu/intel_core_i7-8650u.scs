@@ -1,0 +1,5 @@
+intel_core_i7_8650u <- concept_cpu;
+=> nrel_main_idtf: [Intel Core i7-8650U](*<- lang_ru;;*);
+=> nrel_main_idtf: [Intel Core i7-8650U](*<- lang_en;;*);
+=> nrel_logical_cores_count: [8];
+=> nrel_clock_mhz: [4200];;

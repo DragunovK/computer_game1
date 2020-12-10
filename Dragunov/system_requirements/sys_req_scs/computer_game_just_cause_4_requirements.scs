@@ -1,0 +1,10 @@
+computer_game_just_cause_4
+
+=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_core_i5_2400;;
+		-> rrel_gpu: geforce_gtx_760;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [8];;
+		*);;
+*);;

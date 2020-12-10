@@ -1,0 +1,10 @@
+computer_game_the_elder_scrolls_5_skyrim
+
+=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_core_2_duo_e4400;;
+		-> rrel_gpu: geforce_gtx_260;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [4];;
+		*);;
+*);;

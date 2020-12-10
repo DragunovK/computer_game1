@@ -1,0 +1,4 @@
+geforcertx_2080_ti <- concept_video_adapter;
+=> nrel_main_idtf: [GeForceRTX 2080 Ti](*<- lang_ru;;*);
+=> nrel_main_idtf: [GeForceRTX 2080 Ti](*<- lang_en;;*);
+=> nrel_tflops: [13.448];;

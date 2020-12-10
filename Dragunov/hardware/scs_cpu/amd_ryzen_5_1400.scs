@@ -1,0 +1,5 @@
+amd_ryzen_5_1400 <- concept_cpu;
+=> nrel_main_idtf: [AMD Ryzen 5 1400](*<- lang_ru;;*);
+=> nrel_main_idtf: [AMD Ryzen 5 1400](*<- lang_en;;*);
+=> nrel_logical_cores_count: [8];
+=> nrel_clock_mhz: [3400];;

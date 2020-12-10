@@ -1,0 +1,4 @@
+geforce_gtx_980_ti <- concept_video_adapter;
+=> nrel_main_idtf: [GeForce GTX 980 Ti](*<- lang_ru;;*);
+=> nrel_main_idtf: [GeForce GTX 980 Ti](*<- lang_en;;*);
+=> nrel_tflops: [6.06];;

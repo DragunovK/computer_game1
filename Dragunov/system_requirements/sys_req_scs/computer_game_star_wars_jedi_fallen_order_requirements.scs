@@ -1,0 +1,10 @@
+computer_game_star_wars_jedi_fallen_order
+
+=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: fx_6100;;
+		-> rrel_gpu: geforce_gtx_650;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [8];;
+		*);;
+*);;

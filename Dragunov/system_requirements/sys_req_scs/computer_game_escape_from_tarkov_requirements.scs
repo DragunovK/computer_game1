@@ -1,0 +1,10 @@
+computer_game_escape_from_tarkov
+
+=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_core_2_duo_e6600;;
+		-> rrel_gpu: geforce_gtx_560_ti;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [6];;
+		*);;
+*);;

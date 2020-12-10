@@ -1,0 +1,16 @@
+ui_menu_search_games_playable_on_given_configuration <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
+// Указываем русский идентификатор нашей команды меню
+ui_menu_search_games_playable_on_given_configuration =>nrel_main_idtf: [Найти игры, которые запустятся на данной конфигурации] (* <- lang_ru;; *);;
+// Указываем английский идентификатор нашей команды меню
+ui_menu_search_games_playable_on_given_configuration =>nrel_main_idtf: [Find games that will be playable on given configuration] (* <- lang_en;; *);;
+// Указываем шаблон нашей команды
+ui_menu_search_games_playable_on_given_configuration =>ui_nrel_command_template: [*
+	question_search_games_playable_on_given_configuration _-> ._question_search_games_playable_on_given_configuration_instance (*
+		_-> ui_arg_1;;
+	*);;
+	._question_search_games_playable_on_given_configuration_instance _<- question;;
+*];;
+// Указываем текстовый шаблон для истории диалога на русском языке
+ui_menu_search_games_playable_on_given_configuration =>ui_nrel_command_lang_template: [Игры, в которые можно сыграть на устройстве с данной конфигурацией: $ui_arg_1] (*<- lang_ru;; *);;
+// Указываем текстовый шаблон для истории диалога на английском языке
+ui_menu_search_games_playable_on_given_configuration =>ui_nrel_command_lang_template: [Games playable on a device with following configuration: $ui_arg_1] (* <- lang_en;; *);;

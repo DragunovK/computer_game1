@@ -1,0 +1,4 @@
+geforcegtx_1660 <- concept_video_adapter;
+=> nrel_main_idtf: [GeForceGTX 1660](*<- lang_ru;;*);
+=> nrel_main_idtf: [GeForceGTX 1660](*<- lang_en;;*);
+=> nrel_tflops: [5.027];;

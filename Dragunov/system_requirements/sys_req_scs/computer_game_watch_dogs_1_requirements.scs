@@ -1,0 +1,10 @@
+computer_game_watch_dogs_1
+
+=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_core_i7_3770;;
+		-> rrel_gpu: geforce_gtx_560_ti;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [8];;
+		*);;
+*);;

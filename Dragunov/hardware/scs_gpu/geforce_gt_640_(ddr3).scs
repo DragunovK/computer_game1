@@ -1,0 +1,4 @@
+geforce_gt_640_ddr3 <- concept_video_adapter;
+=> nrel_main_idtf: [GeForce GT 640 (DDR3)](*<- lang_ru;;*);
+=> nrel_main_idtf: [GeForce GT 640 (DDR3)](*<- lang_en;;*);
+=> nrel_tflops: [0.6121];;

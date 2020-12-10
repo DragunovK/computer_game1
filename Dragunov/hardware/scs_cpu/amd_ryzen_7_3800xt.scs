@@ -1,0 +1,5 @@
+amd_ryzen_7_3800xt <- concept_cpu;
+=> nrel_main_idtf: [AMD Ryzen 7 3800XT](*<- lang_ru;;*);
+=> nrel_main_idtf: [AMD Ryzen 7 3800XT](*<- lang_en;;*);
+=> nrel_logical_cores_count: [16];
+=> nrel_clock_mhz: [4700];;

@@ -1,0 +1,10 @@
+computer_game_world_of_warcraft
+
+	=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: fx_8100;;
+		-> rrel_gpu: geforce_gtx_560;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [4];;
+		*);;
+	*);;

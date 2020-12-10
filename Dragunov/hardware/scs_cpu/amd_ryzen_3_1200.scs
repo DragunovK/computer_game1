@@ -1,0 +1,5 @@
+amd_ryzen_3_1200 <- concept_cpu;
+=> nrel_main_idtf: [AMD Ryzen 3 1200](*<- lang_ru;;*);
+=> nrel_main_idtf: [AMD Ryzen 3 1200](*<- lang_en;;*);
+=> nrel_logical_cores_count: [4];
+=> nrel_clock_mhz: [3400];;

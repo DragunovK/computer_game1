@@ -1,0 +1,5 @@
+intel_pentium_d_805 <- concept_cpu;
+=> nrel_main_idtf: [Intel Pentium D 805](*<- lang_ru;;*);
+=> nrel_main_idtf: [Intel Pentium D 805](*<- lang_en;;*);
+=> nrel_logical_cores_count: [2];
+=> nrel_clock_mhz: [2660];;

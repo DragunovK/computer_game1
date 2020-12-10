@@ -1,0 +1,4 @@
+geforce_gtx_770 <- concept_video_adapter;
+=> nrel_main_idtf: [GeForce GTX 770](*<- lang_ru;;*);
+=> nrel_main_idtf: [GeForce GTX 770](*<- lang_en;;*);
+=> nrel_tflops: [3.213];;

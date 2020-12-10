@@ -1,0 +1,5 @@
+amd_ryzen_9_3900xt <- concept_cpu;
+=> nrel_main_idtf: [AMD Ryzen 9 3900XT](*<- lang_ru;;*);
+=> nrel_main_idtf: [AMD Ryzen 9 3900XT](*<- lang_en;;*);
+=> nrel_logical_cores_count: [42];
+=> nrel_clock_mhz: [4700];;

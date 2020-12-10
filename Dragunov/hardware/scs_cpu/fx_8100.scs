@@ -1,0 +1,5 @@
+fx_8100 <- concept_cpu;
+=> nrel_main_idtf: [fx 8100](*<- lang_ru;;*);
+=> nrel_main_idtf: [fx 8100](*<- lang_en;;*);
+=> nrel_logical_cores_count: [8];
+=> nrel_clock_mhz: [3700];;

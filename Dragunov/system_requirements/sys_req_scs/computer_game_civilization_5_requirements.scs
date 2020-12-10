@@ -1,0 +1,10 @@
+computer_game_civilization_5
+
+	=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_core_2_duo_e4300;;
+		-> rrel_gpu: nvidia_7900_gs;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [2];;
+		*);;
+	*);;

@@ -1,0 +1,4 @@
+radeon_hd_3850 <- concept_video_adapter;
+=> nrel_main_idtf: [Radeon HD 3850](*<- lang_ru;;*);
+=> nrel_main_idtf: [Radeon HD 3850](*<- lang_en;;*);
+=> nrel_tflops: [0.427];;

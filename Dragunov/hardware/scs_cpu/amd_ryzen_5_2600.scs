@@ -1,0 +1,5 @@
+amd_ryzen_5_2600 <- concept_cpu;
+=> nrel_main_idtf: [AMD Ryzen 5 2600](*<- lang_ru;;*);
+=> nrel_main_idtf: [AMD Ryzen 5 2600](*<- lang_en;;*);
+=> nrel_logical_cores_count: [12];
+=> nrel_clock_mhz: [3900];;

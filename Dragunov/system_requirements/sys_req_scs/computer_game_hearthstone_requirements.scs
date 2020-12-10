@@ -1,0 +1,10 @@
+computer_game_hearthstone
+
+=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_pentium_d;;
+		-> rrel_gpu: geforce_8600_gt;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [3];;
+		*);;
+*);;

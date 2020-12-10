@@ -1,0 +1,5 @@
+intel_core_i9_10850k <- concept_cpu;
+=> nrel_main_idtf: [Intel Core i9-10850K](*<- lang_ru;;*);
+=> nrel_main_idtf: [Intel Core i9-10850K](*<- lang_en;;*);
+=> nrel_logical_cores_count: [20];
+=> nrel_clock_mhz: [5200];;

@@ -1,0 +1,4 @@
+geforce_8500_gt <- concept_video_adapter;
+=> nrel_main_idtf: [GeForce 8500 GT](*<- lang_ru;;*);
+=> nrel_main_idtf: [GeForce 8500 GT](*<- lang_en;;*);
+=> nrel_tflops: [0.043];;

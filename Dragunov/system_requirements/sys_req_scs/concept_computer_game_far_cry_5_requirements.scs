@@ -1,0 +1,10 @@
+concept_computer_game_far_cry_5
+
+=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: amd_ryzen_5_1600;;
+		-> rrel_gpu: geforce_gtx_970;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [8];;
+		*);;
+*);;

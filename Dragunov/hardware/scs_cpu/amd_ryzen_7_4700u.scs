@@ -1,0 +1,5 @@
+amd_ryzen_7_4700u <- concept_cpu;
+=> nrel_main_idtf: [AMD Ryzen 7 4700U](*<- lang_ru;;*);
+=> nrel_main_idtf: [AMD Ryzen 7 4700U](*<- lang_en;;*);
+=> nrel_logical_cores_count: [8];
+=> nrel_clock_mhz: [4100];;

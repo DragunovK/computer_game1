@@ -1,0 +1,10 @@
+computer_game_battlefield_3
+
+=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_core_2_duo_e6600;;
+		-> rrel_gpu: radeon_3870;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [2];;
+		*);;
+*);;

@@ -1,0 +1,4 @@
+geforce_gtx_960 <- concept_video_adapter;
+=> nrel_main_idtf: [GeForce GTX 960](*<- lang_ru;;*);
+=> nrel_main_idtf: [GeForce GTX 960](*<- lang_en;;*);
+=> nrel_tflops: [2.413];;

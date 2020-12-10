@@ -1,0 +1,49 @@
+// Спецификация sc-агента
+sc_agent_of_search_search_games_playable_on_given_configuration
+=>nrel_main_idtf:
+	[sc-агент поиска] (* <- lang_ru;; *);
+	[sc-agent of search] (* <- lang_en;; *);
+
+<- abstract_sc_agent;
+
+=>nrel_primary_initiation_condition: (sc_event_add_output_arc =>question_initiated);
+
+=>nrel_initiation_condition_and_result: (..sc_agent_of_search_games_playable_on_given_configuration_initiation_condition =>..sc_agent_of_search_games_playable_on_given_configuration_result);
+<= nrel_sc_agent_key_sc_elements:
+{
+	question_initiated;
+	question;
+	question_search_games_playable_on_given_configuration
+};// Описание деятельности sc-агента
+<- key_sc_element: ...(*
+	<- sc_description_of_sc_agent_behavior;;
+	<= nrel_sc_text_translation: ...(*
+		->rrel_example: [Задачей sc-агента поиска является поиск.];;
+	*);;
+*); // Описание поведения sc-агента
+=>nrel_inclusion: ...(*
+	<- platform_independent_abstract_sc_agent;;
+// Агент платформенно-независим, т.е. реализован на SCP
+	<= nrel_sc_agent_program: {
+		agent_proc_search_games_playable_on_given_configuration;
+		proc_search_games_playable_on_given_configuration
+	};; // Перечень программ sc-агента, включая агентную программу
+
+	->sc_agent_of_search_games_playable_on_given_configuration_scp (* <- active_sc_agent;; *);;
+	// Экемпляр абстраткного sс-агента – конкретный sc-агент
+*);;
+// Полное условие инициирования sc-агента
+..sc_agent_of_search_games_playable_on_given_configuration_initiation_condition = [*
+	question_search_games_playable_on_given_configuration _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> .._parameter;;
+*];;
+// Описание результатов выполнения sc-агента
+..sc_agent_of_search_games_playable_on_given_configuration_result = [*
+	question_search_games_playable_on_given_configuration _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=>nrel_answer:: .._answer;;
+	.._question _-> .._parameter;;
+*];;

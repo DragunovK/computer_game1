@@ -1,0 +1,4 @@
+geforce_8800_gtx <- concept_video_adapter;
+=> nrel_main_idtf: [GeForce 8800 GTX](*<- lang_ru;;*);
+=> nrel_main_idtf: [GeForce 8800 GTX](*<- lang_en;;*);
+=> nrel_tflops: [0.518];;

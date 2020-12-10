@@ -1,0 +1,10 @@
+concept_computer_game_far_cry
+
+=> nrel_system_requirements: ...(*
+		<- concept_specifications;;
+		-> rrel_cpu: intel_pentium_3;;
+		-> rrel_gpu: geforce_2;;
+		-> rrel_ram: ...(*
+			=> nrel_ram_volume_gb: [0.256];;
+		*);;
+*);;
